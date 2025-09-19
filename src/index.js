@@ -112,7 +112,10 @@ export async function prerender(config) {
       const url = `http://localhost:${port}${route}`;
       console.log(`📄 Processing route: ${route}`);
 
-      await page.goto(url, { waitUntil: "networkidle0" });
+      await page.goto(url, { 
+        waitUntil: "networkidle0",
+        timeout: 120000  // 120 seconds instead of default 30 seconds
+      });
       const html = await page.content();
 
       if (route === "/") {
@@ -120,16 +123,17 @@ export async function prerender(config) {
         console.log(`✅ Saved static page: index.html`);
       } else {
         const safeName = route.replace(/^\//, "").replace(/\//g, "-") || "root";
-
         if (flatOutput) {
           const fileName = `${safeName}.html`;
           await fs.writeFile(path.join(outDirPath, fileName), html);
           console.log(`✅ Saved static page: ${fileName}`);
         } else {
-          const routeDir = path.join(outDirPath, safeName);
+          // Use original path structure instead of safeName
+          const routePath = route.replace(/^\//, "") || "root";
+          const routeDir = path.join(outDirPath, routePath);
           await fs.mkdir(routeDir, { recursive: true });
           await fs.writeFile(path.join(routeDir, "index.html"), html);
-          console.log(`✅ Saved static page: ${path.join(safeName, "index.html")}`);
+          console.log(`✅ Saved static page: ${path.join(routePath, "index.html")}`);
         }
       }
     }

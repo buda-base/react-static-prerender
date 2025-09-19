@@ -5,6 +5,69 @@ import fs from "fs/promises";
 import { spawn } from "child_process";
 import { prerender } from "../src/index.js";
 
+// Function to display help
+function displayHelp() {
+  console.log(`
+🚀 React Static Prerender CLI
+
+USAGE:
+  node cli.js [OPTIONS]
+
+OPTIONS:
+  -h, --help                 Show this help message
+  --with-build              Run build command before prerendering
+  --debug                   Enable debug mode with verbose logging
+  --no-clean                Skip cleaning of output directory before prerendering
+  --no-assets               Skip copying of build assets to output directory
+  --routes-csv <file>       Load routes from CSV file (one route per line)
+                           Routes starting with "bdr:" will be prefixed with "/show/"
+                           Routes not starting with "/show/bdr:" will be prefixed with "/show/bdr:"
+  --serve-dir <directory>   Override serveDir from config (build directory to serve from)
+
+EXAMPLES:
+  node cli.js                                    # Basic prerender with config file routes
+  node cli.js --with-build                       # Build then prerender
+  node cli.js --routes-csv routes.csv            # Use routes from CSV file
+  node cli.js --serve-dir dist                   # Use 'dist' instead of config serveDir
+  node cli.js --routes-csv routes.csv --no-clean # Use CSV routes, don't clean output dir
+  node cli.js --debug --no-assets                # Debug mode, skip asset copying
+  node cli.js --routes-csv routes.csv --with-build --no-clean --no-assets  # All options
+
+CSV FILE FORMAT:
+  Each line should contain one route:
+  /
+  /about
+  /contact
+  bdr:W1234          # Will become /show/bdr:W1234
+  W5678              # Will become /show/bdr:W5678
+  # Lines starting with # are ignored as comments
+
+CONFIGURATION:
+  Create a prerender.config.js file in your project root.
+  See documentation for configuration options.
+`);
+}
+
+// Function to load routes from CSV file
+async function loadRoutesFromCSV(csvPath) {
+  try {
+    const fullPath = path.resolve(process.cwd(), csvPath);
+    const csvContent = await fs.readFile(fullPath, 'utf-8');
+    
+    // Parse CSV - each line is a route, trim whitespace and filter empty lines
+    const routes = csvContent
+      .split('\n')
+      .map(line => line.trim())
+      .filter(line => line.length > 0 && !line.startsWith('#')); // Allow comments with #
+    
+    console.log(`✅ Loaded ${routes.length} routes from CSV: ${csvPath}`);
+    return routes;
+  } catch (error) {
+    console.error(`❌ Error loading routes from CSV file ${csvPath}: ${error.message}`);
+    process.exit(1);
+  }
+}
+
 async function loadConfig() {
   const configPath = path.resolve(process.cwd(), "prerender.config.js");
 
@@ -136,10 +199,42 @@ async function copyBuildAssets(serveDir, outDir) {
 
 async function main() {
   try {
+    // Check for help parameter first, before loading config
+    if (process.argv.includes('-h') || process.argv.includes('--help')) {
+      displayHelp();
+      process.exit(0);
+    }
+
     const config = await loadConfig();
-    const buildDir = path.resolve(process.cwd(), config.serveDir || "build");
     const shouldBuild = process.argv.includes("--with-build");
     const isDebug = process.argv.includes("--debug");
+    const noClean = process.argv.includes("--no-clean");
+    const noAssets = process.argv.includes("--no-assets");
+    
+    // Check for serve-dir parameter
+    const serveDirIndex = process.argv.findIndex(arg => arg === "--serve-dir");
+    if (serveDirIndex !== -1 && serveDirIndex + 1 < process.argv.length) {
+      const customServeDir = process.argv[serveDirIndex + 1];
+      console.log(`📁 Overriding serveDir: ${config.serveDir || "build"} → ${customServeDir}`);
+      config.serveDir = customServeDir;
+    }
+    
+    const buildDir = path.resolve(process.cwd(), config.serveDir || "build");
+    
+    // Check for CSV routes parameter
+    const csvRouteIndex = process.argv.findIndex(arg => arg === "--routes-csv");
+    if (csvRouteIndex !== -1 && csvRouteIndex + 1 < process.argv.length) {
+      const csvPath = process.argv[csvRouteIndex + 1];
+      console.log(`📄 Loading routes from CSV file: ${csvPath}`);
+      const csvRoutes = await loadRoutesFromCSV(csvPath);
+      config.routes = csvRoutes.map(r => { 
+        if(r.startsWith("/")) return r
+        else if(r.startsWith("bdr:")) return "/show/" + r
+        else if(!r.startsWith("/show/bdr:")) return "/show/bdr:"+r
+        return r
+      });
+      console.log(`🔄 Replaced config.routes with ${csvRoutes.length} routes from CSV`);
+    }
 
     if (isDebug) {
       process.env.DEBUG = "1";
@@ -165,22 +260,33 @@ async function main() {
       const hasIndex = await pathExists(path.join(buildDir, "index.html"));
       if (!hasIndex) {
         console.error(
-            "❌ Build folder not found. Run `npm run build` or use --with-build."
+            "❌ Build folder not found. Either specify with --server-dir or check why there is no ./" + config.serveDir + "/index.html"
         );
         process.exit(1);
       }
     }
 
     const outDirPath = path.resolve(process.cwd(), config.outDir || "static-pages");
-    try {
-      await fs.rm(outDirPath, { recursive: true, force: true });
-      console.log(`🧹 Cleaned existing output directory: ${config.outDir || "static-pages"}`);
-    } catch (err) {
+    
+    // Clean output directory unless --no-clean is specified
+    if (!noClean) {
+      try {
+        await fs.rm(outDirPath, { recursive: true, force: true });
+        console.log(`🧹 Cleaned existing output directory: ${config.outDir || "static-pages"}`);
+      } catch (err) {
+      }
+    } else {
+      console.log(`⚠️ Skipping clean of output directory: ${config.outDir || "static-pages"} (--no-clean specified)`);
     }
-
+  
     await prerender(config);
-
-    await copyBuildAssets(config.serveDir || "build", config.outDir || "static-pages");
+  
+    // Copy assets unless --no-assets is specified
+    if (!noAssets) {
+      await copyBuildAssets(config.serveDir || "build", config.outDir || "static-pages");
+    } else {
+      console.log(`⚠️ Skipping copy of build assets (--no-assets specified)`);
+    }
 
     console.log("🎉 Prerendering completed successfully!");
 
