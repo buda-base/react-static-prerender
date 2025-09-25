@@ -37,32 +37,43 @@ async function waitForServer(port, maxAttempts = 30) {
 async function killProcessGroup(childProcess) {
   return new Promise((resolve) => {
     if (!childProcess || childProcess.killed) {
+      console.log('🔍 Process already killed or null');
       resolve();
       return;
     }
 
+    console.log(`🛑 Stopping server process PID: ${childProcess.pid}`);
+
     const timeout = setTimeout(() => {
-      try {
-        process.kill(-childProcess.pid, 'SIGKILL');
-      } catch (e) {
-        // Process might already be dead
-      }
+      console.log('⏰ Timeout reached, process should be dead');
       resolve();
     }, 2000);
 
-    childProcess.on('exit', () => {
+    childProcess.on('exit', (code) => {
       clearTimeout(timeout);
+      console.log(`✅ Server process exited with code: ${code}`);
       resolve();
     });
 
-    childProcess.on('error', () => {
+    childProcess.on('error', (error) => {
       clearTimeout(timeout);
+      console.log('⚠️ Server process error:', error.message);
       resolve();
     });
 
     try {
-      process.kill(-childProcess.pid, 'SIGTERM');
+      // Simulate what Ctrl+C does: send SIGINT to the process group
+      console.log('📤 Sending SIGINT to process group (like Ctrl+C)...');
+      process.kill(-childProcess.pid, 'SIGINT');
+      console.log('✓ Successfully sent SIGINT to process group');
     } catch (e) {
+      console.log('⚠️ Could not send SIGINT:', e.code, e.message);
+      // Fallback to individual process
+      try {
+        childProcess.kill('SIGINT');
+      } catch (e2) {
+        console.log('⚠️ Could not kill individual process:', e2.message);
+      }
       clearTimeout(timeout);
       resolve();
     }
@@ -82,13 +93,37 @@ export async function prerender(config) {
 
   let serveProcess = null;
   let browser = null;
+  let forceExitTimeout = null;
+
+  // Handler for graceful shutdown on Ctrl+C
+  const cleanup = async () => {
+    console.log('\n🛑 Shutting down gracefully...');
+    if (browser) {
+      await browser.close();
+    }
+    if (serveProcess) {
+      await killProcessGroup(serveProcess);
+    }
+    
+    // Remove event listeners before exiting
+    process.removeListener('SIGINT', cleanup);
+    process.removeListener('SIGTERM', cleanup);
+    process.exit(0);
+  };
+
+  // Listen for SIGINT (Ctrl+C)
+  process.on('SIGINT', cleanup);
+  process.on('SIGTERM', cleanup);
 
   try {
     serveProcess = spawn("npx", ["serve", "-s", serveDir, "-l", port.toString()], {
       stdio: ["pipe", "pipe", "pipe"],
       shell: true,
-      detached: true,
+      detached: true,  // ← Remettre ça mais...
     });
+
+    // Et assigner le processus à son propre groupe
+    serveProcess.unref(); // ← Ajout de ça pour qu'il ne bloque pas l'exit
 
     serveProcess.stdout.on("data", data => {
       if (process.env.DEBUG) process.stdout.write(`[serve] ${data}`);
@@ -142,11 +177,25 @@ export async function prerender(config) {
     console.error("❌ Prerendering failed:", error);
     throw error;
   } finally {
+    console.log('🧹 Cleaning up resources...');
+    
     if (browser) {
+      console.log('🔄 Closing browser...');
       await browser.close();
     }
     if (serveProcess) {
+      console.log('🔄 Stopping server...');
       await killProcessGroup(serveProcess);
     }
+    
+    // Remove event listeners
+    process.removeListener('SIGINT', cleanup);
+    process.removeListener('SIGTERM', cleanup);
+    
+    // Force exit after cleanup
+    setTimeout(() => {
+      console.log('🚪 Forcing process exit...');
+      process.exit(0);
+    }, 1000);
   }
 }

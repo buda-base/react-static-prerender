@@ -14,24 +14,22 @@ USAGE:
   node cli.js [OPTIONS]
 
 OPTIONS:
-  -h, --help                 Show this help message
-  --with-build              Run build command before prerendering
+  -h, --help                Show this help message
   --debug                   Enable debug mode with verbose logging
   --no-clean                Skip cleaning of output directory before prerendering
   --no-assets               Skip copying of build assets to output directory
   --routes-csv <file>       Load routes from CSV file (one route per line)
-                           Routes starting with "bdr:" will be prefixed with "/show/"
-                           Routes not starting with "/show/bdr:" will be prefixed with "/show/bdr:"
+                            Routes starting with "bdr:" will be prefixed with "/show/"
+                            Routes not starting with "/show/bdr:" will be prefixed with "/show/bdr:"
   --serve-dir <directory>   Override serveDir from config (build directory to serve from)
 
 EXAMPLES:
   node cli.js                                    # Basic prerender with config file routes
-  node cli.js --with-build                       # Build then prerender
   node cli.js --routes-csv routes.csv            # Use routes from CSV file
   node cli.js --serve-dir dist                   # Use 'dist' instead of config serveDir
   node cli.js --routes-csv routes.csv --no-clean # Use CSV routes, don't clean output dir
   node cli.js --debug --no-assets                # Debug mode, skip asset copying
-  node cli.js --routes-csv routes.csv --with-build --no-clean --no-assets  # All options
+  node cli.js --routes-csv routes.csv --no-clean --no-assets  # All options
 
 CSV FILE FORMAT:
   Each line should contain one route:
