@@ -206,12 +206,19 @@ export async function prerender(config) {
           await fs.writeFile(path.join(outDirPath, fileName), html);
           console.log(`✅ Saved static page: ${fileName}`);
         } else {
-          // Use original path structure instead of safeName
-          const routePath = route.replace(/^\//, "") || "root";
-          const routeDir = path.join(outDirPath, routePath);
+          // Separate path from query parameters
+          const [routePath, queryString] = route.split('?');
+          const cleanPath = routePath.replace(/^\//, "") || "root";
+          
+          // Create directory structure based on path only
+          const routeDir = path.join(outDirPath, cleanPath);
           await fs.mkdir(routeDir, { recursive: true });
-          await fs.writeFile(path.join(routeDir, "index.html"), html);
-          console.log(`✅ Saved static page: ${path.join(routePath, "index.html")}`);
+          
+          // Include query parameters in filename if they exist
+          const fileName = queryString ? `index.html?${queryString}` : "index.html";
+          
+          await fs.writeFile(path.join(routeDir, fileName), html);
+          console.log(`✅ Saved static page: ${path.join(cleanPath, fileName)}`);
         }
       }
     }

@@ -16,6 +16,7 @@ USAGE:
 OPTIONS:
   -h, --help                Show this help message
   --debug                   Enable debug mode with verbose logging
+  --tibetan                 Use Tibetan translation of page/data
   --no-clean                Skip cleaning of output directory before prerendering
   --no-assets               Skip copying of build assets to output directory
   --routes-csv <file>       Load routes from CSV file (one route per line)
@@ -29,7 +30,9 @@ EXAMPLES:
   node cli.js --serve-dir dist                   # Use 'dist' instead of config serveDir
   node cli.js --routes-csv routes.csv --no-clean # Use CSV routes, don't clean output dir
   node cli.js --debug --no-assets                # Debug mode, skip asset copying
-  node cli.js --routes-csv routes.csv --no-clean --no-assets  # All options
+ 
+  node cli.js --routes-csv routes.csv                                   # first pass, in English
+  node cli.js --routes-csv routes.csv --tibetan --no-clean --no-assets  # second pass, in Tibetan
 
 CSV FILE FORMAT:
   Each line should contain one route:
@@ -208,6 +211,7 @@ async function main() {
     const isDebug = process.argv.includes("--debug");
     const noClean = process.argv.includes("--no-clean");
     const noAssets = process.argv.includes("--no-assets");
+    const tibetan = process.argv.includes("--tibetan");
     
     // Check for serve-dir parameter
     const serveDirIndex = process.argv.findIndex(arg => arg === "--serve-dir");
@@ -232,6 +236,10 @@ async function main() {
         return r
       });
       console.log(`🔄 Replaced config.routes with ${csvRoutes.length} routes from CSV`);
+    }
+
+    if(tibetan) {
+      config.routes = config.routes.map(r => r+"?uilang=bo")
     }
 
     if (isDebug) {
