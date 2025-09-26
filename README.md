@@ -16,6 +16,12 @@ nvm use 20
 yarn
 ```
 
+By default `pdl` build is expected to be found in `./prod`:
+
+```
+ln -nsf /path/to/anywhere/public-digital-library/prod
+```
+
 ## Usage
 
 ### Default usage
