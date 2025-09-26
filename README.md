@@ -4,366 +4,141 @@
 [![MIT license](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 # react-static-prerender
 
-A lightweight CLI tool that converts your React SPA into static HTML files, each acting as a standalone entry point.
-
-## Features
-
-- Prerender specified React app routes into static HTML files
-- **Dynamic route generation** from files, APIs, or databases
-- Flexible output structure (flat files or nested directories)
-- Outputs static pages in a configurable directory
-- Supports custom route lists via `prerender.config.js`
-- Copies static assets excluding HTML files
-- Easy-to-use CLI with debug support
-- Cross-platform compatibility
+(see https://github.com/jankojjs/react-static-prerender for original README)
 
 ## Installation
 
-Install as a development dependency:
+Using `node v20+` via [`nvm`](https://github.com/nvm-sh/nvm):
 
-    npm install --save-dev react-static-prerender
+```
+nvm install 20
+nvm use 20
+yarn
+```
 
 ## Usage
 
-### Basic Setup
-
-1. Create a `prerender.config.js` file in your project root to specify routes, input build directory, and output directory.
-
-   **Static Routes Example**
-
-   If your project has `"type": "module"` in package.json:
-    ```js
-    export default {
-      routes: ["/", "/about", "/contact"],
-      outDir: "static-pages",
-      serveDir: "build",
-      flatOutput: false, // Optional: true for about.html, false for about/index.html
-      buildCommand: "npm run build" // Default, can be omitted
-    };
-    ```
-
-   **For Vite/Yarn/PNPM projects:**
-   ```js
-   export default {
-     routes: ["/", "/about", "/contact"],
-     outDir: "static-pages", 
-     serveDir: "dist", // Vite uses 'dist'
-     buildCommand: "vite/yarn/pnpm build"
-   };
-   ```
-
-
-   If your project uses CommonJS (no `"type": "module"`):
-    ```js
-    module.exports = {
-        routes: ["/", "/about", "/contact"],
-        outDir: "static-pages",
-        serveDir: "build",
-        flatOutput: false, // Optional: true for about.html, false for about/index.html
-   };
-    ```
-
-### Dynamic Routes
-
-For dynamic content like blog posts, product pages, or any data-driven routes, use a function-based configuration:
-
-#### From Local Files (Markdown/JSON)
-
-```js
-// prerender.config.js
-import fs from 'fs/promises';
-import path from 'path';
-
-export default async function() {
-  // Read blog posts from markdown files
-  const blogPosts = await getBlogPostsFromFiles();
-  const blogRoutes = blogPosts.map(post => `/blog/${post.slug}`);
-  
-  return {
-    routes: [
-      "/",
-      "/about", 
-      "/blog",
-      ...blogRoutes // Dynamic blog routes
-    ],
-    outDir: "static-pages",
-    serveDir: "build"
-  };
-}
-
-async function getBlogPostsFromFiles() {
-  try {
-    const postsDir = path.join(process.cwd(), 'content/blog');
-    const files = await fs.readdir(postsDir);
-    
-    return files
-      .filter(file => file.endsWith('.md'))
-      .map(file => ({
-        slug: file.replace(/\.md$/, ''),
-        filename: file
-      }));
-  } catch (error) {
-    console.warn('⚠️  Could not read blog posts:', error.message);
-    return [];
-  }
-}
-```
-
-#### From JSON Data
-
-```js
-// prerender.config.js
-import fs from 'fs/promises';
-
-export default async function() {
-  let blogRoutes = [];
-  
-  try {
-    const postsData = await fs.readFile('./src/data/posts.json', 'utf-8');
-    const posts = JSON.parse(postsData);
-    blogRoutes = posts.map(post => `/blog/${post.slug}`);
-  } catch (error) {
-    console.warn('⚠️  Could not load blog posts:', error.message);
-  }
-  
-  return {
-    routes: ["/", "/blog", ...blogRoutes],
-    outDir: "static-pages",
-    serveDir: "build"
-  };
-}
-```
-
-#### From External API/CMS
-
-```js
-// prerender.config.js
-export default async function() {
-  const blogRoutes = await getBlogRoutesFromAPI();
-  
-  return {
-    routes: ["/", "/blog", ...blogRoutes],
-    outDir: "static-pages",
-    serveDir: "build"
-  };
-}
-
-async function getBlogRoutesFromAPI() {
-  try {
-    // Example: Contentful, Strapi, Ghost, etc.
-    const response = await fetch('https://your-cms.com/api/posts?fields=slug');
-    const data = await response.json();
-    
-    return data.posts.map(post => `/blog/${post.slug}`);
-  } catch (error) {
-    console.warn('⚠️  Could not fetch from API:', error.message);
-    return [];
-  }
-}
-```
-
-#### Multiple Dynamic Route Types
-
-```js
-// prerender.config.js
-export default async function() {
-  const [blogRoutes, productRoutes, categoryRoutes] = await Promise.all([
-    getBlogRoutes(),
-    getProductRoutes(), 
-    getCategoryRoutes()
-  ]);
-  
-  return {
-    routes: [
-      // Static routes
-      "/",
-      "/about",
-      "/contact",
-      
-      // Dynamic routes
-      ...blogRoutes,
-      ...productRoutes,
-      ...categoryRoutes
-    ],
-    outDir: "static-pages",
-    serveDir: "build"
-  };
-}
-
-async function getBlogRoutes() {
-  // Your blog post logic here
-  return ["/blog/getting-started", "/blog/advanced-tips"];
-}
-
-async function getProductRoutes() {
-  // Your product logic here  
-  return ["/products/widget-1", "/products/gadget-2"];
-}
-
-async function getCategoryRoutes() {
-  // Your category logic here
-  return ["/category/tech", "/category/design"];
-}
-```
-
-#### CommonJS Version (for projects without `"type": "module"`)
-
-```js
-// prerender.config.js
-const fs = require('fs/promises');
-
-module.exports = async function() {
-  const blogRoutes = await getBlogRoutes();
-  
-  return {
-    routes: ["/", "/blog", ...blogRoutes],
-    outDir: "static-pages",
-    serveDir: "build"
-  };
-}
-
-async function getBlogRoutes() {
-  try {
-    const postsData = await fs.readFile('./src/data/posts.json', 'utf-8');
-    const posts = JSON.parse(postsData);
-    return posts.map(post => `/blog/${post.slug}`);
-  } catch (error) {
-    console.warn('⚠️  Could not load blog posts:', error.message);
-    return [];
-  }
-}
-```
-
-### Running the Tool
-
-1. Make sure your React app is built and ready to be prerendered or run the command with --with-build flag.
-2. Run the prerender command to generate static HTML pages.
+### Default usage
 
 ```
-npx react-static-prerender
+$ node bin/cli.js -h
+
+🚀 React Static Prerender CLI
+
+USAGE:
+  node cli.js [OPTIONS]
+
+OPTIONS:
+  -h, --help                Show this help message
+  --debug                   Enable debug mode with verbose logging
+  --tibetan                 Use Tibetan translation of page/data
+  --no-clean                Skip cleaning of output directory before prerendering
+  --no-assets               Skip copying of build assets to output directory
+  --routes-csv <file>       Load routes from CSV file (one route per line)
+                            Routes starting with "bdr:" will be prefixed with "/show/"
+                            Routes not starting with "/show/bdr:" will be prefixed with "/show/bdr:"
+  --serve-dir <directory>   Override serveDir from config (build directory to serve from)
+
+EXAMPLES:
+  node cli.js                                    # Basic prerender with config file routes
+  node cli.js --routes-csv routes.csv            # Use routes from CSV file
+  node cli.js --serve-dir dist                   # Use 'dist' instead of config serveDir
+  node cli.js --routes-csv routes.csv --no-clean # Use CSV routes, don't clean output dir
+  node cli.js --debug --no-assets                # Debug mode, skip asset copying
+ 
+  node cli.js --routes-csv routes.csv                                   # first pass, in English
+  node cli.js --routes-csv routes.csv --tibetan --no-clean --no-assets  # second pass, in Tibetan
+
+CSV FILE FORMAT:
+  Each line should contain one route:
+  /
+  /about
+  /contact
+  bdr:W1234          # Will become /show/bdr:W1234
+  W5678              # Will become /show/bdr:W5678
+  # Lines starting with # are ignored as comments
 ```
 
-If you want to automatically build before prerendering:
+Example trace for `routes.csv` with only `MW22084` in it:
 
 ```
-npx react-static-prerender --with-build
+$ node bin/cli.js --routes-csv routes.csv --no-assets 
+📄 Loading routes from CSV file: routes.csv
+✅ Loaded 1 routes from CSV: routes.csv
+🔄 Replaced config.routes with 1 routes from CSV
+🧹 Cleaned existing output directory: static-pages
+📋 Setting up signal handlers for port: 5050
+🚀 Server started on port 5050
+📄 Processing route: /show/bdr:MW22084
+✅ Saved static page: show/bdr:MW22084/index.html
+🧹 Cleaning up resources...
+🔄 Closing browser...
+🔄 Stopping server...
+🛑 Stopping server process PID: 220305 on port 5050
+📤 Sending SIGTERM to process group...
+✓ Successfully sent SIGTERM to process group
+✅ Server process exited with code: null
+✅ Port 5050 cleanup completed
+⚠️ Skipping copy of build assets (--no-assets specified)
+🎉 Prerendering completed successfully!
+🚪 Forcing process exit...
 ```
 
-For debugging server issues:
+### Usage with `cpulimit`
+
+Use `./bin/start-cpulimit-prerender.sh` instead of `node bin/cli.js` to limit cpu usage to 20% of one core:
 
 ```
-npx react-static-prerender --debug
+ ./bin/start-cpulimit-prerender.sh --routes-csv routes.csv --no-assets 
+Starting prerender with CPU limit...
+📄 Loading routes from CSV file: routes.csv
+✅ Loaded 1 routes from CSV: routes.csv
+🔄 Replaced config.routes with 1 routes from CSV
+🧹 Cleaned existing output directory: static-pages
+📋 Setting up signal handlers for port: 5050
+🚀 Server started on port 5050
+📄 Processing route: /show/bdr:MW22084
+Limiting Chrome process 223390 to 20% CPU
+Process 223390 detected
+Limiting Chrome process 223399 to 20% CPU
+Process 223399 detected
+Limiting Chrome process 223427 to 20% CPU
+Process 223427 detected
+Limiting Chrome process 223400 to 20% CPU
+Process 223400 detected
+Limiting Chrome process 223430 to 20% CPU
+Process 223430 detected
+Limiting Chrome process 223471 to 20% CPU
+Process 223471 detected
+Limiting Chrome process 223472 to 20% CPU
+Process 223472 detected
+Limiting Chrome process 223496 to 20% CPU
+Process 223496 detected
+Limiting Chrome process 223629 to 20% CPU
+Process 223629 detected
+Limiting Chrome process 223429 to 20% CPU
+Process 223429 detected
+✅ Saved static page: show/bdr:MW22084/index.html
+🧹 Cleaning up resources...
+🔄 Closing browser...
+Process 223472 dead!
+Process 223629 dead!
+Process 223496 dead!
+🔄 Stopping server...
+🛑 Stopping server process PID: 223348 on port 5050
+📤 Sending SIGTERM to process group...
+✓ Successfully sent SIGTERM to process group
+✅ Server process exited with code: null
+Process 223429 dead!
+Process 223400 dead!
+Process 223390 dead!
+✅ Port 5050 cleanup completed
+⚠️ Skipping copy of build assets (--no-assets specified)
+🎉 Prerendering completed successfully!
+Process 223430 dead!
+Process 223399 dead!
+Process 223427 dead!
+Process 223471 dead!
+🚪 Forcing process exit...
+Main process finished
 ```
-
-**(Optional)** Add an npm script to simplify future runs:
-
-```json
-"scripts": {
-  "prerender": "react-static-prerender --with-build"
-}
-```
-
-Then run with:
-
-```
-npm run prerender
-```
-
-## Configuration Options
-
-| Option | Type | Default | Description |
-|--------|------|---------|-------------|
-| `routes` | `string[]` | `[]` | Array of routes to prerender (e.g., `["/", "/about"]`) |
-| `outDir` | `string` | `"static-pages"` | Output directory for generated static files |
-| `serveDir` | `string` | `"build"` | Directory containing your built React app |
-| `buildCommand` | `string` | `"npm run build"` | Command to build your app when using `--with-build` |
-| `flatOutput` | `boolean` | `false` | Output structure: `true` = `about.html`, `false` = `about/index.html` |
-
-## CLI Options
-
-| Flag | Description |
-|------|-------------|
-| `--with-build` | Runs `npm run build` before prerendering |
-| `--debug` | Shows detailed server logs for troubleshooting |
-
-## Output Structure
-
-### Nested Structure (default: `flatOutput: false`)
-```
-static-pages/
-├── index.html           # / route
-├── about/
-│   └── index.html       # /about route
-├── blog/
-│   └── index.html       # /blog route
-├── blog/
-│   ├── getting-started/
-│   │   └── index.html   # /blog/getting-started route
-│   └── advanced-tips/
-│       └── index.html   # /blog/advanced-tips route
-└── contact/
-    └── index.html       # /contact route
-```
-
-### Flat Structure (`flatOutput: true`)
-```
-static-pages/
-├── index.html                 # / route
-├── about.html                 # /about route
-├── blog.html                  # /blog route
-├── blog-getting-started.html  # /blog/getting-started route
-├── blog-advanced-tips.html    # /blog/advanced-tips route
-└── contact.html               # /contact route
-```
-
-## Use Cases
-
-### Perfect for:
-- **Blog sites** with dynamic post generation
-- **E-commerce** with product pages
-- **Documentation sites** with dynamic content
-- **Portfolio sites** with project pages
-- **News sites** with article pages
-- **Any SPA** with data-driven routes
-
-## Why use this?
-
-- **SEO Friendly**: Pre-generated HTML improves search engine crawling
-- **Fast Loading**: Eliminates client-side rendering delay for initial page load
-- **Static Hosting**: Perfect for CDNs, GitHub Pages, Netlify, Vercel
-- **Dynamic Content**: Generate routes from any data source
-- **Minimal Setup**: Simple configuration with sensible defaults
-- **Flexible Output**: Choose between flat files or nested directory structure
-
-## Requirements
-
-- **Node.js 18 or higher**
-- React app build ready for prerendering or run the command with --with-build flag
-
-## Troubleshooting
-
-### Build folder not found
-Make sure your React app is built before running prerender, or use the `--with-build` flag.
-
-### Server startup issues
-Use the `--debug` flag to see detailed server logs:
-```bash
-npx react-static-prerender --debug
-```
-
-### Port conflicts
-The tool automatically finds available ports starting from 5050, so port conflicts should be rare.
-
-### Dynamic route configuration errors
-If you're having issues with dynamic routes:
-1. Make sure your config file exports a function that returns a promise
-2. Check that all imported modules are available
-3. Use `--debug` to see detailed error messages
-
-## Contributing
-
-Contributions are welcome. Please keep code clean and follow best practices.
-
-## License
-
-MIT © Janko Stanic
