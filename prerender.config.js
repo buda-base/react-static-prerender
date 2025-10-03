@@ -34,7 +34,7 @@ export default async function() {
       //const posts = JSON.parse(postsData);
       //tradRoutes = posts.map(post => `/trad/${post.slug}`);
   
-      tradRoutes = IDs.map(i => '/show/'+i).filter((id,n) => n < 100)
+      tradRoutes = IDs.map(i => '/show/'+i) //.filter((id,n) => n < 100)
   
     } catch (error) {
       console.warn('⚠️  Could not load:', error.message);

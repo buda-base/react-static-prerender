@@ -95,12 +95,72 @@ async function killByPort(port) {
   });
 }
 
+// Helper function to start the server
+async function startServer(serveDir, port) {
+  console.log(`🔧 Starting server: npx serve -s ${serveDir} -l ${port}`);
+  
+  const newServeProcess = spawn("npx", ["serve", "-s", serveDir, "-l", port.toString()], {
+    stdio: ["pipe", "pipe", "pipe"],
+    shell: true,
+    detached: true,  // Keep detached for process group management
+  });
+  
+  // Don't use unref() as it makes cleanup harder
+  // newServeProcess.unref();
+  
+  newServeProcess.stdout.on("data", data => {
+    if (process.env.DEBUG) process.stdout.write(`[serve] ${data}`);
+  });
+  newServeProcess.stderr.on("data", data => {
+    if (process.env.DEBUG) {
+      process.stderr.write(`[serve-error] ${data}`);
+    }
+  });
+
+  // Check if process started correctly
+  newServeProcess.on('error', (error) => {
+    console.error(`❌ Failed to start server: ${error.message}`);
+    throw error;
+  });
+
+  try {
+    await waitForServer(port);
+    console.log(`✅ Server is responding on port ${port}`);
+    return newServeProcess;
+  } catch (error) {
+    console.error(`❌ Server failed to start properly: ${error.message}`);
+    newServeProcess.kill();
+    throw error;
+  }
+}
+
+// Helper function to determine output path for a route
+function getOutputPath(route, outDirPath, flatOutput) {
+  if (route === "/") {
+    return path.join(outDirPath, "index.html");
+  }
+  
+  const safeName = route.replace(/^\//, "").replace(/\//g, "-") || "root";
+  if (flatOutput) {
+    const fileName = `${safeName}.html`;
+    return path.join(outDirPath, fileName);
+  } else {
+    // Separate path from query parameters
+    const [routePath, queryString] = route.split('?');
+    const cleanPath = routePath.replace(/^\//, "") || "root";
+    const routeDir = path.join(outDirPath, cleanPath);
+    const fileName = queryString ? `index.html?${queryString}` : "index.html";
+    return path.join(routeDir, fileName);
+  }
+}
+
 export async function prerender(config) {
   const {
     routes = [],
     outDir = "static-pages",
     serveDir = "build",
-    flatOutput = false
+    flatOutput = false,
+    skipExisting = false
   } = config;
 
   const outDirPath = path.resolve(process.cwd(), outDir);
@@ -135,16 +195,21 @@ export async function prerender(config) {
       console.log('🔄 Stopping server...');
       console.log('🔍 serveProcess PID:', serveProcess.pid);
       
-      // Timeout pour killByPort
-      const killPromise = killByPort(port);
-      const timeoutPromise = new Promise(resolve => {
-        setTimeout(() => {
-          console.log('⏰ killByPort timeout reached');
-          resolve();
-        }, 2000);
-      });
+      // More aggressive cleanup
+      try {
+        // Kill the process group
+        process.kill(-serveProcess.pid, 'SIGTERM');
+        await new Promise(resolve => setTimeout(resolve, 1000));
+        process.kill(-serveProcess.pid, 'SIGKILL');
+      } catch (e) {
+        console.log('⚠️ Process group kill error:', e.message);
+      }
       
-      await Promise.race([killPromise, timeoutPromise]);
+      // Backup: kill by port
+      await killByPort(port);
+    } else {
+      // Even if no serveProcess reference, try to clean by port
+      await killByPort(port);
     }
     
     console.log('🧹 Cleanup completed, exiting...');
@@ -159,23 +224,7 @@ export async function prerender(config) {
   process.on('SIGTERM', handleCtrlC);
 
   try {
-    serveProcess = spawn("npx", ["serve", "-s", serveDir, "-l", port.toString()], {
-      stdio: ["pipe", "pipe", "pipe"],
-      shell: true,
-      detached: true,  // ← Garder ça pour la fin normale
-    });
-
-    // Et assigner le processus à son propre groupe
-    serveProcess.unref(); // ← Ajout de ça pour qu'il ne bloque pas l'exit
-
-    serveProcess.stdout.on("data", data => {
-      if (process.env.DEBUG) process.stdout.write(`[serve] ${data}`);
-    });
-    serveProcess.stderr.on("data", data => {
-      if (process.env.DEBUG) process.stderr.write(`[serve] ${data}`);
-    });
-
-    await waitForServer(port);
+    serveProcess = await startServer(serveDir, port);
     console.log(`🚀 Server started on port ${port}`);
 
     browser = await puppeteer.launch({
@@ -186,41 +235,118 @@ export async function prerender(config) {
 
     await fs.mkdir(outDirPath, { recursive: true });
 
-    for (const route of routes) {
-      const url = `http://localhost:${port}${route}`;
-      console.log(`📄 Processing route: ${route}`);
+    let startTime = null; // Will be set when processing the first non-skipped route
+    let processedCount = 0; // Only count actually processed routes, not skipped ones
 
+    for (let routeIndex = 0; routeIndex < routes.length; routeIndex++) {
+      const route = routes[routeIndex];
+      
+      // Restart server every 1000 processed routes
+      if (processedCount > 0 && processedCount % 1000 === 0) {
+        console.log(`🔄 Restarting server after ${processedCount} processed routes...`);
+        
+        // Kill current server
+        if (serveProcess) {
+          await killProcessGroup(serveProcess, port);
+        }
+        
+        // Start new server
+        serveProcess = await startServer(serveDir, port);
+        console.log(`✅ Server restarted on port ${port}`);
+      }
+      
+      const url = `http://localhost:${port}${route}`;
+      
+      // Calculate output path once
+      const outputPath = getOutputPath(route, outDirPath, flatOutput);
+      
+      const displayIndex = routeIndex + 1; // For display (1-based instead of 0-based)
+      
+      // Check if output file already exists when skipExisting is enabled
+      if (skipExisting) {
+        try {
+          await fs.access(outputPath);
+          console.log(`⏭️ Skipping route ${displayIndex}/${routes.length}: ${route} (file already exists)`);
+          continue; // Skip this route, don't increment processedCount
+        } catch (error) {
+          // File doesn't exist, continue with processing
+        }
+      }
+      
+      // Start timing from the first route that actually gets processed
+      if (startTime === null) {
+        startTime = Date.now();
+      }
+      
+      // Calculate time estimation (only for routes that will be processed)
+      let timeEstimation = "";
+      if (processedCount > 0) {
+        const elapsedTime = Date.now() - startTime;
+        const avgTimePerRoute = elapsedTime / processedCount;
+        
+        // Count remaining routes that need to be processed (excluding already existing files)
+        let remainingRoutesToProcess = 0;
+        for (let i = routeIndex + 1; i < routes.length; i++) {
+          const futureRoute = routes[i];
+          const futureOutputPath = getOutputPath(futureRoute, outDirPath, flatOutput);
+          try {
+            if (skipExisting) {
+              await fs.access(futureOutputPath);
+              // File exists, will be skipped
+            } else {
+              remainingRoutesToProcess++;
+            }
+          } catch {
+            // File doesn't exist, will need to be processed
+            remainingRoutesToProcess++;
+          }
+        }
+        
+        const estimatedRemainingTime = avgTimePerRoute * remainingRoutesToProcess;
+        
+        // Format time estimation
+        const minutes = Math.floor(estimatedRemainingTime / 60000);
+        const seconds = Math.floor((estimatedRemainingTime % 60000) / 1000);
+        
+        if (minutes > 0) {
+          timeEstimation = ` (ETA: ${minutes}m ${seconds}s)`;
+        } else {
+          timeEstimation = ` (ETA: ${seconds}s)`;
+        }
+      }
+      
+      console.log(`📄 Processing route ${displayIndex}/${routes.length}: ${route}${timeEstimation}`);
+
+      const routeStartTime = Date.now();
+      
       await page.goto(url, { 
         waitUntil: "networkidle0",
         timeout: 120000  // 120 seconds instead of default 30 seconds
       });
       const html = await page.content();
 
-      if (route === "/") {
-        await fs.writeFile(path.join(outDirPath, "index.html"), html);
-        console.log(`✅ Saved static page: index.html`);
-      } else {
-        const safeName = route.replace(/^\//, "").replace(/\//g, "-") || "root";
-        if (flatOutput) {
-          const fileName = `${safeName}.html`;
-          await fs.writeFile(path.join(outDirPath, fileName), html);
-          console.log(`✅ Saved static page: ${fileName}`);
-        } else {
-          // Separate path from query parameters
-          const [routePath, queryString] = route.split('?');
-          const cleanPath = routePath.replace(/^\//, "") || "root";
-          
-          // Create directory structure based on path only
-          const routeDir = path.join(outDirPath, cleanPath);
-          await fs.mkdir(routeDir, { recursive: true });
-          
-          // Include query parameters in filename if they exist
-          const fileName = queryString ? `index.html?${queryString}` : "index.html";
-          
-          await fs.writeFile(path.join(routeDir, fileName), html);
-          console.log(`✅ Saved static page: ${path.join(cleanPath, fileName)}`);
-        }
+      // Create directory structure if needed (for non-flat output)
+      if (route !== "/" && !flatOutput) {
+        const [routePath] = route.split('?');
+        const cleanPath = routePath.replace(/^\//, "") || "root";
+        const routeDir = path.join(outDirPath, cleanPath);
+        await fs.mkdir(routeDir, { recursive: true });
       }
+      
+      // Write the file
+      await fs.writeFile(outputPath, html);
+      
+      const routeEndTime = Date.now();
+      const routeDuration = routeEndTime - routeStartTime;
+      const routeSeconds = (routeDuration / 1000).toFixed(1);
+      
+      // Calculate file size
+      const fileSizeBytes = Buffer.byteLength(html, 'utf8');
+      const fileSizeKB = (fileSizeBytes / 1024).toFixed(1);
+      
+      console.log(`✅ Saved static page: ${path.relative(outDirPath, outputPath)} (${routeSeconds}s, ${fileSizeKB}KB)`);
+      
+      processedCount++; // Only increment for actually processed routes
     }
 
   } catch (error) {
