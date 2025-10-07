@@ -20,6 +20,7 @@ OPTIONS:
   --no-clean                Skip cleaning of output directory before prerendering
   --no-assets               Skip copying of build assets to output directory
   --skip-existing           Skip processing routes where the output HTML file already exists
+  --prettier                Format HTML output with prettier before saving
   --routes-csv <file>       Load routes from CSV file (one route per line)
                             Routes starting with "bdr:" will be prefixed with "/show/"
                             Routes not starting with "/show/bdr:" will be prefixed with "/show/bdr:"
@@ -32,6 +33,7 @@ EXAMPLES:
   node cli.js --routes-csv routes.csv --no-clean # Use CSV routes, don't clean output dir
   node cli.js --debug --no-assets                # Debug mode, skip asset copying
   node cli.js --skip-existing                    # Skip routes with existing HTML files
+  node cli.js --prettier                         # Format HTML output with prettier
  
   node cli.js --routes-csv routes.csv                                   # first pass, in English
   node cli.js --routes-csv routes.csv --tibetan --no-clean --no-assets  # second pass, in Tibetan
@@ -216,6 +218,7 @@ async function main() {
     const noAssets = process.argv.includes("--no-assets");
     const tibetan = process.argv.includes("--tibetan");
     const skipExisting = process.argv.includes("--skip-existing");
+    const usePrettier = process.argv.includes("--prettier");
     
     // Check for serve-dir parameter
     const serveDirIndex = process.argv.findIndex(arg => arg === "--serve-dir");
@@ -289,8 +292,9 @@ async function main() {
       console.log(`⚠️ Skipping clean of output directory: ${config.outDir || "static-pages"} (--no-clean specified)`);
     }
   
-    // Pass skipExisting flag to prerender config
+    // Pass skipExisting and prettier flags to prerender config
     config.skipExisting = skipExisting;
+    config.usePrettier = usePrettier;
     
     await prerender(config);
   

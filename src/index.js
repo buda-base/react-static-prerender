@@ -3,6 +3,7 @@ import fs from "fs/promises";
 import path from "path";
 import { spawn,exec } from "child_process";
 import { createServer } from "http";
+import prettier from "prettier";
 
 async function findAvailablePort(startPort = 5050) {
   for (let port = startPort; port < startPort + 100; port++) {
@@ -160,7 +161,8 @@ export async function prerender(config) {
     outDir = "static-pages",
     serveDir = "build",
     flatOutput = false,
-    skipExisting = false
+    skipExisting = false,
+    usePrettier = false
   } = config;
 
   const outDirPath = path.resolve(process.cwd(), outDir);
@@ -323,7 +325,29 @@ export async function prerender(config) {
         waitUntil: "networkidle0",
         timeout: 120000  // 120 seconds instead of default 30 seconds
       });
-      const html = await page.content();
+      let html = await page.content();
+
+      // Apply prettier formatting if requested
+      if (usePrettier) {
+        try {
+          html = await prettier.format(html, {
+            parser: 'html',
+            printWidth: 100,
+            tabWidth: 2,
+            useTabs: false,
+            semi: true,
+            singleQuote: true,
+            quoteProps: 'as-needed',
+            trailingComma: 'es5',
+            bracketSpacing: true,
+            htmlWhitespaceSensitivity: 'css',
+            endOfLine: 'lf'
+          });
+        } catch (prettierError) {
+          console.warn(`⚠️ Prettier formatting failed for route ${route}: ${prettierError.message}`);
+          // Continue with unformatted HTML if prettier fails
+        }
+      }
 
       // Create directory structure if needed (for non-flat output)
       if (route !== "/" && !flatOutput) {
