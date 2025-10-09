@@ -137,18 +137,21 @@ async function startServer(serveDir, port) {
 
 // Helper function to determine output path for a route
 function getOutputPath(route, outDirPath, flatOutput) {
-  if (route === "/") {
-    return path.join(outDirPath, "index.html");
+  // Separate path from query parameters first
+  const [routePath, queryString] = route.split('?');
+  
+  // Check if the route path (without query params) is the root
+  if (routePath === "/") {
+    const fileName = queryString ? `index.html?${queryString}` : "index.html";
+    return path.join(outDirPath, fileName);
   }
   
-  const safeName = route.replace(/^\//, "").replace(/\//g, "-") || "root";
+  const safeName = route.replace(/^\//, "").replace(/\//g, "-");
   if (flatOutput) {
     const fileName = `${safeName}.html`;
     return path.join(outDirPath, fileName);
   } else {
-    // Separate path from query parameters
-    const [routePath, queryString] = route.split('?');
-    const cleanPath = routePath.replace(/^\//, "") || "root";
+    const cleanPath = routePath.replace(/^\//, "");
     const routeDir = path.join(outDirPath, cleanPath);
     const fileName = queryString ? `index.html?${queryString}` : "index.html";
     return path.join(routeDir, fileName);
@@ -350,11 +353,13 @@ export async function prerender(config) {
       }
 
       // Create directory structure if needed (for non-flat output)
-      if (route !== "/" && !flatOutput) {
+      if (!flatOutput) {
         const [routePath] = route.split('?');
-        const cleanPath = routePath.replace(/^\//, "") || "root";
-        const routeDir = path.join(outDirPath, cleanPath);
-        await fs.mkdir(routeDir, { recursive: true });
+        if (routePath !== "/") {
+          const cleanPath = routePath.replace(/^\//, "");
+          const routeDir = path.join(outDirPath, cleanPath);
+          await fs.mkdir(routeDir, { recursive: true });
+        }
       }
       
       // Write the file
