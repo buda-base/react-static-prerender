@@ -683,8 +683,14 @@
             "target": "https://library.bdrc.io/search?q={search_term_string}",
             "query-input": "required name=search_term_string"
           },
-          "image": "https://library.bdrc.io/icons/BUDA-small.svg",
-          "thumbnailUrl": "https://library.bdrc.io/icons/BUDA-small.svg"
+          "image": [
+            "https://library.bdrc.io/icons/BUDA-small.svg",
+            "https://library.bdrc.io/android-chrome-192x192.png"
+          ],
+          "thumbnailUrl": [
+            "https://library.bdrc.io/icons/BUDA-small.svg",
+            "https://library.bdrc.io/android-chrome-192x192.png"
+          ]
         },
         {
           "@context": "https://schema.org",
@@ -731,8 +737,8 @@
         href="https://cdn.jsdelivr.net/npm/instantsearch.css@7/themes/satellite-min.css"
       />
       <div
-        title="98dec767-2cd1-4042-8f5d-9df0ea8c7d6c"
-        data-v="98dec767-2cd1-4042-8f5d-9df0ea8c7d6c"
+        title="b548b702-01ac-4b87-924f-95010478e8c4"
+        data-v="b548b702-01ac-4b87-924f-95010478e8c4"
       ></div>
       <div id="uiLangPopup">
         <div class="bg"></div>
@@ -4380,7 +4386,7 @@
                                     </div>
                                   </div>
                                   <span class="names firstScan"
-                                    ><span>about 4 hours ago</span></span
+                                    ><span>about 7 hours ago</span></span
                                   >
                                 </div>
                               </li>
@@ -4455,7 +4461,7 @@
                                     </div>
                                   </div>
                                   <span class="names firstScan"
-                                    ><span>about 4 hours ago</span></span
+                                    ><span>about 7 hours ago</span></span
                                   >
                                 </div>
                               </li>
@@ -4529,7 +4535,7 @@
                                     </div>
                                   </div>
                                   <span class="names firstScan"
-                                    ><span>about 4 hours ago</span></span
+                                    ><span>about 7 hours ago</span></span
                                   >
                                 </div>
                               </li>
@@ -4603,7 +4609,7 @@
                                     </div>
                                   </div>
                                   <span class="names firstScan"
-                                    ><span>about 4 hours ago</span></span
+                                    ><span>about 7 hours ago</span></span
                                   >
                                 </div>
                               </li>
@@ -4671,7 +4677,7 @@
                                     </div>
                                   </div>
                                   <span class="names firstScan"
-                                    ><span>about 4 hours ago</span></span
+                                    ><span>about 7 hours ago</span></span
                                   >
                                 </div>
                               </li>
@@ -4740,7 +4746,7 @@
                                     </div>
                                   </div>
                                   <span class="names firstScan"
-                                    ><span>about 4 hours ago</span></span
+                                    ><span>about 7 hours ago</span></span
                                   >
                                 </div>
                               </li>
@@ -4825,7 +4831,7 @@
                                     </div>
                                   </div>
                                   <span class="names firstScan"
-                                    ><span>about 4 hours ago</span></span
+                                    ><span>about 7 hours ago</span></span
                                   >
                                 </div>
                               </li>
@@ -4890,7 +4896,7 @@
                                     </div>
                                   </div>
                                   <span class="names firstScan"
-                                    ><span>about 4 hours ago</span></span
+                                    ><span>about 7 hours ago</span></span
                                   >
                                 </div>
                               </li>
@@ -4971,7 +4977,7 @@
                                     </div>
                                   </div>
                                   <span class="names firstScan"
-                                    ><span>about 4 hours ago</span></span
+                                    ><span>about 7 hours ago</span></span
                                   >
                                 </div>
                               </li>
@@ -5023,7 +5029,7 @@
                                     </div>
                                   </div>
                                   <span class="names firstScan"
-                                    ><span>about 4 hours ago</span></span
+                                    ><span>about 7 hours ago</span></span
                                   >
                                 </div>
                               </li>
@@ -5089,7 +5095,7 @@
                                     </div>
                                   </div>
                                   <span class="names firstScan"
-                                    ><span>about 4 hours ago</span></span
+                                    ><span>about 7 hours ago</span></span
                                   >
                                 </div>
                               </li>
@@ -5151,7 +5157,7 @@
                                     </div>
                                   </div>
                                   <span class="names firstScan"
-                                    ><span>about 4 hours ago</span></span
+                                    ><span>about 7 hours ago</span></span
                                   >
                                 </div>
                               </li>
@@ -5204,7 +5210,7 @@
                                     </div>
                                   </div>
                                   <span class="names firstScan"
-                                    ><span>about 4 hours ago</span></span
+                                    ><span>about 7 hours ago</span></span
                                   >
                                 </div>
                               </li>
@@ -5268,7 +5274,7 @@
                                     </div>
                                   </div>
                                   <span class="names firstScan"
-                                    ><span>about 4 hours ago</span></span
+                                    ><span>about 7 hours ago</span></span
                                   >
                                 </div>
                               </li>
@@ -5320,7 +5326,7 @@
                                     </div>
                                   </div>
                                   <span class="names firstScan"
-                                    ><span>about 5 hours ago</span></span
+                                    ><span>about 7 hours ago</span></span
                                   >
                                 </div>
                               </li>
@@ -5375,7 +5381,7 @@
                                     </div>
                                   </div>
                                   <span class="names firstScan"
-                                    ><span>about 5 hours ago</span></span
+                                    ><span>about 7 hours ago</span></span
                                   >
                                 </div>
                               </li>
@@ -5453,7 +5459,7 @@
                                     </div>
                                   </div>
                                   <span class="names firstScan"
-                                    ><span>about 5 hours ago</span></span
+                                    ><span>about 8 hours ago</span></span
                                   >
                                 </div>
                               </li>
@@ -5957,9 +5963,9 @@
       })([]);
     </script>
     <script onerror="scriptError(this)" src="/static/js/2.1f9f67d5.chunk.js"></script>
-    <script onerror="scriptError(this)" src="/static/js/main.344718ac.chunk.js"></script>
+    <script onerror="scriptError(this)" src="/static/js/main.8748fd06.chunk.js"></script>
     <iframe
-      src="https://bdrc-io.auth0.com/authorize?client_id=i0CoWiN3twEMPCA85f0aD9acuIVIFj0J&amp;response_type=token%20id_token&amp;redirect_uri=http%3A%2F%2Flocalhost%3A5050%2Fscripts%2Fsilent_callback.html&amp;scope=openid%20profile&amp;audience=https%3A%2F%2Fbdrc-io.auth0.com%2Fapi%2Fv2%2F&amp;_send_telemetry=true&amp;_times_to_retry_failed_requests=0&amp;token_issuer=https%3A%2F%2Fbdrc-io.auth0.com%2F&amp;root_url=https%3A%2F%2Fbdrc-io.auth0.com&amp;universal_login_page=true&amp;response_mode=fragment&amp;state=91Ky.JcHj4ubU9GCMmJIVgrYjomw3fQV&amp;nonce=nz0ZgSaK9sQRnEmNq_XUfaFoIzgeiuVz&amp;prompt=none&amp;auth0Client=eyJuYW1lIjoiYXV0aDAuanMiLCJ2ZXJzaW9uIjoiOS4xNi4yIn0%3D"
+      src="https://bdrc-io.auth0.com/authorize?client_id=i0CoWiN3twEMPCA85f0aD9acuIVIFj0J&amp;response_type=token%20id_token&amp;redirect_uri=http%3A%2F%2Flocalhost%3A5050%2Fscripts%2Fsilent_callback.html&amp;scope=openid%20profile&amp;audience=https%3A%2F%2Fbdrc-io.auth0.com%2Fapi%2Fv2%2F&amp;_send_telemetry=true&amp;_times_to_retry_failed_requests=0&amp;token_issuer=https%3A%2F%2Fbdrc-io.auth0.com%2F&amp;root_url=https%3A%2F%2Fbdrc-io.auth0.com&amp;universal_login_page=true&amp;response_mode=fragment&amp;state=85geAIf-8xp~XB8uxansRYzKuMdIDgZ.&amp;nonce=d~3pqlfs1Tnx69FbB_cxN38oYrjPuAME&amp;prompt=none&amp;auth0Client=eyJuYW1lIjoiYXV0aDAuanMiLCJ2ZXJzaW9uIjoiOS4xNi4yIn0%3D"
       style="display: none"
     ></iframe>
   </body>
