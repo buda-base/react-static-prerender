@@ -25,7 +25,7 @@
       content="The Buddhist Digital Archives by the Buddhist Digital Resource Center. A cooperative platform for expanding access to Buddhist literature. Explore the millions of pages of texts contributed by BDRC and its many partners."
     />
     <link href="/static/css/2.adc7c626.chunk.css" rel="stylesheet" />
-    <link href="/static/css/main.206280b6.chunk.css" rel="stylesheet" />
+    <link href="/static/css/main.7ed1358b.chunk.css" rel="stylesheet" />
     <style type="text/css"></style>
     <style data-jss="" data-meta="MuiTouchRipple">
       .jss20 {
@@ -452,7 +452,7 @@
         {
           "@context": "https://schema.org",
           "@id": "http://purl.bdrc.io/resource/MW12827",
-          "@type": "BookSeries",
+          "@type": "Book",
           "identifier": ["bdr:MW12827", "http://purl.bdrc.io/resource/MW12827"],
           "name": "སྙིང་ཐིག་ཡ་བཞི།",
           "alternateName": [
@@ -493,6 +493,7 @@
           ],
           "datePublished": "{1975,1976}",
           "thumbnailUrl": "https://iiif.bdrc.io/bdr:I2061::020610001.tiff/full/max/0/default.png",
+          "image": "https://iiif.bdrc.io/bdr:I2061::020610001.tiff/full/max/0/default.png",
           "url": "https://library.bdrc.io/show/bdr:MW12827",
           "mainEntityOfPage": {
             "@id": "https://library.bdrc.io/show/bdr:MW12827"
@@ -522,6 +523,31 @@
       href="//iiifpres.bdrc.io/collection/wio:bdr:MW12827::bdr:W12827"
       data-react-helmet="true"
     />
+    <script type="application/ld+json" data-react-helmet="true">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "(Work) snying thig ya bzhi",
+            "item": "/show/bdr:WA3CN501"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "snying thig ya bzhi"
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -531,15 +557,15 @@
         href="https://cdn.jsdelivr.net/npm/instantsearch.css@7/themes/satellite-min.css"
       />
       <div
-        title="98dec767-2cd1-4042-8f5d-9df0ea8c7d6c"
-        data-v="98dec767-2cd1-4042-8f5d-9df0ea8c7d6c"
+        title="e16f61c4-6a85-4211-9b2e-0830f2a8013e"
+        data-v="e16f61c4-6a85-4211-9b2e-0830f2a8013e"
       ></div>
       <div id="uiLangPopup">
         <div class="bg"></div>
         <div class="fg">
           <div>
             Choose language<span id="lang" style="margin: 0px 0px 0px 10px"
-              ><img src="/icons/LANGUE.svg"
+              ><img alt="language icon" src="/icons/LANGUE.svg"
             /></span>
           </div>
           <div>
@@ -588,14 +614,28 @@
         <div>
           <div><i>Preserving Buddhist literature for the world</i></div>
           <div style="text-transform: capitalize">
-            <a href="https://www.bdrc.io?lang=en" target="_blank" rel="nofollow" class="BDRC-link"
-              ><img src="/BDRC-Logo_.png" />BDRC</a
-            ><a href="https://www.bdrc.io/buda-archive?lang=en" target="_blank" rel="nofollow"
-              >About BUDA</a
-            ><a href="https://www.bdrc.io/news?lang=en" target="_blank" rel="nofollow">News</a
-            ><a href="https://www.bdrc.io/programs?lang=en" target="_blank" rel="nofollow"
-              >Programs</a
-            ><a href="https://bdrc.io/donation?lang=en" target="_blank" rel="nofollow">donate</a>
+            <a
+              href="https://www.bdrc.io?lang=en"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="BDRC-link"
+              ><span class="visually-hidden">Go to BDRC homepage</span
+              ><img alt="BDRC logo" src="/BDRC-Logo_.png" />BDRC</a
+            ><a
+              href="https://www.bdrc.io/buda-archive?lang=en"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span class="visually-hidden">Go to About BUDA page</span>About BUDA</a
+            ><a href="https://www.bdrc.io/news?lang=en" target="_blank" rel="noopener noreferrer"
+              ><span class="visually-hidden">Go to News page</span>News</a
+            ><a
+              href="https://www.bdrc.io/programs?lang=en"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span class="visually-hidden">Go to Programs page</span>Programs</a
+            ><a href="https://bdrc.io/donation?lang=en" target="_blank" rel="noopener noreferrer"
+              ><span class="visually-hidden">Go to Donation page</span>donate</a
+            >
           </div>
         </div>
       </div>
@@ -603,7 +643,8 @@
         <div>
           <div id="logo">
             <a href="/?sortBy=firstScanSyncDate_desc&amp;type%5B0%5D=Instance"
-              ><img src="/icons/BUDA-small.svg" /><span class="buda-caption"
+              ><span class="visually-hidden">Go to homepage</span
+              ><img alt="BUDA icon" src="/icons/BUDA-small.svg" /><span class="buda-caption"
                 ><span>BUDA</span
                 ><span class="buda-small">The Buddhist Digital Archives</span></span
               ></a
@@ -614,16 +655,33 @@
               <a
                 class=""
                 href="/tradition/bo/?type[0]=Instance&amp;language[0]=LangBo&amp;sortBy=firstScanSyncDate_desc"
-                >Tibetan Tradition</a
+                ><span class="visually-hidden">Go to Tibetan Tradition page</span>Tibetan
+                Tradition</a
               >
             </div>
-            <div><a class="" href="/tradition/pi/">Pali / SEA Tradition</a></div>
-            <div><a class="" href="/tradition/sa/">Sanskrit Tradition</a></div>
-            <div><a class="" href="/tradition/zh/">Chinese Tradition</a></div>
+            <div>
+              <a class="" href="/tradition/pi/"
+                ><span class="visually-hidden">Go to Pali / SEA Tradition page</span>Pali / SEA
+                Tradition</a
+              >
+            </div>
+            <div>
+              <a class="" href="/tradition/sa/"
+                ><span class="visually-hidden">Go to Sanskrit Tradition page</span>Sanskrit
+                Tradition</a
+              >
+            </div>
+            <div>
+              <a class="" href="/tradition/zh/"
+                ><span class="visually-hidden">Go to Chinese Tradition page</span>Chinese
+                Tradition</a
+              >
+            </div>
           </div>
-          <a id="about" href="https://bdrc.io" target="_blank">about us</a
+          <a id="about" href="https://bdrc.io" target="_blank" rel="noopener noreferrer"
+            ><span class="visually-hidden">Go to BDRC About page</span>about us</a
           ><a id="new-search" href="/"
-            ><span>new search</span
+            ><span class="visually-hidden">Go to search page</span><span>new search</span
             ><svg
               class="jss27"
               focusable="false"
@@ -636,6 +694,7 @@
               ></path>
               <path fill="none" d="M0 0h24v24H0z"></path></svg></a
           ><a id="guide" href="/buda-user-guide"
+            ><span class="visually-hidden">Go to User guide page</span
             ><span
               >user guide<svg
                 version="1.1"
@@ -652,6 +711,7 @@
                   ></path>
                 </g></svg></span></a
           ><a id="more-pages"
+            ><span class="visually-hidden">Open menu of more pages</span
             ><span
               >more pages<svg
                 class="jss27"
@@ -663,25 +723,10 @@
                 <path fill="none" d="M0 0h24v24H0z"></path></svg></span
           ></a>
           <div class="history">
-            <span title="Search history"><img src="/icons/histo.svg" /></span
-            ><span title="Bookmarks"><img src="/icons/fav.svg" /></span>
+            <span title="Search history"><img alt="history icon" src="/icons/histo.svg" /></span
+            ><span title="Bookmarks"><img alt="bookmarks icon" src="/icons/fav.svg" /></span>
           </div>
           <div id="lang-login">
-            <div id="feedback" title="Feedback" class="top off">
-              <button tabindex="0" class="jss17 jss37" type="button">
-                <span class="jss42"
-                  ><svg class="jss27" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
-                    <path fill="none" d="M0 0h24v24H0z"></path>
-                    <path
-                      d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-7 12h-2v-2h2v2zm0-4h-2V6h2v4z"
-                    ></path></svg></span
-                ><span class="jss20"></span>
-              </button>
-              <div class="tooltip mustLogin">
-                <div class="bg"></div>
-                <a>You must be logged in to use the feedback tool.</a>
-              </div>
-            </div>
             <button
               tabindex="0"
               class="jss17 jss37"
@@ -689,7 +734,7 @@
               id="lang"
               title="Choose language"
             >
-              <span class="jss42"><img src="/icons/LANGUE.svg" /></span
+              <span class="jss42"><img alt="language icon" src="/icons/LANGUE.svg" /></span
               ><span class="jss20"></span></button
             ><button tabindex="0" class="jss17 jss37" type="button" id="login">
               <span class="jss42"
@@ -706,30 +751,15 @@
                   <path fill="none" d="M0 0h24v24H0z"></path></svg></span
               ><span class="jss20"></span></button
             ><button tabindex="0" class="jss17 jss37" type="button" id="burger">
-              <span class="jss42"><img src="/icons/burger.svg" /></span><span class="jss20"></span>
+              <span class="jss42"><img alt="burger icon" src="/icons/burger.svg" /></span
+              ><span class="jss20"></span>
             </button>
           </div>
-          <a target="_blank" href="https://bdrc.io/donation/" id="donate"
-            ><img src="/donate.svg" />donate</a
+          <a target="_blank" rel="noopener noreferrer" href="https://bdrc.io/donation/" id="donate"
+            ><span class="visually-hidden">Go to Donation page</span
+            ><img alt="donate icon" src="/donate.svg" />donate</a
           >
           <div class="close">+</div>
-        </div>
-      </div>
-      <div id="feedback" title="Feedback" class="off">
-        <svg class="jss27" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
-          <path fill="none" d="M0 0h24v24H0z"></path>
-          <path
-            d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-7 12h-2v-2h2v2zm0-4h-2V6h2v4z"
-          ></path></svg
-        ><svg class="jss27" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
-          <path
-            d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-          ></path>
-          <path fill="none" d="M0 0h24v24H0z"></path>
-        </svg>
-        <div class="tooltip mustLogin">
-          <div class="bg"></div>
-          <a>You must be logged in to use the feedback tool.</a>
         </div>
       </div>
       <div class="infoPanel inRes">
@@ -743,14 +773,15 @@
               <path fill="none" d="M0 0h24v24H0z"></path>
             </svg>
             <p>
-              <img src="/BDRC-Logo_.png" alt="logo" /><br /><br />The Buddhist Digital Resource
+              <img alt="logo" src="/BDRC-Logo_.png" /><br /><br />The Buddhist Digital Resource
               Center shares over 35 million pages of Buddhist texts with the world, for free.<br /><br />As
               a nonprofit organization, BDRC relies on the donations of scholars like you.<br /><br />If
               you believe that the Buddhist scriptures should be accessible for generations to come,
               please make a tax-deductible donation to BDRC.<br /><br /><a
                 href="https://www.bdrc.io/donation/"
                 target="_blank"
-                >Donate</a
+                rel="noopener noreferrer"
+                ><span class="visually-hidden">Go to Donate</span>Donate</a
               >
             </p>
           </div>
@@ -760,7 +791,8 @@
         <div class="search inner-search-bar fromAdvanced">
           <div>
             <form
-              action=""
+              action="/osearch/search"
+              method="GET"
               role="search"
               class="ais-SearchBox-form search-input"
               novalidate=""
@@ -775,6 +807,7 @@
                 spellcheck="false"
                 maxlength="512"
                 type="search"
+                name="q"
                 placeholder="Search the Digital Archives"
                 value=""
               /><button type="submit" class="ais-SearchBox-submit">Submit</button
@@ -823,8 +856,8 @@
               ></span>
               <ul class="search-result-wrapper suggestions" hidden=""></ul>
               <div id="simple-search">
-                <a class="regular"><span class="new">New</span>Search Tibetan in phonetics!</a
-                ><a>How to find things?</a><a>Advanced search</a>
+                <span class="regular"><span class="new">New</span>Search Tibetan in phonetics!</span
+                ><span>How to find things?</span><span>Advanced search</span>
               </div>
             </form>
           </div>
@@ -841,121 +874,49 @@
             ><span class="can-shrink">snying thig ya bzhi</span>
             <div class="loadedContent"></div>
           </div>
-          <div class="index">
-            <div class="title">
-              <h2 lang="bo-x-ewts" title="snying thig ya bzhi">
-                <a href="/show/bdr:WA3CN501?tabs=bdr:MW12827,bdr:W12827"
-                  ><span class="newT work"
-                    ><span class="space-fix"><span>Work</span></span></span
-                  ><span>snying thig ya bzhi</span><span class="lang">bo-x-ewts</span></a
-                >
-              </h2>
-              <div>
-                <h3>
-                  <a href="/show/bdr:WA3CN501?tabs=bdr:MW12827,bdr:W12827#main-info"
-                    >Main Information</a
-                  >
-                </h3>
-                <h3>
-                  <a href="/show/bdr:WA3CN501?tabs=bdr:MW12827,bdr:W12827#resources"
-                    >Related Resources</a
-                  >
-                </h3>
-                <h3>
-                  <a class="disabled" href="/show/bdr:WA3CN501?tabs=bdr:MW12827,bdr:W12827#ext-info"
-                    >Extended Information</a
-                  >
-                </h3>
-              </div>
-              <h2 title="snying thig ya bzhi" lang="bo-x-ewts" class="on">
-                <span class="newT instance"
-                  ><span class="space-fix"><span>Text</span></span></span
-                ><span><span class="placeType">snying thig ya bzhi</span></span
-                ><span class="lang">bo-x-ewts</span>
-              </h2>
-              <div>
-                <h3><a href="/show/bdr:MW12827?tabs=bdr:W12827#main-info">Main Information</a></h3>
-                <h3><a class="" href="/show/bdr:MW12827?tabs=bdr:W12827#outline">Outline</a></h3>
-                <h3>
-                  <a class="" href="/show/bdr:MW12827?tabs=bdr:W12827#ext-info"
-                    >Extended Information</a
-                  >
-                </h3>
-              </div>
-              <h2 lang="en">
-                <a href="/show/bdr:W12827"
-                  ><span class="newT images"
-                    ><span class="space-fix"><span>Scans</span></span></span
-                  ><span>bdr:W12827</span></a
-                >
-              </h2>
-              <div>
-                <h3><a class="" href="/show/bdr:MW12827#open-viewer">Open in Viewer</a></h3>
-                <h3><a href="/show/bdr:W12827#main-info">Main Information</a></h3>
-                <h3><a class="" href="/show/bdr:W12827#ext-info">Extended Information</a></h3>
-              </div>
-            </div>
-          </div>
+          <div class="index"></div>
           <div>
-            <div class="title">
-              <h2 lang="bo-x-ewts" title="snying thig ya bzhi">
-                <a href="/show/bdr:WA3CN501?tabs=bdr:MW12827,bdr:W12827"
-                  ><span class="newT work"
-                    ><span class="space-fix"><span>Work</span></span></span
-                  ><span>snying thig ya bzhi</span><span class="lang">bo-x-ewts</span></a
-                >
-              </h2>
-              <h2 title="snying thig ya bzhi" lang="bo-x-ewts" class="on">
-                <span class="newT instance"
-                  ><span class="space-fix"><span>Text</span></span></span
-                ><span><span class="placeType">snying thig ya bzhi</span></span
-                ><span class="lang">bo-x-ewts</span>
-              </h2>
-              <h2 lang="en">
-                <a href="/show/bdr:W12827"
-                  ><span class="newT images"
-                    ><span class="space-fix"><span>Scans</span></span></span
-                  ><span>bdr:W12827</span></a
-                >
-              </h2>
-            </div>
+            <div class="title"></div>
             <div class="data">
-              <h2 class="on" title="snying thig ya bzhi" lang="bo-x-ewts">
+              <h1 class="on" title="snying thig ya bzhi" lang="bo-x-ewts">
                 <span class="newT instance"
                   ><span class="space-fix"><span>Text</span></span></span
                 ><span>snying thig ya bzhi</span>
-              </h2>
+              </h1>
             </div>
             <div class="data top-props" id="main-info">
               <div data-prop="bdo:creator" class="">
                 <h3>
                   <span
-                    ><a
+                    ><span
                       class="propref"
                       href="http://purl.bdrc.io/ontology/core/creator"
                       target="_blank"
-                      ><span lang="en" class="hasSpace">has creator</span></a
+                      rel="noopener noreferrer"
+                      ><span lang="en" class="hasSpace">has creator</span></span
                     >:</span
                   >
                 </h3>
                 <div class="group">
                   <div class="sub">
                     <h4 data-prop="bdo:creator" class="first type">
-                      <a
+                      <span
                         class="propref"
                         href="http://purl.bdrc.io/ontology/core/AgentAsCreator"
                         target="_blank"
-                        ><span lang="en">creator</span></a
+                        rel="noopener noreferrer"
+                        ><span lang="en">creator</span></span
                       >:
                     </h4>
                     <div class="subgroup">
                       <div class="subsub">
                         <h4 data-prop="bdo:role" class="first prop">
-                          <a
+                          <span
                             class="propref"
                             href="http://purl.bdrc.io/ontology/core/role"
                             target="_blank"
-                            ><span lang="en">role</span></a
+                            rel="noopener noreferrer"
+                            ><span lang="en">role</span></span
                           >:
                         </h4>
                         <h4 class="hasTogHovM">
@@ -974,23 +935,28 @@
                           </svg>
                           <div class="hover-menu">
                             <div>
-                              <span id="anchor"><img src="/icons/info.svg" /></span>
+                              <span class="anchorH"
+                                ><img alt="info icon" src="/icons/info.svg"
+                              /></span>
                             </div>
                           </div>
                         </h4>
                       </div>
                       <div class="subsub">
                         <h4 data-prop="bdo:agent" class="first prop">
-                          <a
+                          <span
                             class="propref"
                             href="http://purl.bdrc.io/ontology/core/agent"
                             target="_blank"
-                            ><span lang="en">agent</span></a
+                            rel="noopener noreferrer"
+                            ><span lang="en">agent</span></span
                           >:
                         </h4>
                         <h4 class="hasTogHovM">
                           <span lang="bo-x-ewts" class="ulink hasSpace"
                             ><a class="urilink prefLabel" href="/show/bdr:P1583"
+                              ><span class="visually-hidden"
+                                >Go to klong chen rab 'byams pa dri med 'od zer page</span
                               >klong chen rab 'byams pa dri med 'od zer</a
                             ></span
                           ><span class="lang">bo-x-ewts</span
@@ -1007,7 +973,9 @@
                           </svg>
                           <div class="hover-menu">
                             <div>
-                              <span id="anchor"><img src="/icons/info.svg" /></span>
+                              <span class="anchorH"
+                                ><img alt="info icon" src="/icons/info.svg"
+                              /></span>
                             </div>
                           </div>
                         </h4>
@@ -1019,11 +987,12 @@
               <div data-prop="bdo:extentStatement" class="">
                 <h3>
                   <span
-                    ><a
+                    ><span
                       class="propref"
                       href="http://purl.bdrc.io/ontology/core/extentStatement"
                       target="_blank"
-                      ><span lang="en">extent</span></a
+                      rel="noopener noreferrer"
+                      ><span lang="en">extent</span></span
                     >:</span
                   >
                 </h3>
@@ -1043,7 +1012,7 @@
                     </svg>
                     <div class="hover-menu">
                       <div>
-                        <span id="anchor"><img src="/icons/info.svg" /></span>
+                        <span class="anchorH"><img alt="info icon" src="/icons/info.svg" /></span>
                       </div>
                     </div>
                   </h4>
@@ -1067,7 +1036,7 @@
                 <div class="group">
                   <div class="loadedContent"></div>
                   <div class="root is-root">
-                    <img src="/icons/triangle_.png" class="xpd" /><span
+                    <img alt="triangle icon" src="/icons/triangle_.png" class="xpd" /><span
                       class="parTy"
                       title="Collection"
                       ><div>COL</div></span
@@ -1076,14 +1045,15 @@
                         <a href="/show/bdr:MW12827?tabs=bdr:W12827"
                           ><span class="newT instance"
                             ><span class="space-fix"><span>Text</span></span></span
-                          ><span>snying thig ya bzhi</span><span class="lang">bo-x-ewts</span></a
+                          ><span>snying thig ya bzhi</span><span class="lang">bo-x-ewts</span
+                          ><span class="visually-hidden">Go to bdr:MW12827 page</span></a
                         >
                       </h2></span
                     >
                   </div>
                   <div style="padding-left: 45px">
                     <span class="top"
-                      ><img src="/icons/triangle.png" class="xpd right" /><span
+                      ><img alt="triangle icon" src="/icons/triangle.png" class="xpd right" /><span
                         class="parTy"
                         title="Section"
                         ><div>sec</div></span
@@ -1093,7 +1063,9 @@
                             class="urilink prefLabel"
                             data-info="bla ma yang tig"
                             href="/show/bdr:MW12827_BB8776"
-                            >bla ma yang tig</a
+                            >bla ma yang tig<span class="visually-hidden"
+                              >Go to bla ma yang tig page</span
+                            ></a
                           ></span
                         ><span class="lang">bo-x-ewts</span></span
                       >
@@ -1102,13 +1074,17 @@
                           class="hasImg"
                           title="View Scans"
                           href="/show/bdr:W12827?s=%2Fshow%2Fbdr%3AMW12827%3Fpart%3Dbdr%3AMW12827_BB8776%26backToOutline%3Dtrue#open-viewer"
-                          ><img src="/icons/search/images.svg" /><img
-                            src="/icons/search/images_r.svg" /></a
-                        ><span id="anchor" title="Show Details"><img src="/icons/info.svg" /></span
-                        ><a class="permalink" title="Permalink"
-                          ><img src="/icons/PLINK_small.svg" /><img
-                            src="/icons/PLINK_small_r.svg" /></a
-                        ><span id="cite" title="Cite this item"
+                          ><img alt="images icon" src="/icons/search/images.svg" /><span
+                            class="visually-hidden"
+                            >View images</span
+                          ><img alt="images icon" src="/icons/search/images_r.svg" /></a
+                        ><span class="anchorO" title="Show Details"
+                          ><img alt="info icon" src="/icons/info.svg" /></span
+                        ><span class="permalink" title="Permalink"
+                          ><img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                            alt="permalink icon"
+                            src="/icons/PLINK_small_r.svg" /></span
+                        ><span class="citeO" title="Cite this item"
                           ><svg
                             class="jss27"
                             focusable="false"
@@ -1117,7 +1093,7 @@
                           >
                             <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"></path>
                             <path fill="none" d="M0 0h24v24H0z"></path></svg></span
-                        ><span id="print" title="Print on demand"
+                        ><span class="printO" title="Print on demand"
                           ><svg
                             class="jss27"
                             focusable="false"
@@ -1130,7 +1106,7 @@
                             <path fill="none" d="M0 0h24v24H0z"></path></svg
                         ></span></div></span
                     ><span class="top"
-                      ><img src="/icons/triangle.png" class="xpd right" /><span
+                      ><img alt="triangle icon" src="/icons/triangle.png" class="xpd right" /><span
                         class="parTy"
                         title="Section"
                         ><div>sec</div></span
@@ -1140,7 +1116,9 @@
                             class="urilink prefLabel"
                             data-info="bi ma snying thig"
                             href="/show/bdr:MW12827_58921B"
-                            >bi ma snying thig</a
+                            >bi ma snying thig<span class="visually-hidden"
+                              >Go to bi ma snying thig page</span
+                            ></a
                           ></span
                         ><span class="lang">bo-x-ewts</span></span
                       >
@@ -1149,13 +1127,17 @@
                           class="hasImg"
                           title="View Scans"
                           href="/show/bdr:W12827?s=%2Fshow%2Fbdr%3AMW12827%3Fpart%3Dbdr%3AMW12827_58921B%26backToOutline%3Dtrue#open-viewer"
-                          ><img src="/icons/search/images.svg" /><img
-                            src="/icons/search/images_r.svg" /></a
-                        ><span id="anchor" title="Show Details"><img src="/icons/info.svg" /></span
-                        ><a class="permalink" title="Permalink"
-                          ><img src="/icons/PLINK_small.svg" /><img
-                            src="/icons/PLINK_small_r.svg" /></a
-                        ><span id="cite" title="Cite this item"
+                          ><img alt="images icon" src="/icons/search/images.svg" /><span
+                            class="visually-hidden"
+                            >View images</span
+                          ><img alt="images icon" src="/icons/search/images_r.svg" /></a
+                        ><span class="anchorO" title="Show Details"
+                          ><img alt="info icon" src="/icons/info.svg" /></span
+                        ><span class="permalink" title="Permalink"
+                          ><img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                            alt="permalink icon"
+                            src="/icons/PLINK_small_r.svg" /></span
+                        ><span class="citeO" title="Cite this item"
                           ><svg
                             class="jss27"
                             focusable="false"
@@ -1164,7 +1146,7 @@
                           >
                             <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"></path>
                             <path fill="none" d="M0 0h24v24H0z"></path></svg></span
-                        ><span id="print" title="Print on demand"
+                        ><span class="printO" title="Print on demand"
                           ><svg
                             class="jss27"
                             focusable="false"
@@ -1177,7 +1159,7 @@
                             <path fill="none" d="M0 0h24v24H0z"></path></svg
                         ></span></div></span
                     ><span class="top"
-                      ><img src="/icons/triangle.png" class="xpd right" /><span
+                      ><img alt="triangle icon" src="/icons/triangle.png" class="xpd right" /><span
                         class="parTy"
                         title="Section"
                         ><div>sec</div></span
@@ -1187,7 +1169,9 @@
                             class="urilink prefLabel"
                             data-info="mkha' 'gro yang tig"
                             href="/show/bdr:MW12827_8E3796"
-                            >mkha' 'gro yang tig</a
+                            >mkha' 'gro yang tig<span class="visually-hidden"
+                              >Go to mkha' 'gro yang tig page</span
+                            ></a
                           ></span
                         ><span class="lang">bo-x-ewts</span></span
                       >
@@ -1196,13 +1180,17 @@
                           class="hasImg"
                           title="View Scans"
                           href="/show/bdr:W12827?s=%2Fshow%2Fbdr%3AMW12827%3Fpart%3Dbdr%3AMW12827_8E3796%26backToOutline%3Dtrue#open-viewer"
-                          ><img src="/icons/search/images.svg" /><img
-                            src="/icons/search/images_r.svg" /></a
-                        ><span id="anchor" title="Show Details"><img src="/icons/info.svg" /></span
-                        ><a class="permalink" title="Permalink"
-                          ><img src="/icons/PLINK_small.svg" /><img
-                            src="/icons/PLINK_small_r.svg" /></a
-                        ><span id="cite" title="Cite this item"
+                          ><img alt="images icon" src="/icons/search/images.svg" /><span
+                            class="visually-hidden"
+                            >View images</span
+                          ><img alt="images icon" src="/icons/search/images_r.svg" /></a
+                        ><span class="anchorO" title="Show Details"
+                          ><img alt="info icon" src="/icons/info.svg" /></span
+                        ><span class="permalink" title="Permalink"
+                          ><img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                            alt="permalink icon"
+                            src="/icons/PLINK_small_r.svg" /></span
+                        ><span class="citeO" title="Cite this item"
                           ><svg
                             class="jss27"
                             focusable="false"
@@ -1211,7 +1199,7 @@
                           >
                             <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"></path>
                             <path fill="none" d="M0 0h24v24H0z"></path></svg></span
-                        ><span id="print" title="Print on demand"
+                        ><span class="printO" title="Print on demand"
                           ><svg
                             class="jss27"
                             focusable="false"
@@ -1224,7 +1212,7 @@
                             <path fill="none" d="M0 0h24v24H0z"></path></svg
                         ></span></div></span
                     ><span class="top"
-                      ><img src="/icons/triangle.png" class="xpd right" /><span
+                      ><img alt="triangle icon" src="/icons/triangle.png" class="xpd right" /><span
                         class="parTy"
                         title="Section"
                         ><div>sec</div></span
@@ -1234,7 +1222,9 @@
                             class="urilink prefLabel"
                             data-info="mkha' gro snying thig"
                             href="/show/bdr:MW12827_CBDB0C"
-                            >mkha' gro snying thig</a
+                            >mkha' gro snying thig<span class="visually-hidden"
+                              >Go to mkha' gro snying thig page</span
+                            ></a
                           ></span
                         ><span class="lang">bo-x-ewts</span></span
                       >
@@ -1243,13 +1233,17 @@
                           class="hasImg"
                           title="View Scans"
                           href="/show/bdr:W12827?s=%2Fshow%2Fbdr%3AMW12827%3Fpart%3Dbdr%3AMW12827_CBDB0C%26backToOutline%3Dtrue#open-viewer"
-                          ><img src="/icons/search/images.svg" /><img
-                            src="/icons/search/images_r.svg" /></a
-                        ><span id="anchor" title="Show Details"><img src="/icons/info.svg" /></span
-                        ><a class="permalink" title="Permalink"
-                          ><img src="/icons/PLINK_small.svg" /><img
-                            src="/icons/PLINK_small_r.svg" /></a
-                        ><span id="cite" title="Cite this item"
+                          ><img alt="images icon" src="/icons/search/images.svg" /><span
+                            class="visually-hidden"
+                            >View images</span
+                          ><img alt="images icon" src="/icons/search/images_r.svg" /></a
+                        ><span class="anchorO" title="Show Details"
+                          ><img alt="info icon" src="/icons/info.svg" /></span
+                        ><span class="permalink" title="Permalink"
+                          ><img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                            alt="permalink icon"
+                            src="/icons/PLINK_small_r.svg" /></span
+                        ><span class="citeO" title="Cite this item"
                           ><svg
                             class="jss27"
                             focusable="false"
@@ -1258,7 +1252,7 @@
                           >
                             <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"></path>
                             <path fill="none" d="M0 0h24v24H0z"></path></svg></span
-                        ><span id="print" title="Print on demand"
+                        ><span class="printO" title="Print on demand"
                           ><svg
                             class="jss27"
                             focusable="false"
@@ -1271,7 +1265,7 @@
                             <path fill="none" d="M0 0h24v24H0z"></path></svg
                         ></span></div></span
                     ><span class="top"
-                      ><img src="/icons/triangle.png" class="xpd right" /><span
+                      ><img alt="triangle icon" src="/icons/triangle.png" class="xpd right" /><span
                         class="parTy"
                         title="Section"
                         ><div>sec</div></span
@@ -1281,7 +1275,9 @@
                             class="urilink prefLabel"
                             data-info="zab mo yang tig"
                             href="/show/bdr:MW12827_C93AD5"
-                            >zab mo yang tig</a
+                            >zab mo yang tig<span class="visually-hidden"
+                              >Go to zab mo yang tig page</span
+                            ></a
                           ></span
                         ><span class="lang">bo-x-ewts</span></span
                       >
@@ -1290,13 +1286,17 @@
                           class="hasImg"
                           title="View Scans"
                           href="/show/bdr:W12827?s=%2Fshow%2Fbdr%3AMW12827%3Fpart%3Dbdr%3AMW12827_C93AD5%26backToOutline%3Dtrue#open-viewer"
-                          ><img src="/icons/search/images.svg" /><img
-                            src="/icons/search/images_r.svg" /></a
-                        ><span id="anchor" title="Show Details"><img src="/icons/info.svg" /></span
-                        ><a class="permalink" title="Permalink"
-                          ><img src="/icons/PLINK_small.svg" /><img
-                            src="/icons/PLINK_small_r.svg" /></a
-                        ><span id="cite" title="Cite this item"
+                          ><img alt="images icon" src="/icons/search/images.svg" /><span
+                            class="visually-hidden"
+                            >View images</span
+                          ><img alt="images icon" src="/icons/search/images_r.svg" /></a
+                        ><span class="anchorO" title="Show Details"
+                          ><img alt="info icon" src="/icons/info.svg" /></span
+                        ><span class="permalink" title="Permalink"
+                          ><img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                            alt="permalink icon"
+                            src="/icons/PLINK_small_r.svg" /></span
+                        ><span class="citeO" title="Cite this item"
                           ><svg
                             class="jss27"
                             focusable="false"
@@ -1305,7 +1305,7 @@
                           >
                             <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"></path>
                             <path fill="none" d="M0 0h24v24H0z"></path></svg></span
-                        ><span id="print" title="Print on demand"
+                        ><span class="printO" title="Print on demand"
                           ><svg
                             class="jss27"
                             focusable="false"
@@ -1324,7 +1324,8 @@
               <div data-prop="tmp:propHasScans">
                 <h3>
                   <span
-                    ><a class="propref" target="_blank"><span lang="">Scans</span></a
+                    ><span class="propref" target="_blank" rel="noopener noreferrer"
+                      ><span lang="">Scans</span></span
                     >:</span
                   >
                 </h3>
@@ -1340,20 +1341,24 @@
                         "
                       >
                         <img
+                          alt="thumbnail"
                           src="https://iiif.bdrc.io/bdr:I2061::020610001.tiff/full/!2000,145/0/default.jpg"
-                        /></div
-                    ></a>
+                        />
+                      </div>
+                      <span class="visually-hidden">Go to bdr:W12827 page</span></a
+                    >
                     <div class="images-thumb-links" data-n="2">
                       <a
                         class="urilink bdr"
                         href="/show/bdr:W12827?s=%2Fshow%2Fbdr%3AMW12827#open-viewer"
-                        >Open in Viewer</a
-                      ><a href="#" class="urilink">Download</a>
+                        >Open in Viewer<span class="visually-hidden">Go to bdr:W12827 page</span></a
+                      ><span href="#" class="a urilink">Download</span>
                       <div>
                         In collection
                         <span lang="en" class="ulink hasSpace"
                           ><a class="urilink prefLabel" href="/show/bdr:PR1PL480"
-                            >PL480 Collection</a
+                            ><span class="visually-hidden">Go to PL480 Collection page</span>PL480
+                            Collection</a
                           ></span
                         ><span class="lang">en</span>
                       </div>
@@ -1371,7 +1376,7 @@
                     </svg>
                     <div class="hover-menu">
                       <div>
-                        <span id="anchor"><img src="/icons/info.svg" /></span>
+                        <span class="anchorH"><img alt="info icon" src="/icons/info.svg" /></span>
                       </div>
                     </div>
                   </h4>
@@ -1381,7 +1386,8 @@
               <div data-prop="tmp:propHasEtext" class="">
                 <h3>
                   <span
-                    ><a class="propref" target="_blank"><span lang="">Etext</span></a
+                    ><span class="propref" target="_blank" rel="noopener noreferrer"
+                      ><span lang="">Etext</span></span
                     >:</span
                   >
                 </h3>
@@ -1401,7 +1407,7 @@
                     </svg>
                     <div class="hover-menu">
                       <div>
-                        <span id="anchor"><img src="/icons/info.svg" /></span>
+                        <span class="anchorH"><img alt="info icon" src="/icons/info.svg" /></span>
                       </div>
                     </div>
                   </h4>
@@ -1410,18 +1416,22 @@
               <div data-prop="bdo:workIsAbout" class="">
                 <h3>
                   <span
-                    ><a
+                    ><span
                       class="propref"
                       href="http://purl.bdrc.io/ontology/core/workIsAbout"
                       target="_blank"
-                      ><span lang="en" class="hasSpace">is about</span></a
+                      rel="noopener noreferrer"
+                      ><span lang="en" class="hasSpace">is about</span></span
                     >:</span
                   >
                 </h3>
                 <div class="group">
                   <h4 class="hasTogHovM">
                     <span lang="en" class="ulink hasSpace"
-                      ><a class="urilink prefLabel" href="/show/bdr:T354">great perfection</a></span
+                      ><a class="urilink prefLabel" href="/show/bdr:T354"
+                        ><span class="visually-hidden">Go to great perfection page</span>great
+                        perfection</a
+                      ></span
                     ><span class="lang">en</span
                     ><svg
                       class="jss27 annoticon"
@@ -1436,7 +1446,7 @@
                     </svg>
                     <div class="hover-menu">
                       <div>
-                        <span id="anchor"><img src="/icons/info.svg" /></span>
+                        <span class="anchorH"><img alt="info icon" src="/icons/info.svg" /></span>
                       </div>
                     </div>
                   </h4>
@@ -1445,11 +1455,12 @@
               <div data-prop="bdo:catalogInfo" class="">
                 <h3>
                   <span
-                    ><a
+                    ><span
                       class="propref"
                       href="http://purl.bdrc.io/ontology/core/catalogInfo"
                       target="_blank"
-                      ><span lang="en">summary</span></a
+                      rel="noopener noreferrer"
+                      ><span lang="en">summary</span></span
                     >:</span
                   >
                 </h3>
@@ -1475,7 +1486,7 @@
                     </svg>
                     <div class="hover-menu">
                       <div>
-                        <span id="anchor"><img src="/icons/info.svg" /></span>
+                        <span class="anchorH"><img alt="info icon" src="/icons/info.svg" /></span>
                       </div>
                     </div>
                   </h4>
@@ -1484,11 +1495,11 @@
             </div>
             <div class="data" id="perma">
               <div>
-                <a id="permalink" title="Permalink" style="margin-left: 0px"
-                  ><img src="/icons/PLINK.png" /><span>Permalink</span></a
+                <span id="permalink" title="Permalink" style="margin-left: 0px"
+                  ><img alt="permalink icon" src="/icons/PLINK.png" /><span>Permalink</span></span
                 ><span id="rid">bdr:MW12827</span><span class="NL nl-dl"></span
                 ><span id="DL"
-                  ><img src="/icons/DL_.svg" />Export metadata
+                  ><img alt="download icon" src="/icons/DL_.svg" />Export metadata
                   <svg class="jss27" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
                     <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path>
                     <path fill="none" d="M0 0h24v24H0z"></path></svg></span
@@ -1499,7 +1510,8 @@
                     <path fill="none" d="M0 0h24v24H0z"></path></svg
                   >Cite this item</span
                 ><span id="same" title="Link to External Resource" class="PE0"
-                  ><span>Link:</span><span class="provider bdr"><img src="/logo.svg" /></span
+                  ><span>Link:</span
+                  ><span class="provider bdr"><img alt="provider icon" src="/logo.svg" /></span
                 ></span>
               </div>
             </div>
@@ -1507,7 +1519,8 @@
               <div data-prop="tmp:workHasInstance" class="">
                 <h3>
                   <span
-                    ><a class="propref" target="_blank"><span lang="">Other versions</span></a
+                    ><span class="propref" target="_blank" rel="noopener noreferrer"
+                      ><span lang="">Other versions</span></span
                     >:</span
                   >
                 </h3>
@@ -1518,15 +1531,16 @@
                       <div class="searchbox">
                         <h3>
                           <span
-                            ><a class="propref"
-                              ><span>Find Texts Related to this Text:</span></a
+                            ><span class="propref"
+                              ><span>Find Texts Related to this Text:</span></span
                             ></span
                           >
                         </h3>
                         <div class="search inner-search-bar group">
                           <div>
                             <form
-                              action=""
+                              action="/osearch/search"
+                              method="GET"
                               role="search"
                               class="ais-SearchBox-form search-input"
                               novalidate=""
@@ -1541,6 +1555,7 @@
                                 spellcheck="false"
                                 maxlength="512"
                                 type="search"
+                                name="q"
                                 placeholder="Search this text"
                                 value=""
                               /><button type="submit" class="ais-SearchBox-submit">Submit</button
@@ -2968,6 +2983,22 @@
                                                     <li class="ais-RefinementList-item false">
                                                       <label
                                                         class="ais-RefinementList-label"
+                                                        data-id="PR3KG13"
+                                                        ><input
+                                                          type="checkbox"
+                                                          class="ais-RefinementList-checkbox"
+                                                        /><span class="ais-RefinementList-labelText"
+                                                          ><span lang="en" class="hasSpace"
+                                                            >Gene Smith's Personal Collection</span
+                                                          ></span
+                                                        ><span class="ais-RefinementList-count"
+                                                          >7</span
+                                                        ></label
+                                                      >
+                                                    </li>
+                                                    <li class="ais-RefinementList-item false">
+                                                      <label
+                                                        class="ais-RefinementList-label"
                                                         data-id="PR1PL480"
                                                         ><input
                                                           type="checkbox"
@@ -3089,12 +3120,15 @@
                                 <li class="ais-Hits-item">
                                   <div class="result Instance">
                                     <div class="main">
-                                      <a class="BG-link" href="/show/bdr:MW1KG12048"></a>
+                                      <a data-lang="en" class="BG-link" href="/show/bdr:MW1KG12048"
+                                        ><span class="visually-hidden">Go to result page</span></a
+                                      >
                                       <div class="num-box">2</div>
                                       <div class="thumb hasImg">
                                         <a href="/show/bdr:MW1KG12048"
                                           ><span class="img"
                                             ><img
+                                              alt="result thumbnail"
                                               src="//iiif.bdrc.io/bdr:MW1KG12048::thumbnail/full/!1000,130/0/default.jpg" /></span
                                           ><span class="RID">MW1KG12048</span
                                           ><span
@@ -3112,7 +3146,8 @@
                                                 <path
                                                   d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"
                                                 ></path></svg></span></span
-                                        ></a>
+                                          ><span class="visually-hidden">Go to result page</span></a
+                                        >
                                       </div>
                                       <div class="data">
                                         <a href="/show/bdr:MW1KG12048"
@@ -3126,7 +3161,7 @@
                                           ><span lang="bo-x-ewts"
                                             >snying thig ya bzhi/ (dar thang glog klad par
                                             ma/)</span
-                                          ></a
+                                          ><span class="visually-hidden">Go to result page</span></a
                                         >
                                       </div>
                                     </div>
@@ -3135,12 +3170,15 @@
                                 <li class="ais-Hits-item">
                                   <div class="result Instance">
                                     <div class="main">
-                                      <a class="BG-link" href="/show/bdr:MW1KG9720"></a>
+                                      <a data-lang="en" class="BG-link" href="/show/bdr:MW1KG9720"
+                                        ><span class="visually-hidden">Go to result page</span></a
+                                      >
                                       <div class="num-box">3</div>
                                       <div class="thumb hasImg">
                                         <a href="/show/bdr:MW1KG9720"
                                           ><span class="img"
                                             ><img
+                                              alt="result thumbnail"
                                               src="//iiif.bdrc.io/bdr:MW1KG9720::thumbnail/full/!1000,130/0/default.jpg" /></span
                                           ><span class="RID">MW1KG9720</span
                                           ><span
@@ -3149,7 +3187,7 @@
                                             ><span>Etext:</span>&nbsp;<span class="quality"
                                               >not available</span
                                             ></span
-                                          ></a
+                                          ><span class="visually-hidden">Go to result page</span></a
                                         >
                                       </div>
                                       <div class="data">
@@ -3163,7 +3201,7 @@
                                             ></span
                                           ><span lang="bo-x-ewts"
                                             >snying thig ya bzhi/ (a 'dzom par ma/)</span
-                                          ></a
+                                          ><span class="visually-hidden">Go to result page</span></a
                                         >
                                       </div>
                                     </div>
@@ -3172,12 +3210,15 @@
                                 <li class="ais-Hits-item">
                                   <div class="result Instance">
                                     <div class="main">
-                                      <a class="BG-link" href="/show/bdr:MW2PD19078"></a>
+                                      <a data-lang="en" class="BG-link" href="/show/bdr:MW2PD19078"
+                                        ><span class="visually-hidden">Go to result page</span></a
+                                      >
                                       <div class="num-box">4</div>
                                       <div class="thumb hasImg">
                                         <a href="/show/bdr:MW2PD19078"
                                           ><span class="img"
                                             ><img
+                                              alt="result thumbnail"
                                               src="//iiif.bdrc.io/bdr:MW2PD19078::thumbnail/full/!1000,130/0/default.jpg" /></span
                                           ><span class="RID">MW2PD19078</span
                                           ><span
@@ -3195,7 +3236,8 @@
                                                 <path
                                                   d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"
                                                 ></path></svg></span></span
-                                        ></a>
+                                          ><span class="visually-hidden">Go to result page</span></a
+                                        >
                                       </div>
                                       <div class="data">
                                         <a href="/show/bdr:MW2PD19078"
@@ -3206,7 +3248,8 @@
                                               data-lang="undefinedTibt"
                                               >Tibt</span
                                             ></span
-                                          ><span lang="bo-x-ewts">snying thig ya bzhi</span></a
+                                          ><span lang="bo-x-ewts">snying thig ya bzhi</span
+                                          ><span class="visually-hidden">Go to result page</span></a
                                         >
                                       </div>
                                     </div>
@@ -3215,12 +3258,15 @@
                                 <li class="ais-Hits-item">
                                   <div class="result Instance">
                                     <div class="main">
-                                      <a class="BG-link" href="/show/bdr:MW3CN3025"></a>
+                                      <a data-lang="en" class="BG-link" href="/show/bdr:MW3CN3025"
+                                        ><span class="visually-hidden">Go to result page</span></a
+                                      >
                                       <div class="num-box">5</div>
                                       <div class="thumb hasImg">
                                         <a href="/show/bdr:MW3CN3025"
                                           ><span class="img"
                                             ><img
+                                              alt="result thumbnail"
                                               src="//iiif.bdrc.io/bdr:MW3CN3025::thumbnail/full/!1000,130/0/default.jpg" /></span
                                           ><span class="RID">MW3CN3025</span
                                           ><span
@@ -3229,7 +3275,7 @@
                                             ><span>Etext:</span>&nbsp;<span class="quality"
                                               >not available</span
                                             ></span
-                                          ></a
+                                          ><span class="visually-hidden">Go to result page</span></a
                                         >
                                       </div>
                                       <div class="data">
@@ -3241,9 +3287,8 @@
                                               data-lang="undefinedTibt"
                                               >Tibt</span
                                             ></span
-                                          ><span lang="bo-x-ewts"
-                                            >snying thig ya bzhi chen mo</span
-                                          ></a
+                                          ><span lang="bo-x-ewts">snying thig ya bzhi chen mo</span
+                                          ><span class="visually-hidden">Go to result page</span></a
                                         >
                                       </div>
                                     </div>
@@ -3252,12 +3297,15 @@
                                 <li class="ais-Hits-item">
                                   <div class="result Instance">
                                     <div class="main">
-                                      <a class="BG-link" href="/show/bdr:MW4PD2043"></a>
+                                      <a data-lang="en" class="BG-link" href="/show/bdr:MW4PD2043"
+                                        ><span class="visually-hidden">Go to result page</span></a
+                                      >
                                       <div class="num-box">6</div>
                                       <div class="thumb hasImg">
                                         <a href="/show/bdr:MW4PD2043"
                                           ><span class="img"
                                             ><img
+                                              alt="result thumbnail"
                                               src="//iiif.bdrc.io/bdr:MW4PD2043::thumbnail/full/!1000,130/0/default.jpg" /></span
                                           ><span class="RID">MW4PD2043</span
                                           ><span
@@ -3266,7 +3314,7 @@
                                             ><span>Etext:</span>&nbsp;<span class="quality"
                                               >not available</span
                                             ></span
-                                          ></a
+                                          ><span class="visually-hidden">Go to result page</span></a
                                         >
                                       </div>
                                       <div class="data">
@@ -3278,7 +3326,8 @@
                                               data-lang="undefinedTibt"
                                               >Tibt</span
                                             ></span
-                                          ><span lang="bo-x-ewts">snying thig ya bzhi</span></a
+                                          ><span lang="bo-x-ewts">snying thig ya bzhi</span
+                                          ><span class="visually-hidden">Go to result page</span></a
                                         >
                                       </div>
                                     </div>
@@ -3287,12 +3336,15 @@
                                 <li class="ais-Hits-item">
                                   <div class="result Instance">
                                     <div class="main">
-                                      <a class="BG-link" href="/show/bdr:MW3CN5345"></a>
+                                      <a data-lang="en" class="BG-link" href="/show/bdr:MW3CN5345"
+                                        ><span class="visually-hidden">Go to result page</span></a
+                                      >
                                       <div class="num-box">7</div>
                                       <div class="thumb hasImg">
                                         <a href="/show/bdr:MW3CN5345"
                                           ><span class="img"
                                             ><img
+                                              alt="result thumbnail"
                                               src="//iiif.bdrc.io/bdr:MW3CN5345::thumbnail/full/!1000,130/0/default.jpg" /></span
                                           ><span class="RID">MW3CN5345</span
                                           ><span
@@ -3310,7 +3362,8 @@
                                                 <path
                                                   d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"
                                                 ></path></svg></span></span
-                                        ></a>
+                                          ><span class="visually-hidden">Go to result page</span></a
+                                        >
                                       </div>
                                       <div class="data">
                                         <a href="/show/bdr:MW3CN5345"
@@ -3324,7 +3377,7 @@
                                           ><span lang="bo-x-ewts"
                                             >rdzogs pa chen po snying thig ya bzhi las mkha' 'gro
                                             yang tig gi chos skor</span
-                                          ></a
+                                          ><span class="visually-hidden">Go to result page</span></a
                                         >
                                       </div>
                                     </div>
@@ -3333,12 +3386,15 @@
                                 <li class="ais-Hits-item">
                                   <div class="result Instance">
                                     <div class="main">
-                                      <a class="BG-link" href="/show/bdr:MW3CN501"></a>
+                                      <a data-lang="en" class="BG-link" href="/show/bdr:MW3CN501"
+                                        ><span class="visually-hidden">Go to result page</span></a
+                                      >
                                       <div class="num-box">8</div>
                                       <div class="thumb hasImg">
                                         <a href="/show/bdr:MW3CN501"
                                           ><span class="img"
                                             ><img
+                                              alt="result thumbnail"
                                               src="//iiif.bdrc.io/bdr:MW3CN501::thumbnail/full/!1000,130/0/default.jpg" /></span
                                           ><span class="RID">MW3CN501</span
                                           ><span
@@ -3347,7 +3403,7 @@
                                             ><span>Etext:</span>&nbsp;<span class="quality"
                                               >not available</span
                                             ></span
-                                          ></a
+                                          ><span class="visually-hidden">Go to result page</span></a
                                         >
                                       </div>
                                       <div class="data">
@@ -3359,7 +3415,8 @@
                                               data-lang="undefinedTibt"
                                               >Tibt</span
                                             ></span
-                                          ><span lang="bo-x-ewts">snying thig ya bzhi</span></a
+                                          ><span lang="bo-x-ewts">snying thig ya bzhi</span
+                                          ><span class="visually-hidden">Go to result page</span></a
                                         >
                                       </div>
                                     </div>
@@ -3368,7 +3425,9 @@
                                 <li class="ais-Hits-item">
                                   <div class="result Instance">
                                     <div class="main">
-                                      <a class="BG-link" href="/show/bdr:MW4PD2049"></a>
+                                      <a data-lang="en" class="BG-link" href="/show/bdr:MW4PD2049"
+                                        ><span class="visually-hidden">Go to result page</span></a
+                                      >
                                       <div class="num-box">9</div>
                                       <div class="thumb">
                                         <a href="/show/bdr:MW4PD2049"
@@ -3381,7 +3440,7 @@
                                             ><span>Etext:</span>&nbsp;<span class="quality"
                                               >not available</span
                                             ></span
-                                          ></a
+                                          ><span class="visually-hidden">Go to result page</span></a
                                         >
                                       </div>
                                       <div class="data">
@@ -3395,7 +3454,7 @@
                                             ></span
                                           ><span lang="bo-x-ewts"
                                             >snying thig ya bzhi/(sde dge/)</span
-                                          ></a
+                                          ><span class="visually-hidden">Go to result page</span></a
                                         >
                                       </div>
                                     </div>
@@ -3404,12 +3463,15 @@
                                 <li class="ais-Hits-item">
                                   <div class="result Instance">
                                     <div class="main">
-                                      <a class="BG-link" href="/show/bdr:MW8LS16277"></a>
+                                      <a data-lang="en" class="BG-link" href="/show/bdr:MW8LS16277"
+                                        ><span class="visually-hidden">Go to result page</span></a
+                                      >
                                       <div class="num-box">10</div>
                                       <div class="thumb hasImg">
                                         <a href="/show/bdr:MW8LS16277"
                                           ><span class="img"
                                             ><img
+                                              alt="result thumbnail"
                                               src="//iiif.bdrc.io/bdr:MW8LS16277::thumbnail/full/!1000,130/0/default.jpg" /></span
                                           ><span class="RID">MW8LS16277</span
                                           ><span
@@ -3418,7 +3480,7 @@
                                             ><span>Etext:</span>&nbsp;<span class="quality"
                                               >not available</span
                                             ></span
-                                          ></a
+                                          ><span class="visually-hidden">Go to result page</span></a
                                         >
                                       </div>
                                       <div class="data">
@@ -3428,7 +3490,8 @@
                                             ><span title="script: Ume" data-lang="undefinedDbuMed"
                                               >DbuMed</span
                                             ></span
-                                          ><span lang="bo-x-ewts">mkha' 'gro snying thig</span></a
+                                          ><span lang="bo-x-ewts">mkha' 'gro snying thig</span
+                                          ><span class="visually-hidden">Go to result page</span></a
                                         >
                                       </div>
                                     </div>
@@ -3437,42 +3500,48 @@
                                 <li class="ais-Hits-item">
                                   <div class="result PartTypeText">
                                     <div class="main">
-                                      <a class="BG-link" href="/show/bdr:MW25983_2FA6EF"></a>
+                                      <a
+                                        data-lang="en"
+                                        class="BG-link"
+                                        href="/show/bdr:MW20877_FBFD5B"
+                                        ><span class="visually-hidden">Go to result page</span></a
+                                      >
                                       <div class="num-box">11</div>
                                       <div class="thumb hasImg">
-                                        <a href="/show/bdr:MW25983_2FA6EF"
+                                        <a href="/show/bdr:MW20877_FBFD5B"
                                           ><span class="img"
                                             ><img
-                                              src="//iiif.bdrc.io/bdr:MW25983::thumbnail/full/!1000,130/0/default.jpg" /></span
-                                          ><span class="RID">MW25983_2FA6EF</span
+                                              alt="result thumbnail"
+                                              src="//iiif.bdrc.io/bdr:MW20877::thumbnail/full/!1000,130/0/default.jpg" /></span
+                                          ><span class="RID">MW20877_FBFD5B</span
                                           ><span
                                             ><span>Scans:</span>&nbsp;<span>open access</span></span
                                           ><span
                                             ><span>Etext:</span>&nbsp;<span class="quality"
                                               >not available</span
                                             ></span
-                                          ></a
+                                          ><span class="visually-hidden">Go to result page</span></a
                                         >
                                       </div>
                                       <div class="data">
-                                        <a href="/show/bdr:MW25983_2FA6EF"
+                                        <a href="/show/bdr:MW20877_FBFD5B"
                                           ><span class="T"
                                             >Text in outline<span
-                                              title="script: Uchen"
-                                              data-lang="undefinedDbuCan"
-                                              >DbuCan</span
+                                              title="script: Tibetan script"
+                                              data-lang="undefinedTibt"
+                                              >Tibt</span
                                             ></span
                                           ><span lang="bo-x-ewts"
                                             >rdzogs pa chen po gsang ba snying thig ma bu'i bka'
                                             srol chu bo gnyis 'dus kyi khrid yig dri med zhal
                                             lung</span
-                                          ></a
+                                          ><span class="visually-hidden">Go to result page</span></a
                                         ><span class="names inRoot noNL"
                                           ><span class="label">in</span
                                           ><span
-                                            ><span data-id="MW25983"
+                                            ><span data-id="MW20877"
                                               ><span lang="bo-x-ewts" class="hasSpace"
-                                                >bka' ma shin tu rgyas pa (kaH thog)</span
+                                                >gdams ngag mdzod</span
                                               ></span
                                             ></span
                                           ></span
@@ -3509,7 +3578,8 @@
               <div data-prop="bdo:workHasInstance" class="">
                 <h3>
                   <span
-                    ><a class="propref" target="_blank"><span lang="">Other versions</span></a
+                    ><span class="propref" target="_blank" rel="noopener noreferrer"
+                      ><span lang="">Other versions</span></span
                     >:</span
                   >
                 </h3>
@@ -3522,10 +3592,13 @@
                         background-image: url('https://iiif.bdrc.io/bdr:I4PD2088::I4PD20880003.jpg/full/!2000,145/0/default.jpg');
                       "
                       ><img
-                        src="https://iiif.bdrc.io/bdr:I4PD2088::I4PD20880003.jpg/full/!2000,145/0/default.jpg" /></a
+                        alt="thumbnail"
+                        src="https://iiif.bdrc.io/bdr:I4PD2088::I4PD20880003.jpg/full/!2000,145/0/default.jpg"
+                      /><span class="visually-hidden">Go to resource.instanceF page</span></a
                     ><span lang="bo-x-ewts" class="ulink hasSpace"
                       ><a class="urilink prefLabel" href="/show/bdr:MW4PD2043"
-                        >snying thig ya bzhi</a
+                        ><span class="visually-hidden">Go to snying thig ya bzhi page</span>snying
+                        thig ya bzhi</a
                       ></span
                     ><span class="lang">bo-x-ewts</span
                     ><svg
@@ -3541,7 +3614,7 @@
                     </svg>
                     <div class="hover-menu">
                       <div>
-                        <span id="anchor"><img src="/icons/info.svg" /></span>
+                        <span class="anchorH"><img alt="info icon" src="/icons/info.svg" /></span>
                       </div>
                     </div>
                   </h4>
@@ -3553,10 +3626,13 @@
                         background-image: url('https://iiif.bdrc.io/bdr:I2PD19082::I2PD190820003.tif/full/!2000,145/0/default.jpg');
                       "
                       ><img
-                        src="https://iiif.bdrc.io/bdr:I2PD19082::I2PD190820003.tif/full/!2000,145/0/default.jpg" /></a
+                        alt="thumbnail"
+                        src="https://iiif.bdrc.io/bdr:I2PD19082::I2PD190820003.tif/full/!2000,145/0/default.jpg"
+                      /><span class="visually-hidden">Go to resource.instanceF page</span></a
                     ><span lang="bo-x-ewts" class="ulink hasSpace"
                       ><a class="urilink prefLabel" href="/show/bdr:MW2PD19078"
-                        >snying thig ya bzhi</a
+                        ><span class="visually-hidden">Go to snying thig ya bzhi page</span>snying
+                        thig ya bzhi</a
                       ></span
                     ><span class="lang">bo-x-ewts</span
                     ><svg
@@ -3572,7 +3648,7 @@
                     </svg>
                     <div class="hover-menu">
                       <div>
-                        <span id="anchor"><img src="/icons/info.svg" /></span>
+                        <span class="anchorH"><img alt="info icon" src="/icons/info.svg" /></span>
                       </div>
                     </div>
                   </h4>
@@ -3584,10 +3660,13 @@
                         background-image: url('https://iiif.bdrc.io/bdr:I3CN4537::I3CN45370003.jpg/full/!2000,145/0/default.jpg');
                       "
                       ><img
-                        src="https://iiif.bdrc.io/bdr:I3CN4537::I3CN45370003.jpg/full/!2000,145/0/default.jpg" /></a
+                        alt="thumbnail"
+                        src="https://iiif.bdrc.io/bdr:I3CN4537::I3CN45370003.jpg/full/!2000,145/0/default.jpg"
+                      /><span class="visually-hidden">Go to resource.instanceF page</span></a
                     ><span lang="bo-x-ewts" class="ulink hasSpace"
                       ><a class="urilink prefLabel" href="/show/bdr:MW3CN501"
-                        >snying thig ya bzhi</a
+                        ><span class="visually-hidden">Go to snying thig ya bzhi page</span>snying
+                        thig ya bzhi</a
                       ></span
                     ><span class="lang">bo-x-ewts</span
                     ><svg
@@ -3603,7 +3682,7 @@
                     </svg>
                     <div class="hover-menu">
                       <div>
-                        <span id="anchor"><img src="/icons/info.svg" /></span>
+                        <span class="anchorH"><img alt="info icon" src="/icons/info.svg" /></span>
                       </div>
                     </div>
                   </h4>
@@ -3615,9 +3694,12 @@
                         background-image: url('https://iiif.bdrc.io/bdr:I3CN3151::I3CN31510003.jpg/full/!2000,145/0/default.jpg');
                       "
                       ><img
-                        src="https://iiif.bdrc.io/bdr:I3CN3151::I3CN31510003.jpg/full/!2000,145/0/default.jpg" /></a
+                        alt="thumbnail"
+                        src="https://iiif.bdrc.io/bdr:I3CN3151::I3CN31510003.jpg/full/!2000,145/0/default.jpg"
+                      /><span class="visually-hidden">Go to resource.instanceF page</span></a
                     ><span lang="bo-x-ewts" class="ulink hasSpace"
                       ><a class="urilink prefLabel" href="/show/bdr:MW3CN3025"
+                        ><span class="visually-hidden">Go to snying thig ya bzhi chen mo page</span
                         >snying thig ya bzhi chen mo</a
                       ></span
                     ><span class="lang">bo-x-ewts</span
@@ -3634,7 +3716,7 @@
                     </svg>
                     <div class="hover-menu">
                       <div>
-                        <span id="anchor"><img src="/icons/info.svg" /></span>
+                        <span class="anchorH"><img alt="info icon" src="/icons/info.svg" /></span>
                       </div>
                     </div>
                   </h4>
@@ -3646,9 +3728,13 @@
                         background-image: url('https://iiif.bdrc.io/bdr:I1KG10075::I1KG100750003.jpg/full/!2000,145/0/default.jpg');
                       "
                       ><img
-                        src="https://iiif.bdrc.io/bdr:I1KG10075::I1KG100750003.jpg/full/!2000,145/0/default.jpg" /></a
+                        alt="thumbnail"
+                        src="https://iiif.bdrc.io/bdr:I1KG10075::I1KG100750003.jpg/full/!2000,145/0/default.jpg"
+                      /><span class="visually-hidden">Go to resource.instanceF page</span></a
                     ><span lang="bo-x-ewts" class="ulink hasSpace"
                       ><a class="urilink prefLabel" href="/show/bdr:MW1KG9720"
+                        ><span class="visually-hidden"
+                          >Go to snying thig ya bzhi/ (a 'dzom par ma/) page</span
                         >snying thig ya bzhi/ (a 'dzom par ma/)</a
                       ></span
                     ><span class="lang">bo-x-ewts</span
@@ -3665,7 +3751,7 @@
                     </svg>
                     <div class="hover-menu">
                       <div>
-                        <span id="anchor"><img src="/icons/info.svg" /></span>
+                        <span class="anchorH"><img alt="info icon" src="/icons/info.svg" /></span>
                       </div>
                     </div>
                   </h4>
@@ -3677,9 +3763,13 @@
                         background-image: url('https://iiif.bdrc.io/bdr:I1KG12050::I1KG120500003.jpg/full/!2000,145/0/default.jpg');
                       "
                       ><img
-                        src="https://iiif.bdrc.io/bdr:I1KG12050::I1KG120500003.jpg/full/!2000,145/0/default.jpg" /></a
+                        alt="thumbnail"
+                        src="https://iiif.bdrc.io/bdr:I1KG12050::I1KG120500003.jpg/full/!2000,145/0/default.jpg"
+                      /><span class="visually-hidden">Go to resource.instanceF page</span></a
                     ><span lang="bo-x-ewts" class="ulink hasSpace"
                       ><a class="urilink prefLabel" href="/show/bdr:MW1KG12048"
+                        ><span class="visually-hidden"
+                          >Go to snying thig ya bzhi/ (dar thang glog klad par ma/) page</span
                         >snying thig ya bzhi/ (dar thang glog klad par ma/)</a
                       ></span
                     ><span class="lang">bo-x-ewts</span
@@ -3696,7 +3786,7 @@
                     </svg>
                     <div class="hover-menu">
                       <div>
-                        <span id="anchor"><img src="/icons/info.svg" /></span>
+                        <span class="anchorH"><img alt="info icon" src="/icons/info.svg" /></span>
                       </div>
                     </div>
                   </h4>
@@ -3705,9 +3795,11 @@
                       class="images-thumb no-thumb 2b"
                       href="/show/bdr:MW4PD2049"
                       style="background-image: url('/icons/header/instance.svg')"
-                    ></a
+                      ><span class="visually-hidden">Go to resource.instanceF page</span></a
                     ><span lang="bo-x-ewts" class="ulink hasSpace"
                       ><a class="urilink prefLabel" href="/show/bdr:MW4PD2049"
+                        ><span class="visually-hidden"
+                          >Go to snying thig ya bzhi/(sde dge/) page</span
                         >snying thig ya bzhi/(sde dge/)</a
                       ></span
                     ><span class="lang">bo-x-ewts</span
@@ -3724,34 +3816,38 @@
                     </svg>
                     <div class="hover-menu">
                       <div>
-                        <span id="anchor"><img src="/icons/info.svg" /></span>
+                        <span class="anchorH"><img alt="info icon" src="/icons/info.svg" /></span>
                       </div>
                     </div>
                   </h4>
                 </div>
                 <span class="expand linkToVersions"
-                  ><a href="/osearch/associated/WA3CN501/search">Browse all 7</a></span
+                  ><a href="/osearch/associated/WA3CN501/search"
+                    >Browse all 7<span class="visually-hidden">Go to Browse all 7 page</span></a
+                  ></span
                 >
               </div>
               <div data-prop="bdo:hasTitle" class="">
                 <h3>
                   <span
-                    ><a
+                    ><span
                       class="propref"
                       href="http://purl.bdrc.io/ontology/core/hasTitle"
                       target="_blank"
-                      ><span lang="en">title</span></a
+                      rel="noopener noreferrer"
+                      ><span lang="en">title</span></span
                     >:</span
                   >
                 </h3>
                 <div class="group">
                   <div class="sub">
                     <h4 data-prop="bdo:hasTitle" class="first type">
-                      <a
+                      <span
                         class="propref"
                         href="http://purl.bdrc.io/ontology/core/CoverTitle"
                         target="_blank"
-                        ><span lang="en" class="hasSpace">Cover Title</span></a
+                        rel="noopener noreferrer"
+                        ><span lang="en" class="hasSpace">Cover Title</span></span
                       >:
                     </h4>
                     <h4 class="label hasTogHovM">
@@ -3759,18 +3855,19 @@
                       ><span class="lang">bo-x-ewts</span>
                       <div class="hover-menu">
                         <div>
-                          <span id="anchor"><img src="/icons/info.svg" /></span>
+                          <span class="anchorH"><img alt="info icon" src="/icons/info.svg" /></span>
                         </div>
                       </div>
                     </h4>
                   </div>
                   <div class="sub">
                     <h4 data-prop="bdo:hasTitle" class="first type">
-                      <a
+                      <span
                         class="propref"
                         href="http://purl.bdrc.io/ontology/core/TitlePageTitle"
                         target="_blank"
-                        ><span lang="en" class="hasSpace">Title page title</span></a
+                        rel="noopener noreferrer"
+                        ><span lang="en" class="hasSpace">Title page title</span></span
                       >:
                     </h4>
                     <h4 class="label hasTogHovM">
@@ -3780,7 +3877,7 @@
                       ><span class="lang">en</span>
                       <div class="hover-menu">
                         <div>
-                          <span id="anchor"><img src="/icons/info.svg" /></span>
+                          <span class="anchorH"><img alt="info icon" src="/icons/info.svg" /></span>
                         </div>
                       </div>
                     </h4>
@@ -3790,32 +3887,35 @@
               <div data-prop="bdo:instanceEvent" class="">
                 <h3>
                   <span
-                    ><a
+                    ><span
                       class="propref"
                       href="http://purl.bdrc.io/ontology/core/instanceEvent"
                       target="_blank"
-                      ><span lang="en">event</span></a
+                      rel="noopener noreferrer"
+                      ><span lang="en">event</span></span
                     >:</span
                   >
                 </h3>
                 <div class="group">
                   <div class="sub">
                     <h4 data-prop="bdo:instanceEvent" class="first type">
-                      <a
+                      <span
                         class="propref"
                         href="http://purl.bdrc.io/ontology/core/PublishedEvent"
                         target="_blank"
-                        ><span lang="en">Published</span></a
+                        rel="noopener noreferrer"
+                        ><span lang="en">Published</span></span
                       >:
                     </h4>
                     <div class="subgroup">
                       <div class="subsub">
                         <h4 data-prop="bdo:notBefore" class="first prop">
-                          <a
+                          <span
                             class="propref"
                             href="http://purl.bdrc.io/ontology/core/notBefore"
                             target="_blank"
-                            ><span lang="en" class="hasSpace">not before</span></a
+                            rel="noopener noreferrer"
+                            ><span lang="en" class="hasSpace">not before</span></span
                           >:
                         </h4>
                         <h4 class="hasTogHovM">
@@ -3833,18 +3933,21 @@
                           </svg>
                           <div class="hover-menu">
                             <div>
-                              <span id="anchor"><img src="/icons/info.svg" /></span>
+                              <span class="anchorH"
+                                ><img alt="info icon" src="/icons/info.svg"
+                              /></span>
                             </div>
                           </div>
                         </h4>
                       </div>
                       <div class="subsub">
                         <h4 data-prop="bdo:notAfter" class="first prop">
-                          <a
+                          <span
                             class="propref"
                             href="http://purl.bdrc.io/ontology/core/notAfter"
                             target="_blank"
-                            ><span lang="en" class="hasSpace">not after</span></a
+                            rel="noopener noreferrer"
+                            ><span lang="en" class="hasSpace">not after</span></span
                           >:
                         </h4>
                         <h4 class="hasTogHovM">
@@ -3862,18 +3965,21 @@
                           </svg>
                           <div class="hover-menu">
                             <div>
-                              <span id="anchor"><img src="/icons/info.svg" /></span>
+                              <span class="anchorH"
+                                ><img alt="info icon" src="/icons/info.svg"
+                              /></span>
                             </div>
                           </div>
                         </h4>
                       </div>
                       <div class="subsub">
                         <h4 data-prop="bdo:eventWhen" class="first prop">
-                          <a
+                          <span
                             class="propref"
                             href="http://purl.bdrc.io/ontology/core/eventWhen"
                             target="_blank"
-                            ><span lang="en">when</span></a
+                            rel="noopener noreferrer"
+                            ><span lang="en">when</span></span
                           >:
                         </h4>
                         <h4 class="hasTogHovM">
@@ -3890,7 +3996,9 @@
                           </svg>
                           <div class="hover-menu">
                             <div>
-                              <span id="anchor"><img src="/icons/info.svg" /></span>
+                              <span class="anchorH"
+                                ><img alt="info icon" src="/icons/info.svg"
+                              /></span>
                             </div>
                           </div>
                         </h4>
@@ -3902,11 +4010,12 @@
               <div data-prop="bdo:publisherName" class="">
                 <h3>
                   <span
-                    ><a
+                    ><span
                       class="propref"
                       href="http://purl.bdrc.io/ontology/core/publisherName"
                       target="_blank"
-                      ><span lang="en" class="hasSpace">publisher name</span></a
+                      rel="noopener noreferrer"
+                      ><span lang="en" class="hasSpace">publisher name</span></span
                     >:</span
                   >
                 </h3>
@@ -3930,7 +4039,7 @@
                     </svg>
                     <div class="hover-menu">
                       <div>
-                        <span id="anchor"><img src="/icons/info.svg" /></span>
+                        <span class="anchorH"><img alt="info icon" src="/icons/info.svg" /></span>
                       </div>
                     </div>
                   </h4>
@@ -3939,11 +4048,12 @@
               <div data-prop="bdo:publisherLocation" class="">
                 <h3>
                   <span
-                    ><a
+                    ><span
                       class="propref"
                       href="http://purl.bdrc.io/ontology/core/publisherLocation"
                       target="_blank"
-                      ><span lang="en" class="hasSpace">publisher location</span></a
+                      rel="noopener noreferrer"
+                      ><span lang="en" class="hasSpace">publisher location</span></span
                     >:</span
                   >
                 </h3>
@@ -3965,7 +4075,7 @@
                     </svg>
                     <div class="hover-menu">
                       <div>
-                        <span id="anchor"><img src="/icons/info.svg" /></span>
+                        <span class="anchorH"><img alt="info icon" src="/icons/info.svg" /></span>
                       </div>
                     </div>
                   </h4>
@@ -3976,11 +4086,12 @@
               <div data-prop="adm:metadataLegal" class="">
                 <h3>
                   <span
-                    ><a
+                    ><span
                       class="propref"
                       href="http://purl.bdrc.io/ontology/admin/metadataLegal"
                       target="_blank"
-                      ><span lang="en" class="hasSpace">metadata legal info</span></a
+                      rel="noopener noreferrer"
+                      ><span lang="en" class="hasSpace">metadata legal info</span></span
                     >:</span
                   >
                 </h3>
@@ -3988,6 +4099,8 @@
                   <h4 class="hasTogHovM">
                     <span lang="en" class="ulink generic bda provider hasIcon hasSpace"
                       ><a class="urilink prefLabel" href="/show/bda:LD_BDRC_CC0"
+                        ><span class="visually-hidden"
+                          >Go to Provided by BDRC under the CC0 license page</span
                         >Provided by BDRC under the CC0 license</a
                       ></span
                     ><span class="lang">en</span
@@ -4004,7 +4117,7 @@
                     </svg>
                     <div class="hover-menu">
                       <div>
-                        <span id="anchor"><img src="/icons/info.svg" /></span>
+                        <span class="anchorH"><img alt="info icon" src="/icons/info.svg" /></span>
                       </div>
                     </div>
                   </h4>
@@ -4013,11 +4126,12 @@
               <div data-prop="bdo:script" class="">
                 <h3>
                   <span
-                    ><a
+                    ><span
                       class="propref"
                       href="http://purl.bdrc.io/ontology/core/script"
                       target="_blank"
-                      ><span lang="en">script</span></a
+                      rel="noopener noreferrer"
+                      ><span lang="en">script</span></span
                     >:</span
                   >
                 </h3>
@@ -4037,7 +4151,7 @@
                     </svg>
                     <div class="hover-menu">
                       <div>
-                        <span id="anchor"><img src="/icons/info.svg" /></span>
+                        <span class="anchorH"><img alt="info icon" src="/icons/info.svg" /></span>
                       </div>
                     </div>
                   </h4>
@@ -4046,11 +4160,12 @@
               <div data-prop="bdo:authorshipStatement" class="">
                 <h3>
                   <span
-                    ><a
+                    ><span
                       class="propref"
                       href="http://purl.bdrc.io/ontology/core/authorshipStatement"
                       target="_blank"
-                      ><span lang="en" class="hasSpace">authorship statement</span></a
+                      rel="noopener noreferrer"
+                      ><span lang="en" class="hasSpace">authorship statement</span></span
                     >:</span
                   >
                 </h3>
@@ -4074,7 +4189,7 @@
                     </svg>
                     <div class="hover-menu">
                       <div>
-                        <span id="anchor"><img src="/icons/info.svg" /></span>
+                        <span class="anchorH"><img alt="info icon" src="/icons/info.svg" /></span>
                       </div>
                     </div>
                   </h4>
@@ -4083,11 +4198,12 @@
               <div data-prop="bdo:hasSourcePrintery" class="">
                 <h3>
                   <span
-                    ><a
+                    ><span
                       class="propref"
                       href="http://purl.bdrc.io/ontology/core/hasSourcePrintery"
                       target="_blank"
-                      ><span lang="en" class="hasSpace">place of production</span></a
+                      rel="noopener noreferrer"
+                      ><span lang="en" class="hasSpace">place of production</span></span
                     >:</span
                   >
                 </h3>
@@ -4095,6 +4211,7 @@
                   <h4 class="hasTogHovM">
                     <span lang="bo-x-ewts" class="ulink hasSpace"
                       ><a class="urilink prefLabel" href="/show/bdr:G3JT12503"
+                        ><span class="visually-hidden">Go to a 'dzom chos sgar par khang page</span
                         >a 'dzom chos sgar par khang</a
                       ></span
                     ><span class="lang">bo-x-ewts</span
@@ -4111,7 +4228,7 @@
                     </svg>
                     <div class="hover-menu">
                       <div>
-                        <span id="anchor"><img src="/icons/info.svg" /></span>
+                        <span class="anchorH"><img alt="info icon" src="/icons/info.svg" /></span>
                       </div>
                     </div>
                   </h4>
@@ -4120,11 +4237,12 @@
               <div data-prop="bdo:biblioNote" class="">
                 <h3>
                   <span
-                    ><a
+                    ><span
                       class="propref"
                       href="http://purl.bdrc.io/ontology/core/biblioNote"
                       target="_blank"
-                      ><span lang="">Note</span></a
+                      rel="noopener noreferrer"
+                      ><span lang="">Note</span></span
                     >:</span
                   >
                 </h3>
@@ -4148,7 +4266,7 @@
                     </svg>
                     <div class="hover-menu">
                       <div>
-                        <span id="anchor"><img src="/icons/info.svg" /></span>
+                        <span class="anchorH"><img alt="info icon" src="/icons/info.svg" /></span>
                       </div>
                     </div>
                   </h4>
@@ -4157,11 +4275,12 @@
               <div data-prop="bdo:copyrightStatus" class="">
                 <h3>
                   <span
-                    ><a
+                    ><span
                       class="propref"
                       href="http://purl.bdrc.io/ontology/core/copyrightStatus"
                       target="_blank"
-                      ><span lang="en" class="hasSpace">copyright status</span></a
+                      rel="noopener noreferrer"
+                      ><span lang="en" class="hasSpace">copyright status</span></span
                     >:</span
                   >
                 </h3>
@@ -4182,7 +4301,7 @@
                     </svg>
                     <div class="hover-menu">
                       <div>
-                        <span id="anchor"><img src="/icons/info.svg" /></span>
+                        <span class="anchorH"><img alt="info icon" src="/icons/info.svg" /></span>
                       </div>
                     </div>
                   </h4>
@@ -4191,11 +4310,12 @@
               <div data-prop="bdo:inCollection" class="">
                 <h3>
                   <span
-                    ><a
+                    ><span
                       class="propref"
                       href="http://purl.bdrc.io/ontology/core/inCollection"
                       target="_blank"
-                      ><span lang="en" class="hasSpace">in collection</span></a
+                      rel="noopener noreferrer"
+                      ><span lang="en" class="hasSpace">in collection</span></span
                     >:</span
                   >
                 </h3>
@@ -4203,7 +4323,8 @@
                   <h4 class="hasTogHovM">
                     <span lang="en" class="ulink hasSpace"
                       ><a class="urilink prefLabel" href="/show/bdr:PR1PL480"
-                        >PL480 Collection</a
+                        ><span class="visually-hidden">Go to PL480 Collection page</span>PL480
+                        Collection</a
                       ></span
                     ><span class="lang">en</span
                     ><svg
@@ -4219,7 +4340,7 @@
                     </svg>
                     <div class="hover-menu">
                       <div>
-                        <span id="anchor"><img src="/icons/info.svg" /></span>
+                        <span class="anchorH"><img alt="info icon" src="/icons/info.svg" /></span>
                       </div>
                     </div>
                   </h4>
@@ -4230,11 +4351,12 @@
               <div data-prop="adm:metadataLegal" class="">
                 <h3>
                   <span
-                    ><a
+                    ><span
                       class="propref"
                       href="http://purl.bdrc.io/ontology/admin/metadataLegal"
                       target="_blank"
-                      ><span lang="en" class="hasSpace">metadata legal info</span></a
+                      rel="noopener noreferrer"
+                      ><span lang="en" class="hasSpace">metadata legal info</span></span
                     >:</span
                   >
                 </h3>
@@ -4242,6 +4364,8 @@
                   <h4 class="hasTogHovM">
                     <span lang="en" class="ulink generic bda provider hasIcon hasSpace"
                       ><a class="urilink prefLabel" href="/show/bda:LD_BDRC_CC0"
+                        ><span class="visually-hidden"
+                          >Go to Provided by BDRC under the CC0 license page</span
                         >Provided by BDRC under the CC0 license</a
                       ></span
                     ><span class="lang">en</span
@@ -4258,7 +4382,7 @@
                     </svg>
                     <div class="hover-menu">
                       <div>
-                        <span id="anchor"><img src="/icons/info.svg" /></span>
+                        <span class="anchorH"><img alt="info icon" src="/icons/info.svg" /></span>
                       </div>
                     </div>
                   </h4>
@@ -4272,7 +4396,8 @@
               <div data-prop="tmp:BDRCworkId" class="">
                 <h3>
                   <span
-                    ><a class="propref" target="_blank"><span lang="">Work Page</span></a
+                    ><span class="propref" target="_blank" rel="noopener noreferrer"
+                      ><span lang="">Work Page</span></span
                     >:</span
                   >
                 </h3>
@@ -4280,6 +4405,9 @@
                   <h4 class="hasTogHovM">
                     <span
                       ><a href="/show/bdr:WA3CN501"
+                        ><span class="visually-hidden"
+                          >Go to See the "work" page which combines all the different versions of
+                          this text. page</span
                         >See the "work" page which combines all the different versions of this
                         text.</a
                       ><span> </span>The ID of this version is MW12827.<br />The overarching work ID
@@ -4306,7 +4434,7 @@
                     </svg>
                     <div class="hover-menu">
                       <div>
-                        <span id="anchor"><img src="/icons/info.svg" /></span>
+                        <span class="anchorH"><img alt="info icon" src="/icons/info.svg" /></span>
                       </div>
                     </div>
                   </h4>
@@ -4315,20 +4443,23 @@
               <div data-prop="bf:identifiedBy" class="">
                 <h3>
                   <span
-                    ><a class="propref" target="_blank"><span lang="">Identified By</span></a
+                    ><span class="propref" target="_blank" rel="noopener noreferrer"
+                      ><span lang="">Identified By</span></span
                     >:</span
                   >
                 </h3>
                 <div class="group">
                   <div class="sub">
                     <h4 data-prop="bf:identifiedBy" class="first type">
-                      <a class="propref" target="_blank"><span lang="en">LCCN</span></a
+                      <span class="propref" target="_blank" rel="noopener noreferrer"
+                        ><span lang="en">LCCN</span></span
                       >:
                     </h4>
                     <div class="subgroup">
                       <div class="subsub">
                         <h4 data-prop="rdf:value" class="first prop">
-                          <a class="propref" target="_blank"><span lang="">value</span></a
+                          <span class="propref" target="_blank" rel="noopener noreferrer"
+                            ><span lang="">value</span></span
                           >:
                         </h4>
                         <h4 class="hasTogHovM">
@@ -4345,7 +4476,9 @@
                           </svg>
                           <div class="hover-menu">
                             <div>
-                              <span id="anchor"><img src="/icons/info.svg" /></span>
+                              <span class="anchorH"
+                                ><img alt="info icon" src="/icons/info.svg"
+                              /></span>
                             </div>
                           </div>
                         </h4>
@@ -4354,14 +4487,15 @@
                   </div>
                   <div class="sub">
                     <h4 data-prop="bf:identifiedBy" class="first type">
-                      <a class="propref" target="_blank"
-                        ><span lang="en" class="hasSpace">LCC call number</span></a
+                      <span class="propref" target="_blank" rel="noopener noreferrer"
+                        ><span lang="en" class="hasSpace">LCC call number</span></span
                       >:
                     </h4>
                     <div class="subgroup">
                       <div class="subsub">
                         <h4 data-prop="rdf:value" class="first prop">
-                          <a class="propref" target="_blank"><span lang="">value</span></a
+                          <span class="propref" target="_blank" rel="noopener noreferrer"
+                            ><span lang="">value</span></span
                           >:
                         </h4>
                         <h4 class="hasTogHovM">
@@ -4378,7 +4512,9 @@
                           </svg>
                           <div class="hover-menu">
                             <div>
-                              <span id="anchor"><img src="/icons/info.svg" /></span>
+                              <span class="anchorH"
+                                ><img alt="info icon" src="/icons/info.svg"
+                              /></span>
                             </div>
                           </div>
                         </h4>
@@ -4387,17 +4523,19 @@
                   </div>
                   <div class="sub">
                     <h4 data-prop="bf:identifiedBy" class="first type">
-                      <a
+                      <span
                         class="propref"
                         target="_blank"
+                        rel="noopener noreferrer"
                         href="http://purl.bdrc.io/resource/HollisId"
-                        ><span lang="en" class="hasSpace">hollis id</span></a
+                        ><span lang="en" class="hasSpace">hollis id</span></span
                       >:
                     </h4>
                     <div class="subgroup">
                       <div class="subsub">
                         <h4 data-prop="rdf:value" class="first prop">
-                          <a class="propref" target="_blank"><span lang="">value</span></a
+                          <span class="propref" target="_blank" rel="noopener noreferrer"
+                            ><span lang="">value</span></span
                           >:
                         </h4>
                         <h4 class="hasTogHovM">
@@ -4414,7 +4552,9 @@
                           </svg>
                           <div class="hover-menu">
                             <div>
-                              <span id="anchor"><img src="/icons/info.svg" /></span>
+                              <span class="anchorH"
+                                ><img alt="info icon" src="/icons/info.svg"
+                              /></span>
                             </div>
                           </div>
                         </h4>
@@ -4426,11 +4566,12 @@
               <div data-prop="bdo:printMethod" class="">
                 <h3>
                   <span
-                    ><a
+                    ><span
                       class="propref"
                       href="http://purl.bdrc.io/ontology/core/printMethod"
                       target="_blank"
-                      ><span lang="en" class="hasSpace">print method</span></a
+                      rel="noopener noreferrer"
+                      ><span lang="en" class="hasSpace">print method</span></span
                     >:</span
                   >
                 </h3>
@@ -4450,7 +4591,7 @@
                     </svg>
                     <div class="hover-menu">
                       <div>
-                        <span id="anchor"><img src="/icons/info.svg" /></span>
+                        <span class="anchorH"><img alt="info icon" src="/icons/info.svg" /></span>
                       </div>
                     </div>
                   </h4>
@@ -4459,11 +4600,12 @@
               <div data-prop="bdo:material" class="">
                 <h3>
                   <span
-                    ><a
+                    ><span
                       class="propref"
                       href="http://purl.bdrc.io/ontology/core/material"
                       target="_blank"
-                      ><span lang="en">material</span></a
+                      rel="noopener noreferrer"
+                      ><span lang="en">material</span></span
                     >:</span
                   >
                 </h3>
@@ -4483,7 +4625,7 @@
                     </svg>
                     <div class="hover-menu">
                       <div>
-                        <span id="anchor"><img src="/icons/info.svg" /></span>
+                        <span class="anchorH"><img alt="info icon" src="/icons/info.svg" /></span>
                       </div>
                     </div>
                   </h4>
@@ -4492,11 +4634,12 @@
               <div data-prop="bdo:binding" class="">
                 <h3>
                   <span
-                    ><a
+                    ><span
                       class="propref"
                       href="http://purl.bdrc.io/ontology/core/binding"
                       target="_blank"
-                      ><span lang="en">binding</span></a
+                      rel="noopener noreferrer"
+                      ><span lang="en">binding</span></span
                     >:</span
                   >
                 </h3>
@@ -4517,7 +4660,7 @@
                     </svg>
                     <div class="hover-menu">
                       <div>
-                        <span id="anchor"><img src="/icons/info.svg" /></span>
+                        <span class="anchorH"><img alt="info icon" src="/icons/info.svg" /></span>
                       </div>
                     </div>
                   </h4>
@@ -4526,11 +4669,12 @@
               <div data-prop="bdo:numberOfVolumes" class="">
                 <h3>
                   <span
-                    ><a
+                    ><span
                       class="propref"
                       href="http://purl.bdrc.io/ontology/core/numberOfVolumes"
                       target="_blank"
-                      ><span lang="en" class="hasSpace">number of volumes</span></a
+                      rel="noopener noreferrer"
+                      ><span lang="en" class="hasSpace">number of volumes</span></span
                     >:</span
                   >
                 </h3>
@@ -4550,7 +4694,7 @@
                     </svg>
                     <div class="hover-menu">
                       <div>
-                        <span id="anchor"><img src="/icons/info.svg" /></span>
+                        <span class="anchorH"><img alt="info icon" src="/icons/info.svg" /></span>
                       </div>
                     </div>
                   </h4>
@@ -4559,11 +4703,12 @@
               <div data-prop="bdo:note" class="has-collapse custom">
                 <h3>
                   <span
-                    ><a
+                    ><span
                       class="propref"
                       href="http://purl.bdrc.io/ontology/core/note"
                       target="_blank"
-                      ><span>Notes</span></a
+                      rel="noopener noreferrer"
+                      ><span>Notes</span></span
                     >:</span
                   >
                 </h3>
@@ -4591,7 +4736,7 @@
                       </div>
                       <div class="hover-menu">
                         <div>
-                          <span id="anchor"><img src="/icons/info.svg" /></span>
+                          <span class="anchorH"><img alt="info icon" src="/icons/info.svg" /></span>
                         </div>
                       </div>
                     </div>
@@ -4620,7 +4765,7 @@
                       </div>
                       <div class="hover-menu">
                         <div>
-                          <span id="anchor"><img src="/icons/info.svg" /></span>
+                          <span class="anchorH"><img alt="info icon" src="/icons/info.svg" /></span>
                         </div>
                       </div>
                     </div>
@@ -4715,10 +4860,10 @@
         t();
       })([]);
     </script>
-    <script onerror="scriptError(this)" src="/static/js/2.1f9f67d5.chunk.js"></script>
-    <script onerror="scriptError(this)" src="/static/js/main.344718ac.chunk.js"></script>
+    <script onerror="scriptError(this)" src="/static/js/2.9d3e2d57.chunk.js"></script>
+    <script onerror="scriptError(this)" src="/static/js/main.ed85c1ce.chunk.js"></script>
     <iframe
-      src="https://bdrc-io.auth0.com/authorize?client_id=i0CoWiN3twEMPCA85f0aD9acuIVIFj0J&amp;response_type=token%20id_token&amp;redirect_uri=http%3A%2F%2Flocalhost%3A5050%2Fscripts%2Fsilent_callback.html&amp;scope=openid%20profile&amp;audience=https%3A%2F%2Fbdrc-io.auth0.com%2Fapi%2Fv2%2F&amp;_send_telemetry=true&amp;_times_to_retry_failed_requests=0&amp;token_issuer=https%3A%2F%2Fbdrc-io.auth0.com%2F&amp;root_url=https%3A%2F%2Fbdrc-io.auth0.com&amp;universal_login_page=true&amp;response_mode=fragment&amp;state=rpIospKQ0HQjiShackDIrv2m8m8dkw5Z&amp;nonce=J-HQX0J37v.EiSyxZFfqFtJBN_H.NHmN&amp;prompt=none&amp;auth0Client=eyJuYW1lIjoiYXV0aDAuanMiLCJ2ZXJzaW9uIjoiOS4xNi4yIn0%3D"
+      src="https://bdrc-io.auth0.com/authorize?client_id=i0CoWiN3twEMPCA85f0aD9acuIVIFj0J&amp;response_type=token%20id_token&amp;redirect_uri=http%3A%2F%2Flocalhost%3A5050%2Fscripts%2Fsilent_callback.html&amp;scope=openid%20profile&amp;audience=https%3A%2F%2Fbdrc-io.auth0.com%2Fapi%2Fv2%2F&amp;_send_telemetry=true&amp;_times_to_retry_failed_requests=0&amp;token_issuer=https%3A%2F%2Fbdrc-io.auth0.com%2F&amp;root_url=https%3A%2F%2Fbdrc-io.auth0.com&amp;universal_login_page=true&amp;response_mode=fragment&amp;state=VzqlLLAEx93jCtuGnQHzdtCf-zkNvAO6&amp;nonce=xe_J0V8TYCkpdKZ8-2MiNfe6gcY_Dsfl&amp;prompt=none&amp;auth0Client=eyJuYW1lIjoiYXV0aDAuanMiLCJ2ZXJzaW9uIjoiOS4xNi4yIn0%3D"
       style="display: none"
     ></iframe>
   </body>
