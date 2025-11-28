@@ -25,7 +25,7 @@
       content="The Buddhist Digital Archives by the Buddhist Digital Resource Center. A cooperative platform for expanding access to Buddhist literature. Explore the millions of pages of texts contributed by BDRC and its many partners."
     />
     <link href="/static/css/2.adc7c626.chunk.css" rel="stylesheet" />
-    <link href="/static/css/main.7ed1358b.chunk.css" rel="stylesheet" />
+    <link href="/static/css/main.42ce2251.chunk.css" rel="stylesheet" />
     <style type="text/css"></style>
     <style data-jss="" data-meta="MuiTouchRipple">
       .jss20 {
@@ -556,8 +556,8 @@
         href="https://cdn.jsdelivr.net/npm/instantsearch.css@7/themes/satellite-min.css"
       />
       <div
-        title="e16f61c4-6a85-4211-9b2e-0830f2a8013e"
-        data-v="e16f61c4-6a85-4211-9b2e-0830f2a8013e"
+        title="6e244356-5c23-4a13-a2a4-db7dee8e7d65"
+        data-v="6e244356-5c23-4a13-a2a4-db7dee8e7d65"
       ></div>
       <div id="uiLangPopup">
         <div class="bg"></div>
@@ -887,9 +887,7 @@
               <div data-prop="tmp:versionTitle" class="">
                 <h3>
                   <span
-                    ><span class="propref" target="_blank" rel="noopener noreferrer"
-                      ><span lang="">version Title</span></span
-                    >:</span
+                    ><button class="propref"><span lang="">version Title</span></button>:</span
                   >
                 </h3>
                 <div class="group">
@@ -910,7 +908,9 @@
                     </svg>
                     <div class="hover-menu">
                       <div>
-                        <span class="anchorH"><img alt="info icon" src="/icons/info.svg" /></span>
+                        <button class="anchorH">
+                          <img alt="info icon" src="/icons/info.svg" />
+                        </button>
                       </div>
                     </div>
                   </h4>
@@ -919,35 +919,35 @@
               <div data-prop="bdo:creator" class="">
                 <h3>
                   <span
-                    ><span
+                    ><a
                       class="propref"
                       href="http://purl.bdrc.io/ontology/core/creator"
                       target="_blank"
                       rel="noopener noreferrer"
-                      ><span lang="en" class="hasSpace">has creator</span></span
+                      ><span lang="en" class="hasSpace">has creator</span></a
                     >:</span
                   >
                 </h3>
                 <div class="group">
                   <div class="sub">
                     <h4 data-prop="bdo:creator" class="first type">
-                      <span
+                      <a
                         class="propref"
                         href="http://purl.bdrc.io/ontology/core/AgentAsCreator"
                         target="_blank"
                         rel="noopener noreferrer"
-                        ><span lang="en">creator</span></span
+                        ><span lang="en">creator</span></a
                       >:
                     </h4>
                     <div class="subgroup">
                       <div class="subsub">
                         <h4 data-prop="bdo:role" class="first prop">
-                          <span
+                          <a
                             class="propref"
                             href="http://purl.bdrc.io/ontology/core/role"
                             target="_blank"
                             rel="noopener noreferrer"
-                            ><span lang="en">role</span></span
+                            ><span lang="en">role</span></a
                           >:
                         </h4>
                         <h4 class="hasTogHovM">
@@ -965,21 +965,21 @@
                           </svg>
                           <div class="hover-menu">
                             <div>
-                              <span class="anchorH"
-                                ><img alt="info icon" src="/icons/info.svg"
-                              /></span>
+                              <button class="anchorH">
+                                <img alt="info icon" src="/icons/info.svg" />
+                              </button>
                             </div>
                           </div>
                         </h4>
                       </div>
                       <div class="subsub">
                         <h4 data-prop="bdo:agent" class="first prop">
-                          <span
+                          <a
                             class="propref"
                             href="http://purl.bdrc.io/ontology/core/agent"
                             target="_blank"
                             rel="noopener noreferrer"
-                            ><span lang="en">agent</span></span
+                            ><span lang="en">agent</span></a
                           >:
                         </h4>
                         <h4 class="hasTogHovM">
@@ -1003,9 +1003,9 @@
                           </svg>
                           <div class="hover-menu">
                             <div>
-                              <span class="anchorH"
-                                ><img alt="info icon" src="/icons/info.svg"
-                              /></span>
+                              <button class="anchorH">
+                                <img alt="info icon" src="/icons/info.svg" />
+                              </button>
                             </div>
                           </div>
                         </h4>
@@ -1017,12 +1017,12 @@
               <div data-prop="bdo:extentStatement" class="">
                 <h3>
                   <span
-                    ><span
+                    ><a
                       class="propref"
                       href="http://purl.bdrc.io/ontology/core/extentStatement"
                       target="_blank"
                       rel="noopener noreferrer"
-                      ><span lang="en">extent</span></span
+                      ><span lang="en">extent</span></a
                     >:</span
                   >
                 </h3>
@@ -1042,7 +1042,9 @@
                     </svg>
                     <div class="hover-menu">
                       <div>
-                        <span class="anchorH"><img alt="info icon" src="/icons/info.svg" /></span>
+                        <button class="anchorH">
+                          <img alt="info icon" src="/icons/info.svg" />
+                        </button>
                       </div>
                     </div>
                   </h4>
@@ -1107,23 +1109,25 @@
                             class="visually-hidden"
                             >View images</span
                           ><img alt="images icon" src="/icons/search/images_r.svg" /></a
-                        ><span class="anchorO" title="Show Details"
-                          ><img alt="info icon" src="/icons/info.svg" /></span
-                        ><span class="permalink" title="Permalink"
-                          ><img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                        ><button class="anchorO" title="Show Details">
+                          <img alt="info icon" src="/icons/info.svg" /></button
+                        ><button class="permalink" title="Permalink">
+                          <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
                             alt="permalink icon"
-                            src="/icons/PLINK_small_r.svg" /></span
-                        ><span class="citeO" title="Cite this item"
-                          ><svg
+                            src="/icons/PLINK_small_r.svg"
+                          /></button
+                        ><button class="citeO" title="Cite this item">
+                          <svg
                             class="jss27"
                             focusable="false"
                             viewBox="0 0 24 24"
                             aria-hidden="true"
                           >
                             <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"></path>
-                            <path fill="none" d="M0 0h24v24H0z"></path></svg></span
-                        ><span class="printO" title="Print on demand"
-                          ><svg
+                            <path fill="none" d="M0 0h24v24H0z"></path>
+                          </svg></button
+                        ><button class="printO" title="Print on demand">
+                          <svg
                             class="jss27"
                             focusable="false"
                             viewBox="0 0 24 24"
@@ -1132,8 +1136,9 @@
                             <path
                               d="M19 8H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zm-3 11H8v-5h8v5zm3-7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm-1-9H6v4h12V3z"
                             ></path>
-                            <path fill="none" d="M0 0h24v24H0z"></path></svg
-                        ></span></div></span
+                            <path fill="none" d="M0 0h24v24H0z"></path>
+                          </svg>
+                        </button></div></span
                     ><span class="top"
                       ><img alt="triangle icon" src="/icons/triangle.png" class="xpd right" /><span
                         class="parTy"
@@ -1158,23 +1163,25 @@
                             class="visually-hidden"
                             >View images</span
                           ><img alt="images icon" src="/icons/search/images_r.svg" /></a
-                        ><span class="anchorO" title="Show Details"
-                          ><img alt="info icon" src="/icons/info.svg" /></span
-                        ><span class="permalink" title="Permalink"
-                          ><img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                        ><button class="anchorO" title="Show Details">
+                          <img alt="info icon" src="/icons/info.svg" /></button
+                        ><button class="permalink" title="Permalink">
+                          <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
                             alt="permalink icon"
-                            src="/icons/PLINK_small_r.svg" /></span
-                        ><span class="citeO" title="Cite this item"
-                          ><svg
+                            src="/icons/PLINK_small_r.svg"
+                          /></button
+                        ><button class="citeO" title="Cite this item">
+                          <svg
                             class="jss27"
                             focusable="false"
                             viewBox="0 0 24 24"
                             aria-hidden="true"
                           >
                             <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"></path>
-                            <path fill="none" d="M0 0h24v24H0z"></path></svg></span
-                        ><span class="printO" title="Print on demand"
-                          ><svg
+                            <path fill="none" d="M0 0h24v24H0z"></path>
+                          </svg></button
+                        ><button class="printO" title="Print on demand">
+                          <svg
                             class="jss27"
                             focusable="false"
                             viewBox="0 0 24 24"
@@ -1183,8 +1190,9 @@
                             <path
                               d="M19 8H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zm-3 11H8v-5h8v5zm3-7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm-1-9H6v4h12V3z"
                             ></path>
-                            <path fill="none" d="M0 0h24v24H0z"></path></svg
-                        ></span></div></span
+                            <path fill="none" d="M0 0h24v24H0z"></path>
+                          </svg>
+                        </button></div></span
                     ><span class="top"
                       ><img alt="triangle icon" src="/icons/triangle.png" class="xpd right" /><span
                         class="parTy"
@@ -1209,23 +1217,25 @@
                             class="visually-hidden"
                             >View images</span
                           ><img alt="images icon" src="/icons/search/images_r.svg" /></a
-                        ><span class="anchorO" title="Show Details"
-                          ><img alt="info icon" src="/icons/info.svg" /></span
-                        ><span class="permalink" title="Permalink"
-                          ><img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                        ><button class="anchorO" title="Show Details">
+                          <img alt="info icon" src="/icons/info.svg" /></button
+                        ><button class="permalink" title="Permalink">
+                          <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
                             alt="permalink icon"
-                            src="/icons/PLINK_small_r.svg" /></span
-                        ><span class="citeO" title="Cite this item"
-                          ><svg
+                            src="/icons/PLINK_small_r.svg"
+                          /></button
+                        ><button class="citeO" title="Cite this item">
+                          <svg
                             class="jss27"
                             focusable="false"
                             viewBox="0 0 24 24"
                             aria-hidden="true"
                           >
                             <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"></path>
-                            <path fill="none" d="M0 0h24v24H0z"></path></svg></span
-                        ><span class="printO" title="Print on demand"
-                          ><svg
+                            <path fill="none" d="M0 0h24v24H0z"></path>
+                          </svg></button
+                        ><button class="printO" title="Print on demand">
+                          <svg
                             class="jss27"
                             focusable="false"
                             viewBox="0 0 24 24"
@@ -1234,8 +1244,9 @@
                             <path
                               d="M19 8H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zm-3 11H8v-5h8v5zm3-7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm-1-9H6v4h12V3z"
                             ></path>
-                            <path fill="none" d="M0 0h24v24H0z"></path></svg
-                        ></span></div></span
+                            <path fill="none" d="M0 0h24v24H0z"></path>
+                          </svg>
+                        </button></div></span
                     ><span class="top"
                       ><img alt="triangle icon" src="/icons/triangle.png" class="xpd right" /><span
                         class="parTy"
@@ -1262,23 +1273,25 @@
                             class="visually-hidden"
                             >View images</span
                           ><img alt="images icon" src="/icons/search/images_r.svg" /></a
-                        ><span class="anchorO" title="Show Details"
-                          ><img alt="info icon" src="/icons/info.svg" /></span
-                        ><span class="permalink" title="Permalink"
-                          ><img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                        ><button class="anchorO" title="Show Details">
+                          <img alt="info icon" src="/icons/info.svg" /></button
+                        ><button class="permalink" title="Permalink">
+                          <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
                             alt="permalink icon"
-                            src="/icons/PLINK_small_r.svg" /></span
-                        ><span class="citeO" title="Cite this item"
-                          ><svg
+                            src="/icons/PLINK_small_r.svg"
+                          /></button
+                        ><button class="citeO" title="Cite this item">
+                          <svg
                             class="jss27"
                             focusable="false"
                             viewBox="0 0 24 24"
                             aria-hidden="true"
                           >
                             <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"></path>
-                            <path fill="none" d="M0 0h24v24H0z"></path></svg></span
-                        ><span class="printO" title="Print on demand"
-                          ><svg
+                            <path fill="none" d="M0 0h24v24H0z"></path>
+                          </svg></button
+                        ><button class="printO" title="Print on demand">
+                          <svg
                             class="jss27"
                             focusable="false"
                             viewBox="0 0 24 24"
@@ -1287,8 +1300,9 @@
                             <path
                               d="M19 8H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zm-3 11H8v-5h8v5zm3-7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm-1-9H6v4h12V3z"
                             ></path>
-                            <path fill="none" d="M0 0h24v24H0z"></path></svg
-                        ></span></div></span
+                            <path fill="none" d="M0 0h24v24H0z"></path>
+                          </svg>
+                        </button></div></span
                     ><span class="top"
                       ><img alt="triangle icon" src="/icons/triangle.png" class="xpd right" /><span
                         class="parTy"
@@ -1313,23 +1327,25 @@
                             class="visually-hidden"
                             >View images</span
                           ><img alt="images icon" src="/icons/search/images_r.svg" /></a
-                        ><span class="anchorO" title="Show Details"
-                          ><img alt="info icon" src="/icons/info.svg" /></span
-                        ><span class="permalink" title="Permalink"
-                          ><img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                        ><button class="anchorO" title="Show Details">
+                          <img alt="info icon" src="/icons/info.svg" /></button
+                        ><button class="permalink" title="Permalink">
+                          <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
                             alt="permalink icon"
-                            src="/icons/PLINK_small_r.svg" /></span
-                        ><span class="citeO" title="Cite this item"
-                          ><svg
+                            src="/icons/PLINK_small_r.svg"
+                          /></button
+                        ><button class="citeO" title="Cite this item">
+                          <svg
                             class="jss27"
                             focusable="false"
                             viewBox="0 0 24 24"
                             aria-hidden="true"
                           >
                             <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"></path>
-                            <path fill="none" d="M0 0h24v24H0z"></path></svg></span
-                        ><span class="printO" title="Print on demand"
-                          ><svg
+                            <path fill="none" d="M0 0h24v24H0z"></path>
+                          </svg></button
+                        ><button class="printO" title="Print on demand">
+                          <svg
                             class="jss27"
                             focusable="false"
                             viewBox="0 0 24 24"
@@ -1338,8 +1354,9 @@
                             <path
                               d="M19 8H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zm-3 11H8v-5h8v5zm3-7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm-1-9H6v4h12V3z"
                             ></path>
-                            <path fill="none" d="M0 0h24v24H0z"></path></svg
-                        ></span></div></span
+                            <path fill="none" d="M0 0h24v24H0z"></path>
+                          </svg>
+                        </button></div></span
                     ><span class="top"
                       ><img alt="triangle icon" src="/icons/triangle.png" class="xpd right" /><span
                         class="parTy"
@@ -1366,23 +1383,25 @@
                             class="visually-hidden"
                             >View images</span
                           ><img alt="images icon" src="/icons/search/images_r.svg" /></a
-                        ><span class="anchorO" title="Show Details"
-                          ><img alt="info icon" src="/icons/info.svg" /></span
-                        ><span class="permalink" title="Permalink"
-                          ><img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                        ><button class="anchorO" title="Show Details">
+                          <img alt="info icon" src="/icons/info.svg" /></button
+                        ><button class="permalink" title="Permalink">
+                          <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
                             alt="permalink icon"
-                            src="/icons/PLINK_small_r.svg" /></span
-                        ><span class="citeO" title="Cite this item"
-                          ><svg
+                            src="/icons/PLINK_small_r.svg"
+                          /></button
+                        ><button class="citeO" title="Cite this item">
+                          <svg
                             class="jss27"
                             focusable="false"
                             viewBox="0 0 24 24"
                             aria-hidden="true"
                           >
                             <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"></path>
-                            <path fill="none" d="M0 0h24v24H0z"></path></svg></span
-                        ><span class="printO" title="Print on demand"
-                          ><svg
+                            <path fill="none" d="M0 0h24v24H0z"></path>
+                          </svg></button
+                        ><button class="printO" title="Print on demand">
+                          <svg
                             class="jss27"
                             focusable="false"
                             viewBox="0 0 24 24"
@@ -1391,8 +1410,9 @@
                             <path
                               d="M19 8H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zm-3 11H8v-5h8v5zm3-7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm-1-9H6v4h12V3z"
                             ></path>
-                            <path fill="none" d="M0 0h24v24H0z"></path></svg
-                        ></span></div></span
+                            <path fill="none" d="M0 0h24v24H0z"></path>
+                          </svg>
+                        </button></div></span
                     ><span class="top"
                       ><img alt="triangle icon" src="/icons/triangle.png" class="xpd right" /><span
                         class="parTy"
@@ -1417,23 +1437,25 @@
                             class="visually-hidden"
                             >View images</span
                           ><img alt="images icon" src="/icons/search/images_r.svg" /></a
-                        ><span class="anchorO" title="Show Details"
-                          ><img alt="info icon" src="/icons/info.svg" /></span
-                        ><span class="permalink" title="Permalink"
-                          ><img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                        ><button class="anchorO" title="Show Details">
+                          <img alt="info icon" src="/icons/info.svg" /></button
+                        ><button class="permalink" title="Permalink">
+                          <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
                             alt="permalink icon"
-                            src="/icons/PLINK_small_r.svg" /></span
-                        ><span class="citeO" title="Cite this item"
-                          ><svg
+                            src="/icons/PLINK_small_r.svg"
+                          /></button
+                        ><button class="citeO" title="Cite this item">
+                          <svg
                             class="jss27"
                             focusable="false"
                             viewBox="0 0 24 24"
                             aria-hidden="true"
                           >
                             <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"></path>
-                            <path fill="none" d="M0 0h24v24H0z"></path></svg></span
-                        ><span class="printO" title="Print on demand"
-                          ><svg
+                            <path fill="none" d="M0 0h24v24H0z"></path>
+                          </svg></button
+                        ><button class="printO" title="Print on demand">
+                          <svg
                             class="jss27"
                             focusable="false"
                             viewBox="0 0 24 24"
@@ -1442,8 +1464,9 @@
                             <path
                               d="M19 8H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zm-3 11H8v-5h8v5zm3-7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm-1-9H6v4h12V3z"
                             ></path>
-                            <path fill="none" d="M0 0h24v24H0z"></path></svg
-                        ></span></div></span
+                            <path fill="none" d="M0 0h24v24H0z"></path>
+                          </svg>
+                        </button></div></span
                     ><span class="top"
                       ><img alt="triangle icon" src="/icons/triangle.png" class="xpd right" /><span
                         class="parTy"
@@ -1468,23 +1491,25 @@
                             class="visually-hidden"
                             >View images</span
                           ><img alt="images icon" src="/icons/search/images_r.svg" /></a
-                        ><span class="anchorO" title="Show Details"
-                          ><img alt="info icon" src="/icons/info.svg" /></span
-                        ><span class="permalink" title="Permalink"
-                          ><img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                        ><button class="anchorO" title="Show Details">
+                          <img alt="info icon" src="/icons/info.svg" /></button
+                        ><button class="permalink" title="Permalink">
+                          <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
                             alt="permalink icon"
-                            src="/icons/PLINK_small_r.svg" /></span
-                        ><span class="citeO" title="Cite this item"
-                          ><svg
+                            src="/icons/PLINK_small_r.svg"
+                          /></button
+                        ><button class="citeO" title="Cite this item">
+                          <svg
                             class="jss27"
                             focusable="false"
                             viewBox="0 0 24 24"
                             aria-hidden="true"
                           >
                             <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"></path>
-                            <path fill="none" d="M0 0h24v24H0z"></path></svg></span
-                        ><span class="printO" title="Print on demand"
-                          ><svg
+                            <path fill="none" d="M0 0h24v24H0z"></path>
+                          </svg></button
+                        ><button class="printO" title="Print on demand">
+                          <svg
                             class="jss27"
                             focusable="false"
                             viewBox="0 0 24 24"
@@ -1493,8 +1518,9 @@
                             <path
                               d="M19 8H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zm-3 11H8v-5h8v5zm3-7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm-1-9H6v4h12V3z"
                             ></path>
-                            <path fill="none" d="M0 0h24v24H0z"></path></svg
-                        ></span></div></span
+                            <path fill="none" d="M0 0h24v24H0z"></path>
+                          </svg>
+                        </button></div></span
                     ><span class="top"
                       ><img alt="triangle icon" src="/icons/triangle.png" class="xpd right" /><span
                         class="parTy"
@@ -1521,23 +1547,25 @@
                             class="visually-hidden"
                             >View images</span
                           ><img alt="images icon" src="/icons/search/images_r.svg" /></a
-                        ><span class="anchorO" title="Show Details"
-                          ><img alt="info icon" src="/icons/info.svg" /></span
-                        ><span class="permalink" title="Permalink"
-                          ><img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                        ><button class="anchorO" title="Show Details">
+                          <img alt="info icon" src="/icons/info.svg" /></button
+                        ><button class="permalink" title="Permalink">
+                          <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
                             alt="permalink icon"
-                            src="/icons/PLINK_small_r.svg" /></span
-                        ><span class="citeO" title="Cite this item"
-                          ><svg
+                            src="/icons/PLINK_small_r.svg"
+                          /></button
+                        ><button class="citeO" title="Cite this item">
+                          <svg
                             class="jss27"
                             focusable="false"
                             viewBox="0 0 24 24"
                             aria-hidden="true"
                           >
                             <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"></path>
-                            <path fill="none" d="M0 0h24v24H0z"></path></svg></span
-                        ><span class="printO" title="Print on demand"
-                          ><svg
+                            <path fill="none" d="M0 0h24v24H0z"></path>
+                          </svg></button
+                        ><button class="printO" title="Print on demand">
+                          <svg
                             class="jss27"
                             focusable="false"
                             viewBox="0 0 24 24"
@@ -1546,8 +1574,9 @@
                             <path
                               d="M19 8H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zm-3 11H8v-5h8v5zm3-7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm-1-9H6v4h12V3z"
                             ></path>
-                            <path fill="none" d="M0 0h24v24H0z"></path></svg
-                        ></span></div></span
+                            <path fill="none" d="M0 0h24v24H0z"></path>
+                          </svg>
+                        </button></div></span
                     ><span class="top"
                       ><img alt="triangle icon" src="/icons/triangle.png" class="xpd right" /><span
                         class="parTy"
@@ -1572,23 +1601,25 @@
                             class="visually-hidden"
                             >View images</span
                           ><img alt="images icon" src="/icons/search/images_r.svg" /></a
-                        ><span class="anchorO" title="Show Details"
-                          ><img alt="info icon" src="/icons/info.svg" /></span
-                        ><span class="permalink" title="Permalink"
-                          ><img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                        ><button class="anchorO" title="Show Details">
+                          <img alt="info icon" src="/icons/info.svg" /></button
+                        ><button class="permalink" title="Permalink">
+                          <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
                             alt="permalink icon"
-                            src="/icons/PLINK_small_r.svg" /></span
-                        ><span class="citeO" title="Cite this item"
-                          ><svg
+                            src="/icons/PLINK_small_r.svg"
+                          /></button
+                        ><button class="citeO" title="Cite this item">
+                          <svg
                             class="jss27"
                             focusable="false"
                             viewBox="0 0 24 24"
                             aria-hidden="true"
                           >
                             <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"></path>
-                            <path fill="none" d="M0 0h24v24H0z"></path></svg></span
-                        ><span class="printO" title="Print on demand"
-                          ><svg
+                            <path fill="none" d="M0 0h24v24H0z"></path>
+                          </svg></button
+                        ><button class="printO" title="Print on demand">
+                          <svg
                             class="jss27"
                             focusable="false"
                             viewBox="0 0 24 24"
@@ -1597,8 +1628,9 @@
                             <path
                               d="M19 8H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zm-3 11H8v-5h8v5zm3-7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm-1-9H6v4h12V3z"
                             ></path>
-                            <path fill="none" d="M0 0h24v24H0z"></path></svg
-                        ></span></div></span
+                            <path fill="none" d="M0 0h24v24H0z"></path>
+                          </svg>
+                        </button></div></span
                     ><span class="top"
                       ><img alt="triangle icon" src="/icons/triangle.png" class="xpd right" /><span
                         class="parTy"
@@ -1623,23 +1655,25 @@
                             class="visually-hidden"
                             >View images</span
                           ><img alt="images icon" src="/icons/search/images_r.svg" /></a
-                        ><span class="anchorO" title="Show Details"
-                          ><img alt="info icon" src="/icons/info.svg" /></span
-                        ><span class="permalink" title="Permalink"
-                          ><img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                        ><button class="anchorO" title="Show Details">
+                          <img alt="info icon" src="/icons/info.svg" /></button
+                        ><button class="permalink" title="Permalink">
+                          <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
                             alt="permalink icon"
-                            src="/icons/PLINK_small_r.svg" /></span
-                        ><span class="citeO" title="Cite this item"
-                          ><svg
+                            src="/icons/PLINK_small_r.svg"
+                          /></button
+                        ><button class="citeO" title="Cite this item">
+                          <svg
                             class="jss27"
                             focusable="false"
                             viewBox="0 0 24 24"
                             aria-hidden="true"
                           >
                             <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"></path>
-                            <path fill="none" d="M0 0h24v24H0z"></path></svg></span
-                        ><span class="printO" title="Print on demand"
-                          ><svg
+                            <path fill="none" d="M0 0h24v24H0z"></path>
+                          </svg></button
+                        ><button class="printO" title="Print on demand">
+                          <svg
                             class="jss27"
                             focusable="false"
                             viewBox="0 0 24 24"
@@ -1648,8 +1682,9 @@
                             <path
                               d="M19 8H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zm-3 11H8v-5h8v5zm3-7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm-1-9H6v4h12V3z"
                             ></path>
-                            <path fill="none" d="M0 0h24v24H0z"></path></svg
-                        ></span></div></span
+                            <path fill="none" d="M0 0h24v24H0z"></path>
+                          </svg>
+                        </button></div></span
                     ><span class="top"
                       ><img alt="triangle icon" src="/icons/triangle.png" class="xpd right" /><span
                         class="parTy"
@@ -1676,23 +1711,25 @@
                             class="visually-hidden"
                             >View images</span
                           ><img alt="images icon" src="/icons/search/images_r.svg" /></a
-                        ><span class="anchorO" title="Show Details"
-                          ><img alt="info icon" src="/icons/info.svg" /></span
-                        ><span class="permalink" title="Permalink"
-                          ><img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                        ><button class="anchorO" title="Show Details">
+                          <img alt="info icon" src="/icons/info.svg" /></button
+                        ><button class="permalink" title="Permalink">
+                          <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
                             alt="permalink icon"
-                            src="/icons/PLINK_small_r.svg" /></span
-                        ><span class="citeO" title="Cite this item"
-                          ><svg
+                            src="/icons/PLINK_small_r.svg"
+                          /></button
+                        ><button class="citeO" title="Cite this item">
+                          <svg
                             class="jss27"
                             focusable="false"
                             viewBox="0 0 24 24"
                             aria-hidden="true"
                           >
                             <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"></path>
-                            <path fill="none" d="M0 0h24v24H0z"></path></svg></span
-                        ><span class="printO" title="Print on demand"
-                          ><svg
+                            <path fill="none" d="M0 0h24v24H0z"></path>
+                          </svg></button
+                        ><button class="printO" title="Print on demand">
+                          <svg
                             class="jss27"
                             focusable="false"
                             viewBox="0 0 24 24"
@@ -1701,8 +1738,9 @@
                             <path
                               d="M19 8H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zm-3 11H8v-5h8v5zm3-7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm-1-9H6v4h12V3z"
                             ></path>
-                            <path fill="none" d="M0 0h24v24H0z"></path></svg
-                        ></span></div></span
+                            <path fill="none" d="M0 0h24v24H0z"></path>
+                          </svg>
+                        </button></div></span
                     ><span class="top"
                       ><img alt="triangle icon" src="/icons/triangle.png" class="xpd right" /><span
                         class="parTy"
@@ -1727,23 +1765,25 @@
                             class="visually-hidden"
                             >View images</span
                           ><img alt="images icon" src="/icons/search/images_r.svg" /></a
-                        ><span class="anchorO" title="Show Details"
-                          ><img alt="info icon" src="/icons/info.svg" /></span
-                        ><span class="permalink" title="Permalink"
-                          ><img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                        ><button class="anchorO" title="Show Details">
+                          <img alt="info icon" src="/icons/info.svg" /></button
+                        ><button class="permalink" title="Permalink">
+                          <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
                             alt="permalink icon"
-                            src="/icons/PLINK_small_r.svg" /></span
-                        ><span class="citeO" title="Cite this item"
-                          ><svg
+                            src="/icons/PLINK_small_r.svg"
+                          /></button
+                        ><button class="citeO" title="Cite this item">
+                          <svg
                             class="jss27"
                             focusable="false"
                             viewBox="0 0 24 24"
                             aria-hidden="true"
                           >
                             <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"></path>
-                            <path fill="none" d="M0 0h24v24H0z"></path></svg></span
-                        ><span class="printO" title="Print on demand"
-                          ><svg
+                            <path fill="none" d="M0 0h24v24H0z"></path>
+                          </svg></button
+                        ><button class="printO" title="Print on demand">
+                          <svg
                             class="jss27"
                             focusable="false"
                             viewBox="0 0 24 24"
@@ -1752,8 +1792,9 @@
                             <path
                               d="M19 8H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zm-3 11H8v-5h8v5zm3-7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm-1-9H6v4h12V3z"
                             ></path>
-                            <path fill="none" d="M0 0h24v24H0z"></path></svg
-                        ></span></div></span
+                            <path fill="none" d="M0 0h24v24H0z"></path>
+                          </svg>
+                        </button></div></span
                     ><span class="top"
                       ><img alt="triangle icon" src="/icons/triangle.png" class="xpd right" /><span
                         class="parTy"
@@ -1778,23 +1819,25 @@
                             class="visually-hidden"
                             >View images</span
                           ><img alt="images icon" src="/icons/search/images_r.svg" /></a
-                        ><span class="anchorO" title="Show Details"
-                          ><img alt="info icon" src="/icons/info.svg" /></span
-                        ><span class="permalink" title="Permalink"
-                          ><img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                        ><button class="anchorO" title="Show Details">
+                          <img alt="info icon" src="/icons/info.svg" /></button
+                        ><button class="permalink" title="Permalink">
+                          <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
                             alt="permalink icon"
-                            src="/icons/PLINK_small_r.svg" /></span
-                        ><span class="citeO" title="Cite this item"
-                          ><svg
+                            src="/icons/PLINK_small_r.svg"
+                          /></button
+                        ><button class="citeO" title="Cite this item">
+                          <svg
                             class="jss27"
                             focusable="false"
                             viewBox="0 0 24 24"
                             aria-hidden="true"
                           >
                             <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"></path>
-                            <path fill="none" d="M0 0h24v24H0z"></path></svg></span
-                        ><span class="printO" title="Print on demand"
-                          ><svg
+                            <path fill="none" d="M0 0h24v24H0z"></path>
+                          </svg></button
+                        ><button class="printO" title="Print on demand">
+                          <svg
                             class="jss27"
                             focusable="false"
                             viewBox="0 0 24 24"
@@ -1803,8 +1846,9 @@
                             <path
                               d="M19 8H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zm-3 11H8v-5h8v5zm3-7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm-1-9H6v4h12V3z"
                             ></path>
-                            <path fill="none" d="M0 0h24v24H0z"></path></svg
-                        ></span></div
+                            <path fill="none" d="M0 0h24v24H0z"></path>
+                          </svg>
+                        </button></div
                     ></span>
                   </div>
                 </div>
@@ -1812,9 +1856,7 @@
               <div data-prop="tmp:propHasScans">
                 <h3>
                   <span
-                    ><span class="propref" target="_blank" rel="noopener noreferrer"
-                      ><span lang="">Scans</span></span
-                    >:</span
+                    ><button class="propref"><span lang="">Scans</span></button>:</span
                   >
                 </h3>
                 <div class="group">
@@ -1879,7 +1921,9 @@
                     </svg>
                     <div class="hover-menu">
                       <div>
-                        <span class="anchorH"><img alt="info icon" src="/icons/info.svg" /></span>
+                        <button class="anchorH">
+                          <img alt="info icon" src="/icons/info.svg" />
+                        </button>
                       </div>
                     </div>
                   </h4>
@@ -1889,9 +1933,7 @@
               <div data-prop="tmp:propHasEtext" class="etext-and-preview-not-available">
                 <h3>
                   <span
-                    ><span class="propref" target="_blank" rel="noopener noreferrer"
-                      ><span lang="">Etext</span></span
-                    >:</span
+                    ><button class="propref"><span lang="">Etext</span></button>:</span
                   >
                 </h3>
                 <div class="group preview-etext">
@@ -1931,9 +1973,9 @@
                                 </div>
                                 <div class="hover-menu">
                                   <div>
-                                    <span class="anchorH"
-                                      ><img alt="info icon" src="/icons/info.svg"
-                                    /></span>
+                                    <button class="anchorH">
+                                      <img alt="info icon" src="/icons/info.svg" />
+                                    </button>
                                   </div>
                                 </div>
                               </div>
@@ -1954,12 +1996,12 @@
               <div data-prop="bdo:workIsAbout" class="">
                 <h3>
                   <span
-                    ><span
+                    ><a
                       class="propref"
                       href="http://purl.bdrc.io/ontology/core/workIsAbout"
                       target="_blank"
                       rel="noopener noreferrer"
-                      ><span lang="en" class="hasSpace">is about</span></span
+                      ><span lang="en" class="hasSpace">is about</span></a
                     >:</span
                   >
                 </h3>
@@ -1983,7 +2025,9 @@
                     </svg>
                     <div class="hover-menu">
                       <div>
-                        <span class="anchorH"><img alt="info icon" src="/icons/info.svg" /></span>
+                        <button class="anchorH">
+                          <img alt="info icon" src="/icons/info.svg" />
+                        </button>
                       </div>
                     </div>
                   </h4>
@@ -1992,12 +2036,12 @@
               <div data-prop="bdo:catalogInfo" class="">
                 <h3>
                   <span
-                    ><span
+                    ><a
                       class="propref"
                       href="http://purl.bdrc.io/ontology/core/catalogInfo"
                       target="_blank"
                       rel="noopener noreferrer"
-                      ><span lang="en">summary</span></span
+                      ><span lang="en">summary</span></a
                     >:</span
                   >
                 </h3>
@@ -2022,7 +2066,9 @@
                     </svg>
                     <div class="hover-menu">
                       <div>
-                        <span class="anchorH"><img alt="info icon" src="/icons/info.svg" /></span>
+                        <button class="anchorH">
+                          <img alt="info icon" src="/icons/info.svg" />
+                        </button>
                       </div>
                     </div>
                   </h4>
@@ -2031,8 +2077,8 @@
             </div>
             <div class="data" id="perma">
               <div>
-                <span id="permalink" title="Permalink" style="margin-left: 0px"
-                  ><img alt="permalink icon" src="/icons/PLINK.png" /><span>Permalink</span></span
+                <button id="permalink" title="Permalink" style="margin-left: 0px">
+                  <img alt="permalink icon" src="/icons/PLINK.png" /><span>Permalink</span></button
                 ><span id="rid">bdr:MW22084</span><span class="NL nl-dl"></span
                 ><span id="DL"
                   ><img alt="download icon" src="/icons/DL_.svg" />Export metadata
@@ -2046,18 +2092,17 @@
                     <path fill="none" d="M0 0h24v24H0z"></path></svg
                   >Cite this item</span
                 ><span class="NL nl-same"></span
-                ><span id="same" title="Link to External Resource" class=""
-                  ><span>Link:</span
-                  ><span class="provider rkts"><img alt="provider icon" src="/RKTS.png" /></span
-                ></span>
+                ><button id="same" title="Link to External Resource" class="">
+                  <span>Link:</span
+                  ><span class="provider rkts"><img alt="provider icon" src="/RKTS.png" /></span>
+                </button>
               </div>
             </div>
             <div class="data mid-props">
               <div id="otherR" data-prop="tmp:otherResources">
                 <h3>
                   <span
-                    ><span class="propref"><span>Other resource</span></span
-                    >:</span
+                    ><button class="propref"><span>Other resource</span></button>:</span
                   >
                 </h3>
                 <div class="group">
@@ -2075,7 +2120,9 @@
                     >
                     <div class="hover-menu">
                       <div>
-                        <span class="anchorH"><img alt="info icon" src="/icons/info.svg" /></span>
+                        <button class="anchorH">
+                          <img alt="info icon" src="/icons/info.svg" />
+                        </button>
                       </div>
                     </div>
                   </h4>
@@ -2084,9 +2131,7 @@
               <div data-prop="tmp:workHasInstance" class="">
                 <h3>
                   <span
-                    ><span class="propref" target="_blank" rel="noopener noreferrer"
-                      ><span lang="">Other versions</span></span
-                    >:</span
+                    ><button class="propref"><span lang="">Other versions</span></button>:</span
                   >
                 </h3>
                 <div class="group">
@@ -4410,9 +4455,7 @@
               >
                 <h3>
                   <span
-                    ><span class="propref" target="_blank" rel="noopener noreferrer"
-                      ><span lang="">Other versions</span></span
-                    >:</span
+                    ><button class="propref"><span lang="">Other versions</span></button>:</span
                   >
                 </h3>
                 <div class="propCollapseHeader in-false">
@@ -4448,7 +4491,9 @@
                     </svg>
                     <div class="hover-menu">
                       <div>
-                        <span class="anchorH"><img alt="info icon" src="/icons/info.svg" /></span>
+                        <button class="anchorH">
+                          <img alt="info icon" src="/icons/info.svg" />
+                        </button>
                       </div>
                     </div>
                   </h4>
@@ -4484,7 +4529,9 @@
                     </svg>
                     <div class="hover-menu">
                       <div>
-                        <span class="anchorH"><img alt="info icon" src="/icons/info.svg" /></span>
+                        <button class="anchorH">
+                          <img alt="info icon" src="/icons/info.svg" />
+                        </button>
                       </div>
                     </div>
                   </h4>
@@ -4529,7 +4576,9 @@
                     </svg>
                     <div class="hover-menu">
                       <div>
-                        <span class="anchorH"><img alt="info icon" src="/icons/info.svg" /></span>
+                        <button class="anchorH">
+                          <img alt="info icon" src="/icons/info.svg" />
+                        </button>
                       </div>
                     </div>
                   </h4>
@@ -4563,7 +4612,9 @@
                     </svg>
                     <div class="hover-menu">
                       <div>
-                        <span class="anchorH"><img alt="info icon" src="/icons/info.svg" /></span>
+                        <button class="anchorH">
+                          <img alt="info icon" src="/icons/info.svg" />
+                        </button>
                       </div>
                     </div>
                   </h4>
@@ -4597,7 +4648,9 @@
                     </svg>
                     <div class="hover-menu">
                       <div>
-                        <span class="anchorH"><img alt="info icon" src="/icons/info.svg" /></span>
+                        <button class="anchorH">
+                          <img alt="info icon" src="/icons/info.svg" />
+                        </button>
                       </div>
                     </div>
                   </h4>
@@ -4631,7 +4684,9 @@
                     </svg>
                     <div class="hover-menu">
                       <div>
-                        <span class="anchorH"><img alt="info icon" src="/icons/info.svg" /></span>
+                        <button class="anchorH">
+                          <img alt="info icon" src="/icons/info.svg" />
+                        </button>
                       </div>
                     </div>
                   </h4>
@@ -4665,7 +4720,9 @@
                     </svg>
                     <div class="hover-menu">
                       <div>
-                        <span class="anchorH"><img alt="info icon" src="/icons/info.svg" /></span>
+                        <button class="anchorH">
+                          <img alt="info icon" src="/icons/info.svg" />
+                        </button>
                       </div>
                     </div>
                   </h4>
@@ -4699,7 +4756,9 @@
                     </svg>
                     <div class="hover-menu">
                       <div>
-                        <span class="anchorH"><img alt="info icon" src="/icons/info.svg" /></span>
+                        <button class="anchorH">
+                          <img alt="info icon" src="/icons/info.svg" />
+                        </button>
                       </div>
                     </div>
                   </h4>
@@ -4734,7 +4793,9 @@
                     </svg>
                     <div class="hover-menu">
                       <div>
-                        <span class="anchorH"><img alt="info icon" src="/icons/info.svg" /></span>
+                        <button class="anchorH">
+                          <img alt="info icon" src="/icons/info.svg" />
+                        </button>
                       </div>
                     </div>
                   </h4>
@@ -4769,7 +4830,9 @@
                     </svg>
                     <div class="hover-menu">
                       <div>
-                        <span class="anchorH"><img alt="info icon" src="/icons/info.svg" /></span>
+                        <button class="anchorH">
+                          <img alt="info icon" src="/icons/info.svg" />
+                        </button>
                       </div>
                     </div>
                   </h4>
@@ -4819,9 +4882,9 @@
                         </svg>
                         <div class="hover-menu">
                           <div>
-                            <span class="anchorH"
-                              ><img alt="info icon" src="/icons/info.svg"
-                            /></span>
+                            <button class="anchorH">
+                              <img alt="info icon" src="/icons/info.svg" />
+                            </button>
                           </div>
                         </div>
                       </h4>
@@ -4857,9 +4920,9 @@
                         </svg>
                         <div class="hover-menu">
                           <div>
-                            <span class="anchorH"
-                              ><img alt="info icon" src="/icons/info.svg"
-                            /></span>
+                            <button class="anchorH">
+                              <img alt="info icon" src="/icons/info.svg" />
+                            </button>
                           </div>
                         </div>
                       </h4>
@@ -4907,9 +4970,9 @@
                         </svg>
                         <div class="hover-menu">
                           <div>
-                            <span class="anchorH"
-                              ><img alt="info icon" src="/icons/info.svg"
-                            /></span>
+                            <button class="anchorH">
+                              <img alt="info icon" src="/icons/info.svg" />
+                            </button>
                           </div>
                         </div>
                       </h4>
@@ -4943,9 +5006,9 @@
                         </svg>
                         <div class="hover-menu">
                           <div>
-                            <span class="anchorH"
-                              ><img alt="info icon" src="/icons/info.svg"
-                            /></span>
+                            <button class="anchorH">
+                              <img alt="info icon" src="/icons/info.svg" />
+                            </button>
                           </div>
                         </div>
                       </h4>
@@ -4979,9 +5042,9 @@
                         </svg>
                         <div class="hover-menu">
                           <div>
-                            <span class="anchorH"
-                              ><img alt="info icon" src="/icons/info.svg"
-                            /></span>
+                            <button class="anchorH">
+                              <img alt="info icon" src="/icons/info.svg" />
+                            </button>
                           </div>
                         </div>
                       </h4>
@@ -5015,9 +5078,9 @@
                         </svg>
                         <div class="hover-menu">
                           <div>
-                            <span class="anchorH"
-                              ><img alt="info icon" src="/icons/info.svg"
-                            /></span>
+                            <button class="anchorH">
+                              <img alt="info icon" src="/icons/info.svg" />
+                            </button>
                           </div>
                         </div>
                       </h4>
@@ -5051,9 +5114,9 @@
                         </svg>
                         <div class="hover-menu">
                           <div>
-                            <span class="anchorH"
-                              ><img alt="info icon" src="/icons/info.svg"
-                            /></span>
+                            <button class="anchorH">
+                              <img alt="info icon" src="/icons/info.svg" />
+                            </button>
                           </div>
                         </div>
                       </h4>
@@ -5088,9 +5151,9 @@
                         </svg>
                         <div class="hover-menu">
                           <div>
-                            <span class="anchorH"
-                              ><img alt="info icon" src="/icons/info.svg"
-                            /></span>
+                            <button class="anchorH">
+                              <img alt="info icon" src="/icons/info.svg" />
+                            </button>
                           </div>
                         </div>
                       </h4>
@@ -5125,9 +5188,9 @@
                         </svg>
                         <div class="hover-menu">
                           <div>
-                            <span class="anchorH"
-                              ><img alt="info icon" src="/icons/info.svg"
-                            /></span>
+                            <button class="anchorH">
+                              <img alt="info icon" src="/icons/info.svg" />
+                            </button>
                           </div>
                         </div>
                       </h4>
@@ -5162,9 +5225,9 @@
                         </svg>
                         <div class="hover-menu">
                           <div>
-                            <span class="anchorH"
-                              ><img alt="info icon" src="/icons/info.svg"
-                            /></span>
+                            <button class="anchorH">
+                              <img alt="info icon" src="/icons/info.svg" />
+                            </button>
                           </div>
                         </div>
                       </h4>
@@ -5199,9 +5262,9 @@
                         </svg>
                         <div class="hover-menu">
                           <div>
-                            <span class="anchorH"
-                              ><img alt="info icon" src="/icons/info.svg"
-                            /></span>
+                            <button class="anchorH">
+                              <img alt="info icon" src="/icons/info.svg" />
+                            </button>
                           </div>
                         </div>
                       </h4>
@@ -5236,9 +5299,9 @@
                         </svg>
                         <div class="hover-menu">
                           <div>
-                            <span class="anchorH"
-                              ><img alt="info icon" src="/icons/info.svg"
-                            /></span>
+                            <button class="anchorH">
+                              <img alt="info icon" src="/icons/info.svg" />
+                            </button>
                           </div>
                         </div>
                       </h4>
@@ -5273,9 +5336,9 @@
                         </svg>
                         <div class="hover-menu">
                           <div>
-                            <span class="anchorH"
-                              ><img alt="info icon" src="/icons/info.svg"
-                            /></span>
+                            <button class="anchorH">
+                              <img alt="info icon" src="/icons/info.svg" />
+                            </button>
                           </div>
                         </div>
                       </h4>
@@ -5310,9 +5373,9 @@
                         </svg>
                         <div class="hover-menu">
                           <div>
-                            <span class="anchorH"
-                              ><img alt="info icon" src="/icons/info.svg"
-                            /></span>
+                            <button class="anchorH">
+                              <img alt="info icon" src="/icons/info.svg" />
+                            </button>
                           </div>
                         </div>
                       </h4>
@@ -5346,9 +5409,9 @@
                         </svg>
                         <div class="hover-menu">
                           <div>
-                            <span class="anchorH"
-                              ><img alt="info icon" src="/icons/info.svg"
-                            /></span>
+                            <button class="anchorH">
+                              <img alt="info icon" src="/icons/info.svg" />
+                            </button>
                           </div>
                         </div>
                       </h4>
@@ -5395,9 +5458,9 @@
                         </svg>
                         <div class="hover-menu">
                           <div>
-                            <span class="anchorH"
-                              ><img alt="info icon" src="/icons/info.svg"
-                            /></span>
+                            <button class="anchorH">
+                              <img alt="info icon" src="/icons/info.svg" />
+                            </button>
                           </div>
                         </div>
                       </h4>
@@ -5432,9 +5495,9 @@
                         </svg>
                         <div class="hover-menu">
                           <div>
-                            <span class="anchorH"
-                              ><img alt="info icon" src="/icons/info.svg"
-                            /></span>
+                            <button class="anchorH">
+                              <img alt="info icon" src="/icons/info.svg" />
+                            </button>
                           </div>
                         </div>
                       </h4>
@@ -5469,9 +5532,9 @@
                         </svg>
                         <div class="hover-menu">
                           <div>
-                            <span class="anchorH"
-                              ><img alt="info icon" src="/icons/info.svg"
-                            /></span>
+                            <button class="anchorH">
+                              <img alt="info icon" src="/icons/info.svg" />
+                            </button>
                           </div>
                         </div>
                       </h4>
@@ -5506,9 +5569,9 @@
                         </svg>
                         <div class="hover-menu">
                           <div>
-                            <span class="anchorH"
-                              ><img alt="info icon" src="/icons/info.svg"
-                            /></span>
+                            <button class="anchorH">
+                              <img alt="info icon" src="/icons/info.svg" />
+                            </button>
                           </div>
                         </div>
                       </h4>
@@ -5543,9 +5606,9 @@
                         </svg>
                         <div class="hover-menu">
                           <div>
-                            <span class="anchorH"
-                              ><img alt="info icon" src="/icons/info.svg"
-                            /></span>
+                            <button class="anchorH">
+                              <img alt="info icon" src="/icons/info.svg" />
+                            </button>
                           </div>
                         </div>
                       </h4>
@@ -5556,24 +5619,24 @@
               <div data-prop="bdo:hasTitle" class="">
                 <h3>
                   <span
-                    ><span
+                    ><a
                       class="propref"
                       href="http://purl.bdrc.io/ontology/core/hasTitle"
                       target="_blank"
                       rel="noopener noreferrer"
-                      ><span lang="en">title</span></span
+                      ><span lang="en">title</span></a
                     >:</span
                   >
                 </h3>
                 <div class="group">
                   <div class="sub">
                     <h4 data-prop="bdo:hasTitle" class="first type">
-                      <span
+                      <a
                         class="propref"
                         href="http://purl.bdrc.io/ontology/core/BibliographicalTitle"
                         target="_blank"
                         rel="noopener noreferrer"
-                        ><span lang="en" class="hasSpace">Bibliographic Title</span></span
+                        ><span lang="en" class="hasSpace">Bibliographic Title</span></a
                       >:
                     </h4>
                     <h4 class="label hasTogHovM">
@@ -5581,19 +5644,21 @@
                       ><span class="lang">bo-x-ewts</span>
                       <div class="hover-menu">
                         <div>
-                          <span class="anchorH"><img alt="info icon" src="/icons/info.svg" /></span>
+                          <button class="anchorH">
+                            <img alt="info icon" src="/icons/info.svg" />
+                          </button>
                         </div>
                       </div>
                     </h4>
                   </div>
                   <div class="sub">
                     <h4 data-prop="bdo:hasTitle" class="first type">
-                      <span
+                      <a
                         class="propref"
                         href="http://purl.bdrc.io/ontology/core/CoverTitle"
                         target="_blank"
                         rel="noopener noreferrer"
-                        ><span lang="en" class="hasSpace">Cover Title</span></span
+                        ><span lang="en" class="hasSpace">Cover Title</span></a
                       >:
                     </h4>
                     <h4 class="label hasTogHovM">
@@ -5604,19 +5669,21 @@
                       ><span class="lang">en-x-mixed</span>
                       <div class="hover-menu">
                         <div>
-                          <span class="anchorH"><img alt="info icon" src="/icons/info.svg" /></span>
+                          <button class="anchorH">
+                            <img alt="info icon" src="/icons/info.svg" />
+                          </button>
                         </div>
                       </div>
                     </h4>
                   </div>
                   <div class="sub">
                     <h4 data-prop="bdo:hasTitle" class="first type">
-                      <span
+                      <a
                         class="propref"
                         href="http://purl.bdrc.io/ontology/core/OtherTitle"
                         target="_blank"
                         rel="noopener noreferrer"
-                        ><span lang="en" class="hasSpace">Other Title</span></span
+                        ><span lang="en" class="hasSpace">Other Title</span></a
                       >:
                     </h4>
                     <h4 class="label hasTogHovM">
@@ -5624,7 +5691,9 @@
                       ><span class="lang">bo-x-ewts</span>
                       <div class="hover-menu">
                         <div>
-                          <span class="anchorH"><img alt="info icon" src="/icons/info.svg" /></span>
+                          <button class="anchorH">
+                            <img alt="info icon" src="/icons/info.svg" />
+                          </button>
                         </div>
                       </div>
                     </h4>
@@ -5634,9 +5703,7 @@
               <div data-prop="skos:altLabel" class="">
                 <h3>
                   <span
-                    ><span class="propref" target="_blank" rel="noopener noreferrer"
-                      ><span>Variant Title</span></span
-                    >:</span
+                    ><button class="propref"><span>Variant Title</span></button>:</span
                   >
                 </h3>
                 <div class="group">
@@ -5657,7 +5724,9 @@
                     </svg>
                     <div class="hover-menu">
                       <div>
-                        <span class="anchorH"><img alt="info icon" src="/icons/info.svg" /></span>
+                        <button class="anchorH">
+                          <img alt="info icon" src="/icons/info.svg" />
+                        </button>
                       </div>
                     </div>
                   </h4>
@@ -5682,7 +5751,9 @@
                     </svg>
                     <div class="hover-menu">
                       <div>
-                        <span class="anchorH"><img alt="info icon" src="/icons/info.svg" /></span>
+                        <button class="anchorH">
+                          <img alt="info icon" src="/icons/info.svg" />
+                        </button>
                       </div>
                     </div>
                   </h4>
@@ -5691,35 +5762,35 @@
               <div data-prop="bdo:instanceEvent" class="">
                 <h3>
                   <span
-                    ><span
+                    ><a
                       class="propref"
                       href="http://purl.bdrc.io/ontology/core/instanceEvent"
                       target="_blank"
                       rel="noopener noreferrer"
-                      ><span lang="en">event</span></span
+                      ><span lang="en">event</span></a
                     >:</span
                   >
                 </h3>
                 <div class="group">
                   <div class="sub">
                     <h4 data-prop="bdo:instanceEvent" class="first type">
-                      <span
+                      <a
                         class="propref"
                         href="http://purl.bdrc.io/ontology/core/PublishedEvent"
                         target="_blank"
                         rel="noopener noreferrer"
-                        ><span lang="en">Published</span></span
+                        ><span lang="en">Published</span></a
                       >:
                     </h4>
                     <div class="subgroup">
                       <div class="subsub">
                         <h4 data-prop="bdo:notBefore" class="first prop">
-                          <span
+                          <a
                             class="propref"
                             href="http://purl.bdrc.io/ontology/core/notBefore"
                             target="_blank"
                             rel="noopener noreferrer"
-                            ><span lang="en" class="hasSpace">not before</span></span
+                            ><span lang="en" class="hasSpace">not before</span></a
                           >:
                         </h4>
                         <h4 class="hasTogHovM">
@@ -5737,21 +5808,21 @@
                           </svg>
                           <div class="hover-menu">
                             <div>
-                              <span class="anchorH"
-                                ><img alt="info icon" src="/icons/info.svg"
-                              /></span>
+                              <button class="anchorH">
+                                <img alt="info icon" src="/icons/info.svg" />
+                              </button>
                             </div>
                           </div>
                         </h4>
                       </div>
                       <div class="subsub">
                         <h4 data-prop="bdo:notAfter" class="first prop">
-                          <span
+                          <a
                             class="propref"
                             href="http://purl.bdrc.io/ontology/core/notAfter"
                             target="_blank"
                             rel="noopener noreferrer"
-                            ><span lang="en" class="hasSpace">not after</span></span
+                            ><span lang="en" class="hasSpace">not after</span></a
                           >:
                         </h4>
                         <h4 class="hasTogHovM">
@@ -5769,21 +5840,21 @@
                           </svg>
                           <div class="hover-menu">
                             <div>
-                              <span class="anchorH"
-                                ><img alt="info icon" src="/icons/info.svg"
-                              /></span>
+                              <button class="anchorH">
+                                <img alt="info icon" src="/icons/info.svg" />
+                              </button>
                             </div>
                           </div>
                         </h4>
                       </div>
                       <div class="subsub">
                         <h4 data-prop="bdo:eventWhen" class="first prop">
-                          <span
+                          <a
                             class="propref"
                             href="http://purl.bdrc.io/ontology/core/eventWhen"
                             target="_blank"
                             rel="noopener noreferrer"
-                            ><span lang="en">when</span></span
+                            ><span lang="en">when</span></a
                           >:
                         </h4>
                         <h4 class="hasTogHovM">
@@ -5800,9 +5871,9 @@
                           </svg>
                           <div class="hover-menu">
                             <div>
-                              <span class="anchorH"
-                                ><img alt="info icon" src="/icons/info.svg"
-                              /></span>
+                              <button class="anchorH">
+                                <img alt="info icon" src="/icons/info.svg" />
+                              </button>
                             </div>
                           </div>
                         </h4>
@@ -5814,12 +5885,12 @@
               <div data-prop="bdo:publisherName" class="">
                 <h3>
                   <span
-                    ><span
+                    ><a
                       class="propref"
                       href="http://purl.bdrc.io/ontology/core/publisherName"
                       target="_blank"
                       rel="noopener noreferrer"
-                      ><span lang="en" class="hasSpace">publisher name</span></span
+                      ><span lang="en" class="hasSpace">publisher name</span></a
                     >:</span
                   >
                 </h3>
@@ -5843,7 +5914,9 @@
                     </svg>
                     <div class="hover-menu">
                       <div>
-                        <span class="anchorH"><img alt="info icon" src="/icons/info.svg" /></span>
+                        <button class="anchorH">
+                          <img alt="info icon" src="/icons/info.svg" />
+                        </button>
                       </div>
                     </div>
                   </h4>
@@ -5852,12 +5925,12 @@
               <div data-prop="bdo:publisherLocation" class="">
                 <h3>
                   <span
-                    ><span
+                    ><a
                       class="propref"
                       href="http://purl.bdrc.io/ontology/core/publisherLocation"
                       target="_blank"
                       rel="noopener noreferrer"
-                      ><span lang="en" class="hasSpace">publisher location</span></span
+                      ><span lang="en" class="hasSpace">publisher location</span></a
                     >:</span
                   >
                 </h3>
@@ -5878,7 +5951,9 @@
                     </svg>
                     <div class="hover-menu">
                       <div>
-                        <span class="anchorH"><img alt="info icon" src="/icons/info.svg" /></span>
+                        <button class="anchorH">
+                          <img alt="info icon" src="/icons/info.svg" />
+                        </button>
                       </div>
                     </div>
                   </h4>
@@ -5889,12 +5964,12 @@
               <div data-prop="adm:metadataLegal" class="">
                 <h3>
                   <span
-                    ><span
+                    ><a
                       class="propref"
                       href="http://purl.bdrc.io/ontology/admin/metadataLegal"
                       target="_blank"
                       rel="noopener noreferrer"
-                      ><span lang="en" class="hasSpace">metadata legal info</span></span
+                      ><span lang="en" class="hasSpace">metadata legal info</span></a
                     >:</span
                   >
                 </h3>
@@ -5920,7 +5995,9 @@
                     </svg>
                     <div class="hover-menu">
                       <div>
-                        <span class="anchorH"><img alt="info icon" src="/icons/info.svg" /></span>
+                        <button class="anchorH">
+                          <img alt="info icon" src="/icons/info.svg" />
+                        </button>
                       </div>
                     </div>
                   </h4>
@@ -5929,12 +6006,12 @@
               <div data-prop="bdo:script" class="">
                 <h3>
                   <span
-                    ><span
+                    ><a
                       class="propref"
                       href="http://purl.bdrc.io/ontology/core/script"
                       target="_blank"
                       rel="noopener noreferrer"
-                      ><span lang="en">script</span></span
+                      ><span lang="en">script</span></a
                     >:</span
                   >
                 </h3>
@@ -5954,7 +6031,9 @@
                     </svg>
                     <div class="hover-menu">
                       <div>
-                        <span class="anchorH"><img alt="info icon" src="/icons/info.svg" /></span>
+                        <button class="anchorH">
+                          <img alt="info icon" src="/icons/info.svg" />
+                        </button>
                       </div>
                     </div>
                   </h4>
@@ -5963,12 +6042,12 @@
               <div data-prop="bdo:hasSourcePrintery" class="">
                 <h3>
                   <span
-                    ><span
+                    ><a
                       class="propref"
                       href="http://purl.bdrc.io/ontology/core/hasSourcePrintery"
                       target="_blank"
                       rel="noopener noreferrer"
-                      ><span lang="en" class="hasSpace">place of production</span></span
+                      ><span lang="en" class="hasSpace">place of production</span></a
                     >:</span
                   >
                 </h3>
@@ -5993,7 +6072,9 @@
                     </svg>
                     <div class="hover-menu">
                       <div>
-                        <span class="anchorH"><img alt="info icon" src="/icons/info.svg" /></span>
+                        <button class="anchorH">
+                          <img alt="info icon" src="/icons/info.svg" />
+                        </button>
                       </div>
                     </div>
                   </h4>
@@ -6002,12 +6083,12 @@
               <div data-prop="bdo:copyrightStatus" class="">
                 <h3>
                   <span
-                    ><span
+                    ><a
                       class="propref"
                       href="http://purl.bdrc.io/ontology/core/copyrightStatus"
                       target="_blank"
                       rel="noopener noreferrer"
-                      ><span lang="en" class="hasSpace">copyright status</span></span
+                      ><span lang="en" class="hasSpace">copyright status</span></a
                     >:</span
                   >
                 </h3>
@@ -6028,7 +6109,9 @@
                     </svg>
                     <div class="hover-menu">
                       <div>
-                        <span class="anchorH"><img alt="info icon" src="/icons/info.svg" /></span>
+                        <button class="anchorH">
+                          <img alt="info icon" src="/icons/info.svg" />
+                        </button>
                       </div>
                     </div>
                   </h4>
@@ -6039,12 +6122,12 @@
               <div data-prop="adm:metadataLegal" class="">
                 <h3>
                   <span
-                    ><span
+                    ><a
                       class="propref"
                       href="http://purl.bdrc.io/ontology/admin/metadataLegal"
                       target="_blank"
                       rel="noopener noreferrer"
-                      ><span lang="en" class="hasSpace">metadata legal info</span></span
+                      ><span lang="en" class="hasSpace">metadata legal info</span></a
                     >:</span
                   >
                 </h3>
@@ -6070,7 +6153,9 @@
                     </svg>
                     <div class="hover-menu">
                       <div>
-                        <span class="anchorH"><img alt="info icon" src="/icons/info.svg" /></span>
+                        <button class="anchorH">
+                          <img alt="info icon" src="/icons/info.svg" />
+                        </button>
                       </div>
                     </div>
                   </h4>
@@ -6084,9 +6169,7 @@
               <div data-prop="tmp:BDRCworkId" class="">
                 <h3>
                   <span
-                    ><span class="propref" target="_blank" rel="noopener noreferrer"
-                      ><span lang="">Work Page</span></span
-                    >:</span
+                    ><button class="propref"><span lang="">Work Page</span></button>:</span
                   >
                 </h3>
                 <div class="group">
@@ -6122,7 +6205,9 @@
                     </svg>
                     <div class="hover-menu">
                       <div>
-                        <span class="anchorH"><img alt="info icon" src="/icons/info.svg" /></span>
+                        <button class="anchorH">
+                          <img alt="info icon" src="/icons/info.svg" />
+                        </button>
                       </div>
                     </div>
                   </h4>
@@ -6131,24 +6216,18 @@
               <div data-prop="bf:identifiedBy" class="has-collapse custom max-9 odd">
                 <h3>
                   <span
-                    ><span class="propref" target="_blank" rel="noopener noreferrer"
-                      ><span lang="">Identified By</span></span
-                    >:</span
+                    ><button class="propref"><span lang="">Identified By</span></button>:</span
                   >
                 </h3>
                 <div class="propCollapseHeader in-false">
                   <div class="sub">
                     <h4 data-prop="bf:identifiedBy" class="first type">
-                      <span class="propref" target="_blank" rel="noopener noreferrer"
-                        ><span lang="en">LCCN</span></span
-                      >:
+                      <button class="propref"><span lang="en">LCCN</span></button>:
                     </h4>
                     <div class="subgroup">
                       <div class="subsub">
                         <h4 data-prop="rdf:value" class="first prop">
-                          <span class="propref" target="_blank" rel="noopener noreferrer"
-                            ><span lang="">value</span></span
-                          >:
+                          <button class="propref"><span lang="">value</span></button>:
                         </h4>
                         <h4 class="hasTogHovM">
                           76902420<svg
@@ -6164,9 +6243,9 @@
                           </svg>
                           <div class="hover-menu">
                             <div>
-                              <span class="anchorH"
-                                ><img alt="info icon" src="/icons/info.svg"
-                              /></span>
+                              <button class="anchorH">
+                                <img alt="info icon" src="/icons/info.svg" />
+                              </button>
                             </div>
                           </div>
                         </h4>
@@ -6175,20 +6254,18 @@
                   </div>
                   <div class="sub willK">
                     <h4 data-prop="bf:identifiedBy" class="first type">
-                      <span
+                      <a
                         class="propref"
                         href="http://purl.bdrc.io/resource/HarvardShelfId"
                         target="_blank"
                         rel="noopener noreferrer"
-                        ><span lang="en" class="hasSpace">hollis shelf id</span></span
+                        ><span lang="en" class="hasSpace">hollis shelf id</span></a
                       >:
                     </h4>
                     <div class="subgroup">
                       <div class="subsub">
                         <h4 data-prop="rdf:value" class="first prop">
-                          <span class="propref" target="_blank" rel="noopener noreferrer"
-                            ><span lang="">value</span></span
-                          >:
+                          <button class="propref"><span lang="">value</span></button>:
                         </h4>
                         <h4 class="hasTogHovM">
                           007194410-9<svg
@@ -6204,9 +6281,9 @@
                           </svg>
                           <div class="hover-menu">
                             <div>
-                              <span class="anchorH"
-                                ><img alt="info icon" src="/icons/info.svg"
-                              /></span>
+                              <button class="anchorH">
+                                <img alt="info icon" src="/icons/info.svg" />
+                              </button>
                             </div>
                           </div>
                         </h4>
@@ -6215,20 +6292,18 @@
                   </div>
                   <div class="sub keep willK">
                     <h4 data-prop="bf:identifiedBy" class="first type">
-                      <span
+                      <a
                         class="propref"
                         href="http://purl.bdrc.io/resource/HarvardShelfId"
                         target="_blank"
                         rel="noopener noreferrer"
-                        ><span lang="en" class="hasSpace">hollis shelf id</span></span
+                        ><span lang="en" class="hasSpace">hollis shelf id</span></a
                       >:
                     </h4>
                     <div class="subgroup">
                       <div class="subsub">
                         <h4 data-prop="rdf:value" class="first prop">
-                          <span class="propref" target="_blank" rel="noopener noreferrer"
-                            ><span lang="">value</span></span
-                          >:
+                          <button class="propref"><span lang="">value</span></button>:
                         </h4>
                         <h4 class="hasTogHovM">
                           010896010-2<svg
@@ -6244,9 +6319,9 @@
                           </svg>
                           <div class="hover-menu">
                             <div>
-                              <span class="anchorH"
-                                ><img alt="info icon" src="/icons/info.svg"
-                              /></span>
+                              <button class="anchorH">
+                                <img alt="info icon" src="/icons/info.svg" />
+                              </button>
                             </div>
                           </div>
                         </h4>
@@ -6255,20 +6330,18 @@
                   </div>
                   <div class="sub keep willK">
                     <h4 data-prop="bf:identifiedBy" class="first type">
-                      <span
+                      <a
                         class="propref"
                         href="http://purl.bdrc.io/resource/HarvardShelfId"
                         target="_blank"
                         rel="noopener noreferrer"
-                        ><span lang="en" class="hasSpace">hollis shelf id</span></span
+                        ><span lang="en" class="hasSpace">hollis shelf id</span></a
                       >:
                     </h4>
                     <div class="subgroup">
                       <div class="subsub">
                         <h4 data-prop="rdf:value" class="first prop">
-                          <span class="propref" target="_blank" rel="noopener noreferrer"
-                            ><span lang="">value</span></span
-                          >:
+                          <button class="propref"><span lang="">value</span></button>:
                         </h4>
                         <h4 class="hasTogHovM">
                           010896012-9<svg
@@ -6284,9 +6357,9 @@
                           </svg>
                           <div class="hover-menu">
                             <div>
-                              <span class="anchorH"
-                                ><img alt="info icon" src="/icons/info.svg"
-                              /></span>
+                              <button class="anchorH">
+                                <img alt="info icon" src="/icons/info.svg" />
+                              </button>
                             </div>
                           </div>
                         </h4>
@@ -6295,20 +6368,18 @@
                   </div>
                   <div class="sub keep willK">
                     <h4 data-prop="bf:identifiedBy" class="first type">
-                      <span
+                      <a
                         class="propref"
                         href="http://purl.bdrc.io/resource/HarvardShelfId"
                         target="_blank"
                         rel="noopener noreferrer"
-                        ><span lang="en" class="hasSpace">hollis shelf id</span></span
+                        ><span lang="en" class="hasSpace">hollis shelf id</span></a
                       >:
                     </h4>
                     <div class="subgroup">
                       <div class="subsub">
                         <h4 data-prop="rdf:value" class="first prop">
-                          <span class="propref" target="_blank" rel="noopener noreferrer"
-                            ><span lang="">value</span></span
-                          >:
+                          <button class="propref"><span lang="">value</span></button>:
                         </h4>
                         <h4 class="hasTogHovM">
                           010896013-7<svg
@@ -6324,9 +6395,9 @@
                           </svg>
                           <div class="hover-menu">
                             <div>
-                              <span class="anchorH"
-                                ><img alt="info icon" src="/icons/info.svg"
-                              /></span>
+                              <button class="anchorH">
+                                <img alt="info icon" src="/icons/info.svg" />
+                              </button>
                             </div>
                           </div>
                         </h4>
@@ -6335,20 +6406,18 @@
                   </div>
                   <div class="sub keep willK">
                     <h4 data-prop="bf:identifiedBy" class="first type">
-                      <span
+                      <a
                         class="propref"
+                        href="http://purl.bdrc.io/resource/HarvardShelfId"
                         target="_blank"
                         rel="noopener noreferrer"
-                        href="http://purl.bdrc.io/resource/HarvardShelfId"
-                        ><span lang="en" class="hasSpace">hollis shelf id</span></span
+                        ><span lang="en" class="hasSpace">hollis shelf id</span></a
                       >:
                     </h4>
                     <div class="subgroup">
                       <div class="subsub">
                         <h4 data-prop="rdf:value" class="first prop">
-                          <span class="propref" target="_blank" rel="noopener noreferrer"
-                            ><span lang="">value</span></span
-                          >:
+                          <button class="propref"><span lang="">value</span></button>:
                         </h4>
                         <h4 class="hasTogHovM">
                           010896046-3<svg
@@ -6364,9 +6433,9 @@
                           </svg>
                           <div class="hover-menu">
                             <div>
-                              <span class="anchorH"
-                                ><img alt="info icon" src="/icons/info.svg"
-                              /></span>
+                              <button class="anchorH">
+                                <img alt="info icon" src="/icons/info.svg" />
+                              </button>
                             </div>
                           </div>
                         </h4>
@@ -6375,20 +6444,18 @@
                   </div>
                   <div class="sub keep willK">
                     <h4 data-prop="bf:identifiedBy" class="first type">
-                      <span
+                      <a
                         class="propref"
                         href="http://purl.bdrc.io/resource/HarvardShelfId"
                         target="_blank"
                         rel="noopener noreferrer"
-                        ><span lang="en" class="hasSpace">hollis shelf id</span></span
+                        ><span lang="en" class="hasSpace">hollis shelf id</span></a
                       >:
                     </h4>
                     <div class="subgroup">
                       <div class="subsub">
                         <h4 data-prop="rdf:value" class="first prop">
-                          <span class="propref" target="_blank" rel="noopener noreferrer"
-                            ><span lang="">value</span></span
-                          >:
+                          <button class="propref"><span lang="">value</span></button>:
                         </h4>
                         <h4 class="hasTogHovM">
                           010896047-1<svg
@@ -6404,9 +6471,9 @@
                           </svg>
                           <div class="hover-menu">
                             <div>
-                              <span class="anchorH"
-                                ><img alt="info icon" src="/icons/info.svg"
-                              /></span>
+                              <button class="anchorH">
+                                <img alt="info icon" src="/icons/info.svg" />
+                              </button>
                             </div>
                           </div>
                         </h4>
@@ -6415,20 +6482,18 @@
                   </div>
                   <div class="sub keep willK">
                     <h4 data-prop="bf:identifiedBy" class="first type">
-                      <span
+                      <a
                         class="propref"
                         href="http://purl.bdrc.io/resource/HarvardShelfId"
                         target="_blank"
                         rel="noopener noreferrer"
-                        ><span lang="en" class="hasSpace">hollis shelf id</span></span
+                        ><span lang="en" class="hasSpace">hollis shelf id</span></a
                       >:
                     </h4>
                     <div class="subgroup">
                       <div class="subsub">
                         <h4 data-prop="rdf:value" class="first prop">
-                          <span class="propref" target="_blank" rel="noopener noreferrer"
-                            ><span lang="">value</span></span
-                          >:
+                          <button class="propref"><span lang="">value</span></button>:
                         </h4>
                         <h4 class="hasTogHovM">
                           010896048-X<svg
@@ -6444,9 +6509,9 @@
                           </svg>
                           <div class="hover-menu">
                             <div>
-                              <span class="anchorH"
-                                ><img alt="info icon" src="/icons/info.svg"
-                              /></span>
+                              <button class="anchorH">
+                                <img alt="info icon" src="/icons/info.svg" />
+                              </button>
                             </div>
                           </div>
                         </h4>
@@ -6455,20 +6520,18 @@
                   </div>
                   <div class="sub keep willK">
                     <h4 data-prop="bf:identifiedBy" class="first type">
-                      <span
+                      <a
                         class="propref"
                         href="http://purl.bdrc.io/resource/HarvardShelfId"
                         target="_blank"
                         rel="noopener noreferrer"
-                        ><span lang="en" class="hasSpace">hollis shelf id</span></span
+                        ><span lang="en" class="hasSpace">hollis shelf id</span></a
                       >:
                     </h4>
                     <div class="subgroup">
                       <div class="subsub">
                         <h4 data-prop="rdf:value" class="first prop">
-                          <span class="propref" target="_blank" rel="noopener noreferrer"
-                            ><span lang="">value</span></span
-                          >:
+                          <button class="propref"><span lang="">value</span></button>:
                         </h4>
                         <h4 class="hasTogHovM">
                           010896050-1<svg
@@ -6484,9 +6547,9 @@
                           </svg>
                           <div class="hover-menu">
                             <div>
-                              <span class="anchorH"
-                                ><img alt="info icon" src="/icons/info.svg"
-                              /></span>
+                              <button class="anchorH">
+                                <img alt="info icon" src="/icons/info.svg" />
+                              </button>
                             </div>
                           </div>
                         </h4>
@@ -6505,16 +6568,12 @@
                     <div class="jss53">
                       <div class="sub">
                         <h4 data-prop="bf:identifiedBy" class="first type">
-                          <span class="propref" target="_blank" rel="noopener noreferrer"
-                            ><span lang="en">LCCN</span></span
-                          >:
+                          <button class="propref"><span lang="en">LCCN</span></button>:
                         </h4>
                         <div class="subgroup">
                           <div class="subsub">
                             <h4 data-prop="rdf:value" class="first prop">
-                              <span class="propref" target="_blank" rel="noopener noreferrer"
-                                ><span lang="">value</span></span
-                              >:
+                              <button class="propref"><span lang="">value</span></button>:
                             </h4>
                             <h4 class="hasTogHovM">
                               76902420<svg
@@ -6530,9 +6589,9 @@
                               </svg>
                               <div class="hover-menu">
                                 <div>
-                                  <span class="anchorH"
-                                    ><img alt="info icon" src="/icons/info.svg"
-                                  /></span>
+                                  <button class="anchorH">
+                                    <img alt="info icon" src="/icons/info.svg" />
+                                  </button>
                                 </div>
                               </div>
                             </h4>
@@ -6541,20 +6600,18 @@
                       </div>
                       <div class="sub willK">
                         <h4 data-prop="bf:identifiedBy" class="first type">
-                          <span
+                          <a
                             class="propref"
                             href="http://purl.bdrc.io/resource/HarvardShelfId"
                             target="_blank"
                             rel="noopener noreferrer"
-                            ><span lang="en" class="hasSpace">hollis shelf id</span></span
+                            ><span lang="en" class="hasSpace">hollis shelf id</span></a
                           >:
                         </h4>
                         <div class="subgroup">
                           <div class="subsub">
                             <h4 data-prop="rdf:value" class="first prop">
-                              <span class="propref" target="_blank" rel="noopener noreferrer"
-                                ><span lang="">value</span></span
-                              >:
+                              <button class="propref"><span lang="">value</span></button>:
                             </h4>
                             <h4 class="hasTogHovM">
                               007194410-9<svg
@@ -6570,9 +6627,9 @@
                               </svg>
                               <div class="hover-menu">
                                 <div>
-                                  <span class="anchorH"
-                                    ><img alt="info icon" src="/icons/info.svg"
-                                  /></span>
+                                  <button class="anchorH">
+                                    <img alt="info icon" src="/icons/info.svg" />
+                                  </button>
                                 </div>
                               </div>
                             </h4>
@@ -6581,20 +6638,18 @@
                       </div>
                       <div class="sub keep willK">
                         <h4 data-prop="bf:identifiedBy" class="first type">
-                          <span
+                          <a
                             class="propref"
                             href="http://purl.bdrc.io/resource/HarvardShelfId"
                             target="_blank"
                             rel="noopener noreferrer"
-                            ><span lang="en" class="hasSpace">hollis shelf id</span></span
+                            ><span lang="en" class="hasSpace">hollis shelf id</span></a
                           >:
                         </h4>
                         <div class="subgroup">
                           <div class="subsub">
                             <h4 data-prop="rdf:value" class="first prop">
-                              <span class="propref" target="_blank" rel="noopener noreferrer"
-                                ><span lang="">value</span></span
-                              >:
+                              <button class="propref"><span lang="">value</span></button>:
                             </h4>
                             <h4 class="hasTogHovM">
                               010896010-2<svg
@@ -6610,9 +6665,9 @@
                               </svg>
                               <div class="hover-menu">
                                 <div>
-                                  <span class="anchorH"
-                                    ><img alt="info icon" src="/icons/info.svg"
-                                  /></span>
+                                  <button class="anchorH">
+                                    <img alt="info icon" src="/icons/info.svg" />
+                                  </button>
                                 </div>
                               </div>
                             </h4>
@@ -6621,20 +6676,18 @@
                       </div>
                       <div class="sub keep willK">
                         <h4 data-prop="bf:identifiedBy" class="first type">
-                          <span
+                          <a
                             class="propref"
                             href="http://purl.bdrc.io/resource/HarvardShelfId"
                             target="_blank"
                             rel="noopener noreferrer"
-                            ><span lang="en" class="hasSpace">hollis shelf id</span></span
+                            ><span lang="en" class="hasSpace">hollis shelf id</span></a
                           >:
                         </h4>
                         <div class="subgroup">
                           <div class="subsub">
                             <h4 data-prop="rdf:value" class="first prop">
-                              <span class="propref" target="_blank" rel="noopener noreferrer"
-                                ><span lang="">value</span></span
-                              >:
+                              <button class="propref"><span lang="">value</span></button>:
                             </h4>
                             <h4 class="hasTogHovM">
                               010896012-9<svg
@@ -6650,9 +6703,9 @@
                               </svg>
                               <div class="hover-menu">
                                 <div>
-                                  <span class="anchorH"
-                                    ><img alt="info icon" src="/icons/info.svg"
-                                  /></span>
+                                  <button class="anchorH">
+                                    <img alt="info icon" src="/icons/info.svg" />
+                                  </button>
                                 </div>
                               </div>
                             </h4>
@@ -6661,20 +6714,18 @@
                       </div>
                       <div class="sub keep willK">
                         <h4 data-prop="bf:identifiedBy" class="first type">
-                          <span
+                          <a
                             class="propref"
                             href="http://purl.bdrc.io/resource/HarvardShelfId"
                             target="_blank"
                             rel="noopener noreferrer"
-                            ><span lang="en" class="hasSpace">hollis shelf id</span></span
+                            ><span lang="en" class="hasSpace">hollis shelf id</span></a
                           >:
                         </h4>
                         <div class="subgroup">
                           <div class="subsub">
                             <h4 data-prop="rdf:value" class="first prop">
-                              <span class="propref" target="_blank" rel="noopener noreferrer"
-                                ><span lang="">value</span></span
-                              >:
+                              <button class="propref"><span lang="">value</span></button>:
                             </h4>
                             <h4 class="hasTogHovM">
                               010896013-7<svg
@@ -6690,9 +6741,9 @@
                               </svg>
                               <div class="hover-menu">
                                 <div>
-                                  <span class="anchorH"
-                                    ><img alt="info icon" src="/icons/info.svg"
-                                  /></span>
+                                  <button class="anchorH">
+                                    <img alt="info icon" src="/icons/info.svg" />
+                                  </button>
                                 </div>
                               </div>
                             </h4>
@@ -6701,20 +6752,18 @@
                       </div>
                       <div class="sub keep willK">
                         <h4 data-prop="bf:identifiedBy" class="first type">
-                          <span
+                          <a
                             class="propref"
+                            href="http://purl.bdrc.io/resource/HarvardShelfId"
                             target="_blank"
                             rel="noopener noreferrer"
-                            href="http://purl.bdrc.io/resource/HarvardShelfId"
-                            ><span lang="en" class="hasSpace">hollis shelf id</span></span
+                            ><span lang="en" class="hasSpace">hollis shelf id</span></a
                           >:
                         </h4>
                         <div class="subgroup">
                           <div class="subsub">
                             <h4 data-prop="rdf:value" class="first prop">
-                              <span class="propref" target="_blank" rel="noopener noreferrer"
-                                ><span lang="">value</span></span
-                              >:
+                              <button class="propref"><span lang="">value</span></button>:
                             </h4>
                             <h4 class="hasTogHovM">
                               010896046-3<svg
@@ -6730,9 +6779,9 @@
                               </svg>
                               <div class="hover-menu">
                                 <div>
-                                  <span class="anchorH"
-                                    ><img alt="info icon" src="/icons/info.svg"
-                                  /></span>
+                                  <button class="anchorH">
+                                    <img alt="info icon" src="/icons/info.svg" />
+                                  </button>
                                 </div>
                               </div>
                             </h4>
@@ -6741,20 +6790,18 @@
                       </div>
                       <div class="sub keep willK">
                         <h4 data-prop="bf:identifiedBy" class="first type">
-                          <span
+                          <a
                             class="propref"
                             href="http://purl.bdrc.io/resource/HarvardShelfId"
                             target="_blank"
                             rel="noopener noreferrer"
-                            ><span lang="en" class="hasSpace">hollis shelf id</span></span
+                            ><span lang="en" class="hasSpace">hollis shelf id</span></a
                           >:
                         </h4>
                         <div class="subgroup">
                           <div class="subsub">
                             <h4 data-prop="rdf:value" class="first prop">
-                              <span class="propref" target="_blank" rel="noopener noreferrer"
-                                ><span lang="">value</span></span
-                              >:
+                              <button class="propref"><span lang="">value</span></button>:
                             </h4>
                             <h4 class="hasTogHovM">
                               010896047-1<svg
@@ -6770,9 +6817,9 @@
                               </svg>
                               <div class="hover-menu">
                                 <div>
-                                  <span class="anchorH"
-                                    ><img alt="info icon" src="/icons/info.svg"
-                                  /></span>
+                                  <button class="anchorH">
+                                    <img alt="info icon" src="/icons/info.svg" />
+                                  </button>
                                 </div>
                               </div>
                             </h4>
@@ -6781,20 +6828,18 @@
                       </div>
                       <div class="sub keep willK">
                         <h4 data-prop="bf:identifiedBy" class="first type">
-                          <span
+                          <a
                             class="propref"
                             href="http://purl.bdrc.io/resource/HarvardShelfId"
                             target="_blank"
                             rel="noopener noreferrer"
-                            ><span lang="en" class="hasSpace">hollis shelf id</span></span
+                            ><span lang="en" class="hasSpace">hollis shelf id</span></a
                           >:
                         </h4>
                         <div class="subgroup">
                           <div class="subsub">
                             <h4 data-prop="rdf:value" class="first prop">
-                              <span class="propref" target="_blank" rel="noopener noreferrer"
-                                ><span lang="">value</span></span
-                              >:
+                              <button class="propref"><span lang="">value</span></button>:
                             </h4>
                             <h4 class="hasTogHovM">
                               010896048-X<svg
@@ -6810,9 +6855,9 @@
                               </svg>
                               <div class="hover-menu">
                                 <div>
-                                  <span class="anchorH"
-                                    ><img alt="info icon" src="/icons/info.svg"
-                                  /></span>
+                                  <button class="anchorH">
+                                    <img alt="info icon" src="/icons/info.svg" />
+                                  </button>
                                 </div>
                               </div>
                             </h4>
@@ -6821,20 +6866,18 @@
                       </div>
                       <div class="sub keep willK">
                         <h4 data-prop="bf:identifiedBy" class="first type">
-                          <span
+                          <a
                             class="propref"
                             href="http://purl.bdrc.io/resource/HarvardShelfId"
                             target="_blank"
                             rel="noopener noreferrer"
-                            ><span lang="en" class="hasSpace">hollis shelf id</span></span
+                            ><span lang="en" class="hasSpace">hollis shelf id</span></a
                           >:
                         </h4>
                         <div class="subgroup">
                           <div class="subsub">
                             <h4 data-prop="rdf:value" class="first prop">
-                              <span class="propref" target="_blank" rel="noopener noreferrer"
-                                ><span lang="">value</span></span
-                              >:
+                              <button class="propref"><span lang="">value</span></button>:
                             </h4>
                             <h4 class="hasTogHovM">
                               010896050-1<svg
@@ -6850,9 +6893,9 @@
                               </svg>
                               <div class="hover-menu">
                                 <div>
-                                  <span class="anchorH"
-                                    ><img alt="info icon" src="/icons/info.svg"
-                                  /></span>
+                                  <button class="anchorH">
+                                    <img alt="info icon" src="/icons/info.svg" />
+                                  </button>
                                 </div>
                               </div>
                             </h4>
@@ -6861,20 +6904,18 @@
                       </div>
                       <div class="sub keep willK">
                         <h4 data-prop="bf:identifiedBy" class="first type">
-                          <span
+                          <a
                             class="propref"
                             href="http://purl.bdrc.io/resource/HarvardShelfId"
                             target="_blank"
                             rel="noopener noreferrer"
-                            ><span lang="en" class="hasSpace">hollis shelf id</span></span
+                            ><span lang="en" class="hasSpace">hollis shelf id</span></a
                           >:
                         </h4>
                         <div class="subgroup">
                           <div class="subsub">
                             <h4 data-prop="rdf:value" class="first prop">
-                              <span class="propref" target="_blank" rel="noopener noreferrer"
-                                ><span lang="">value</span></span
-                              >:
+                              <button class="propref"><span lang="">value</span></button>:
                             </h4>
                             <h4 class="hasTogHovM">
                               010896101-X<svg
@@ -6890,9 +6931,9 @@
                               </svg>
                               <div class="hover-menu">
                                 <div>
-                                  <span class="anchorH"
-                                    ><img alt="info icon" src="/icons/info.svg"
-                                  /></span>
+                                  <button class="anchorH">
+                                    <img alt="info icon" src="/icons/info.svg" />
+                                  </button>
                                 </div>
                               </div>
                             </h4>
@@ -6901,20 +6942,18 @@
                       </div>
                       <div class="sub keep willK">
                         <h4 data-prop="bf:identifiedBy" class="first type">
-                          <span
+                          <a
                             class="propref"
                             href="http://purl.bdrc.io/resource/HarvardShelfId"
                             target="_blank"
                             rel="noopener noreferrer"
-                            ><span lang="en" class="hasSpace">hollis shelf id</span></span
+                            ><span lang="en" class="hasSpace">hollis shelf id</span></a
                           >:
                         </h4>
                         <div class="subgroup">
                           <div class="subsub">
                             <h4 data-prop="rdf:value" class="first prop">
-                              <span class="propref" target="_blank" rel="noopener noreferrer"
-                                ><span lang="">value</span></span
-                              >:
+                              <button class="propref"><span lang="">value</span></button>:
                             </h4>
                             <h4 class="hasTogHovM">
                               010896322-5<svg
@@ -6930,9 +6969,9 @@
                               </svg>
                               <div class="hover-menu">
                                 <div>
-                                  <span class="anchorH"
-                                    ><img alt="info icon" src="/icons/info.svg"
-                                  /></span>
+                                  <button class="anchorH">
+                                    <img alt="info icon" src="/icons/info.svg" />
+                                  </button>
                                 </div>
                               </div>
                             </h4>
@@ -6941,20 +6980,18 @@
                       </div>
                       <div class="sub keep willK">
                         <h4 data-prop="bf:identifiedBy" class="first type">
-                          <span
+                          <a
                             class="propref"
                             href="http://purl.bdrc.io/resource/HarvardShelfId"
                             target="_blank"
                             rel="noopener noreferrer"
-                            ><span lang="en" class="hasSpace">hollis shelf id</span></span
+                            ><span lang="en" class="hasSpace">hollis shelf id</span></a
                           >:
                         </h4>
                         <div class="subgroup">
                           <div class="subsub">
                             <h4 data-prop="rdf:value" class="first prop">
-                              <span class="propref" target="_blank" rel="noopener noreferrer"
-                                ><span lang="">value</span></span
-                              >:
+                              <button class="propref"><span lang="">value</span></button>:
                             </h4>
                             <h4 class="hasTogHovM">
                               010897185-6<svg
@@ -6970,9 +7007,9 @@
                               </svg>
                               <div class="hover-menu">
                                 <div>
-                                  <span class="anchorH"
-                                    ><img alt="info icon" src="/icons/info.svg"
-                                  /></span>
+                                  <button class="anchorH">
+                                    <img alt="info icon" src="/icons/info.svg" />
+                                  </button>
                                 </div>
                               </div>
                             </h4>
@@ -6981,20 +7018,18 @@
                       </div>
                       <div class="sub keep willK">
                         <h4 data-prop="bf:identifiedBy" class="first type">
-                          <span
+                          <a
                             class="propref"
                             href="http://purl.bdrc.io/resource/HarvardShelfId"
                             target="_blank"
                             rel="noopener noreferrer"
-                            ><span lang="en" class="hasSpace">hollis shelf id</span></span
+                            ><span lang="en" class="hasSpace">hollis shelf id</span></a
                           >:
                         </h4>
                         <div class="subgroup">
                           <div class="subsub">
                             <h4 data-prop="rdf:value" class="first prop">
-                              <span class="propref" target="_blank" rel="noopener noreferrer"
-                                ><span lang="">value</span></span
-                              >:
+                              <button class="propref"><span lang="">value</span></button>:
                             </h4>
                             <h4 class="hasTogHovM">
                               010897920-2<svg
@@ -7010,9 +7045,9 @@
                               </svg>
                               <div class="hover-menu">
                                 <div>
-                                  <span class="anchorH"
-                                    ><img alt="info icon" src="/icons/info.svg"
-                                  /></span>
+                                  <button class="anchorH">
+                                    <img alt="info icon" src="/icons/info.svg" />
+                                  </button>
                                 </div>
                               </div>
                             </h4>
@@ -7021,20 +7056,18 @@
                       </div>
                       <div class="sub keep willK">
                         <h4 data-prop="bf:identifiedBy" class="first type">
-                          <span
+                          <a
                             class="propref"
                             href="http://purl.bdrc.io/resource/HarvardShelfId"
                             target="_blank"
                             rel="noopener noreferrer"
-                            ><span lang="en" class="hasSpace">hollis shelf id</span></span
+                            ><span lang="en" class="hasSpace">hollis shelf id</span></a
                           >:
                         </h4>
                         <div class="subgroup">
                           <div class="subsub">
                             <h4 data-prop="rdf:value" class="first prop">
-                              <span class="propref" target="_blank" rel="noopener noreferrer"
-                                ><span lang="">value</span></span
-                              >:
+                              <button class="propref"><span lang="">value</span></button>:
                             </h4>
                             <h4 class="hasTogHovM">
                               010898037-5<svg
@@ -7050,9 +7083,9 @@
                               </svg>
                               <div class="hover-menu">
                                 <div>
-                                  <span class="anchorH"
-                                    ><img alt="info icon" src="/icons/info.svg"
-                                  /></span>
+                                  <button class="anchorH">
+                                    <img alt="info icon" src="/icons/info.svg" />
+                                  </button>
                                 </div>
                               </div>
                             </h4>
@@ -7061,20 +7094,18 @@
                       </div>
                       <div class="sub keep">
                         <h4 data-prop="bf:identifiedBy" class="first type">
-                          <span
+                          <a
                             class="propref"
                             href="http://purl.bdrc.io/resource/HarvardShelfId"
                             target="_blank"
                             rel="noopener noreferrer"
-                            ><span lang="en" class="hasSpace">hollis shelf id</span></span
+                            ><span lang="en" class="hasSpace">hollis shelf id</span></a
                           >:
                         </h4>
                         <div class="subgroup">
                           <div class="subsub">
                             <h4 data-prop="rdf:value" class="first prop">
-                              <span class="propref" target="_blank" rel="noopener noreferrer"
-                                ><span lang="">value</span></span
-                              >:
+                              <button class="propref"><span lang="">value</span></button>:
                             </h4>
                             <h4 class="hasTogHovM">
                               010898038-3<svg
@@ -7090,9 +7121,9 @@
                               </svg>
                               <div class="hover-menu">
                                 <div>
-                                  <span class="anchorH"
-                                    ><img alt="info icon" src="/icons/info.svg"
-                                  /></span>
+                                  <button class="anchorH">
+                                    <img alt="info icon" src="/icons/info.svg" />
+                                  </button>
                                 </div>
                               </div>
                             </h4>
@@ -7101,20 +7132,18 @@
                       </div>
                       <div class="sub">
                         <h4 data-prop="bf:identifiedBy" class="first type">
-                          <span
+                          <a
                             class="propref"
                             href="http://purl.bdrc.io/resource/HollisId"
                             target="_blank"
                             rel="noopener noreferrer"
-                            ><span lang="en" class="hasSpace">hollis id</span></span
+                            ><span lang="en" class="hasSpace">hollis id</span></a
                           >:
                         </h4>
                         <div class="subgroup">
                           <div class="subsub">
                             <h4 data-prop="rdf:value" class="first prop">
-                              <span class="propref" target="_blank" rel="noopener noreferrer"
-                                ><span lang="">value</span></span
-                              >:
+                              <button class="propref"><span lang="">value</span></button>:
                             </h4>
                             <h4 class="hasTogHovM">
                               014258613<svg
@@ -7130,9 +7159,9 @@
                               </svg>
                               <div class="hover-menu">
                                 <div>
-                                  <span class="anchorH"
-                                    ><img alt="info icon" src="/icons/info.svg"
-                                  /></span>
+                                  <button class="anchorH">
+                                    <img alt="info icon" src="/icons/info.svg" />
+                                  </button>
                                 </div>
                               </div>
                             </h4>
@@ -7141,20 +7170,18 @@
                       </div>
                       <div class="sub">
                         <h4 data-prop="bf:identifiedBy" class="first type">
-                          <span
+                          <a
                             class="propref"
                             href="http://purl.bdrc.io/resource/OclcControlNumber"
                             target="_blank"
                             rel="noopener noreferrer"
-                            ><span lang="en" class="hasSpace">OCLC Control Number (OCN)</span></span
+                            ><span lang="en" class="hasSpace">OCLC Control Number (OCN)</span></a
                           >:
                         </h4>
                         <div class="subgroup">
                           <div class="subsub">
                             <h4 data-prop="rdf:value" class="first prop">
-                              <span class="propref" target="_blank" rel="noopener noreferrer"
-                                ><span lang="">value</span></span
-                              >:
+                              <button class="propref"><span lang="">value</span></button>:
                             </h4>
                             <h4 class="hasTogHovM">
                               BQ1260 1976<svg
@@ -7170,9 +7197,9 @@
                               </svg>
                               <div class="hover-menu">
                                 <div>
-                                  <span class="anchorH"
-                                    ><img alt="info icon" src="/icons/info.svg"
-                                  /></span>
+                                  <button class="anchorH">
+                                    <img alt="info icon" src="/icons/info.svg" />
+                                  </button>
                                 </div>
                               </div>
                             </h4>
@@ -7186,12 +7213,12 @@
               <div data-prop="bdo:printMethod" class="">
                 <h3>
                   <span
-                    ><span
+                    ><a
                       class="propref"
                       href="http://purl.bdrc.io/ontology/core/printMethod"
                       target="_blank"
                       rel="noopener noreferrer"
-                      ><span lang="en" class="hasSpace">print method</span></span
+                      ><span lang="en" class="hasSpace">print method</span></a
                     >:</span
                   >
                 </h3>
@@ -7211,7 +7238,9 @@
                     </svg>
                     <div class="hover-menu">
                       <div>
-                        <span class="anchorH"><img alt="info icon" src="/icons/info.svg" /></span>
+                        <button class="anchorH">
+                          <img alt="info icon" src="/icons/info.svg" />
+                        </button>
                       </div>
                     </div>
                   </h4>
@@ -7220,12 +7249,12 @@
               <div data-prop="bdo:material" class="">
                 <h3>
                   <span
-                    ><span
+                    ><a
                       class="propref"
                       href="http://purl.bdrc.io/ontology/core/material"
                       target="_blank"
                       rel="noopener noreferrer"
-                      ><span lang="en">material</span></span
+                      ><span lang="en">material</span></a
                     >:</span
                   >
                 </h3>
@@ -7245,7 +7274,9 @@
                     </svg>
                     <div class="hover-menu">
                       <div>
-                        <span class="anchorH"><img alt="info icon" src="/icons/info.svg" /></span>
+                        <button class="anchorH">
+                          <img alt="info icon" src="/icons/info.svg" />
+                        </button>
                       </div>
                     </div>
                   </h4>
@@ -7254,12 +7285,12 @@
               <div data-prop="bdo:binding" class="">
                 <h3>
                   <span
-                    ><span
+                    ><a
                       class="propref"
                       href="http://purl.bdrc.io/ontology/core/binding"
                       target="_blank"
                       rel="noopener noreferrer"
-                      ><span lang="en">binding</span></span
+                      ><span lang="en">binding</span></a
                     >:</span
                   >
                 </h3>
@@ -7280,7 +7311,9 @@
                     </svg>
                     <div class="hover-menu">
                       <div>
-                        <span class="anchorH"><img alt="info icon" src="/icons/info.svg" /></span>
+                        <button class="anchorH">
+                          <img alt="info icon" src="/icons/info.svg" />
+                        </button>
                       </div>
                     </div>
                   </h4>
@@ -7289,12 +7322,12 @@
               <div data-prop="bdo:numberOfVolumes" class="">
                 <h3>
                   <span
-                    ><span
+                    ><a
                       class="propref"
                       href="http://purl.bdrc.io/ontology/core/numberOfVolumes"
                       target="_blank"
                       rel="noopener noreferrer"
-                      ><span lang="en" class="hasSpace">number of volumes</span></span
+                      ><span lang="en" class="hasSpace">number of volumes</span></a
                     >:</span
                   >
                 </h3>
@@ -7314,7 +7347,9 @@
                     </svg>
                     <div class="hover-menu">
                       <div>
-                        <span class="anchorH"><img alt="info icon" src="/icons/info.svg" /></span>
+                        <button class="anchorH">
+                          <img alt="info icon" src="/icons/info.svg" />
+                        </button>
                       </div>
                     </div>
                   </h4>
@@ -7323,12 +7358,12 @@
               <div data-prop="bdo:note" class="has-collapse custom">
                 <h3>
                   <span
-                    ><span
+                    ><a
                       class="propref"
                       href="http://purl.bdrc.io/ontology/core/note"
                       target="_blank"
                       rel="noopener noreferrer"
-                      ><span>Notes</span></span
+                      ><span>Notes</span></a
                     >:</span
                   >
                 </h3>
@@ -7357,7 +7392,9 @@
                       </div>
                       <div class="hover-menu">
                         <div>
-                          <span class="anchorH"><img alt="info icon" src="/icons/info.svg" /></span>
+                          <button class="anchorH">
+                            <img alt="info icon" src="/icons/info.svg" />
+                          </button>
                         </div>
                       </div>
                     </div>
@@ -7416,7 +7453,9 @@
                       </div>
                       <div class="hover-menu">
                         <div>
-                          <span class="anchorH"><img alt="info icon" src="/icons/info.svg" /></span>
+                          <button class="anchorH">
+                            <img alt="info icon" src="/icons/info.svg" />
+                          </button>
                         </div>
                       </div>
                     </div>
@@ -7461,7 +7500,9 @@
                       </div>
                       <div class="hover-menu">
                         <div>
-                          <span class="anchorH"><img alt="info icon" src="/icons/info.svg" /></span>
+                          <button class="anchorH">
+                            <img alt="info icon" src="/icons/info.svg" />
+                          </button>
                         </div>
                       </div>
                     </div>
@@ -7557,9 +7598,9 @@
       })([]);
     </script>
     <script onerror="scriptError(this)" src="/static/js/2.9d3e2d57.chunk.js"></script>
-    <script onerror="scriptError(this)" src="/static/js/main.ed85c1ce.chunk.js"></script>
+    <script onerror="scriptError(this)" src="/static/js/main.7dd6711b.chunk.js"></script>
     <iframe
-      src="https://bdrc-io.auth0.com/authorize?client_id=i0CoWiN3twEMPCA85f0aD9acuIVIFj0J&amp;response_type=token%20id_token&amp;redirect_uri=http%3A%2F%2Flocalhost%3A5050%2Fscripts%2Fsilent_callback.html&amp;scope=openid%20profile&amp;audience=https%3A%2F%2Fbdrc-io.auth0.com%2Fapi%2Fv2%2F&amp;_send_telemetry=true&amp;_times_to_retry_failed_requests=0&amp;token_issuer=https%3A%2F%2Fbdrc-io.auth0.com%2F&amp;root_url=https%3A%2F%2Fbdrc-io.auth0.com&amp;universal_login_page=true&amp;response_mode=fragment&amp;state=jfqTzr0J7XiR5IUXBbG~IJwLR9I8N3mL&amp;nonce=RpEQ21J00uRx19Hg0RaC2qBRRC29IxKx&amp;prompt=none&amp;auth0Client=eyJuYW1lIjoiYXV0aDAuanMiLCJ2ZXJzaW9uIjoiOS4xNi4yIn0%3D"
+      src="https://bdrc-io.auth0.com/authorize?client_id=i0CoWiN3twEMPCA85f0aD9acuIVIFj0J&amp;response_type=token%20id_token&amp;redirect_uri=http%3A%2F%2Flocalhost%3A5050%2Fscripts%2Fsilent_callback.html&amp;scope=openid%20profile&amp;audience=https%3A%2F%2Fbdrc-io.auth0.com%2Fapi%2Fv2%2F&amp;_send_telemetry=true&amp;_times_to_retry_failed_requests=0&amp;token_issuer=https%3A%2F%2Fbdrc-io.auth0.com%2F&amp;root_url=https%3A%2F%2Fbdrc-io.auth0.com&amp;universal_login_page=true&amp;response_mode=fragment&amp;state=GS9aZVOwzdk~fxLDlVSN_VF_.68v3~A_&amp;nonce=jbzF1UTZOdZvHMMVi0sOqV-B3XDp1O0f&amp;prompt=none&amp;auth0Client=eyJuYW1lIjoiYXV0aDAuanMiLCJ2ZXJzaW9uIjoiOS4xNi4yIn0%3D"
       style="display: none"
     ></iframe>
   </body>
