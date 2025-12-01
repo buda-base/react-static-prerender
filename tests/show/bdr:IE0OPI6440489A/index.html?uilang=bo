@@ -1,0 +1,3654 @@
+<!DOCTYPE html>
+<html lang="bo" data-browser="Chrome Headless">
+  <head>
+    <script src="/scripts/scriptError.js"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
+    <title>བཀའ་འགྱུར ༼སྡེ་དགེ་པར་ཕུད༽ - Buddhist Digital Archives</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <link
+      rel="unapi-server"
+      type="application/xml"
+      title="unAPI"
+      href="https://ldspdi.bdrc.io/UNAPI"
+    />
+    <meta name="apple-mobile-web-app-title" content="BUDA" />
+    <meta name="application-name" content="BUDA" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta
+      name="description"
+      content="The Buddhist Digital Archives by the Buddhist Digital Resource Center. A cooperative platform for expanding access to Buddhist literature. Explore the millions of pages of texts contributed by BDRC and its many partners."
+    />
+    <link href="/static/css/2.adc7c626.chunk.css" rel="stylesheet" />
+    <link href="/static/css/main.42ce2251.chunk.css" rel="stylesheet" />
+    <style type="text/css"></style>
+    <style data-jss="" data-meta="MuiTouchRipple">
+      .jss62 {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+        z-index: 0;
+        position: absolute;
+        overflow: hidden;
+        border-radius: inherit;
+        pointer-events: none;
+      }
+      .jss63 {
+        top: 0;
+        left: 0;
+        width: 50px;
+        height: 50px;
+        opacity: 0;
+        position: absolute;
+      }
+      .jss64 {
+        opacity: 0.3;
+        transform: scale(1);
+        animation: mui-ripple-enter 550ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      .jss65 {
+        animation-duration: 200ms;
+      }
+      .jss66 {
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+        display: block;
+        border-radius: 50%;
+        background-color: currentColor;
+      }
+      .jss67 {
+        opacity: 0;
+        animation: mui-ripple-exit 550ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      .jss68 {
+        top: 0;
+        left: 0;
+        position: absolute;
+        animation: mui-ripple-pulsate 2500ms cubic-bezier(0.4, 0, 0.2, 1) 200ms infinite;
+      }
+      @-webkit-keyframes mui-ripple-enter {
+        0% {
+          opacity: 0.1;
+          transform: scale(0);
+        }
+        100% {
+          opacity: 0.3;
+          transform: scale(1);
+        }
+      }
+      @-webkit-keyframes mui-ripple-exit {
+        0% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+      @-webkit-keyframes mui-ripple-pulsate {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(0.92);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+    </style>
+    <style data-jss="" data-meta="MuiButtonBase">
+      .jss59 {
+        color: inherit;
+        border: 0;
+        margin: 0;
+        cursor: pointer;
+        display: inline-flex;
+        outline: none;
+        padding: 0;
+        position: relative;
+        align-items: center;
+        user-select: none;
+        border-radius: 0;
+        vertical-align: middle;
+        justify-content: center;
+        -moz-appearance: none;
+        text-decoration: none;
+        background-color: transparent;
+        -webkit-appearance: none;
+        -webkit-tap-highlight-color: transparent;
+      }
+      .jss59::-moz-focus-inner {
+        border-style: none;
+      }
+      .jss59.jss60 {
+        cursor: default;
+        pointer-events: none;
+      }
+    </style>
+    <style data-jss="" data-meta="MuiIconButton">
+      .jss79 {
+        flex: 0 0 auto;
+        width: 48px;
+        color: rgba(0, 0, 0, 0.54);
+        height: 48px;
+        padding: 0;
+        font-size: 1.5rem;
+        text-align: center;
+        transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+        border-radius: 50%;
+      }
+      .jss79:hover {
+        background-color: rgba(0, 0, 0, 0.08);
+      }
+      .jss79.jss83 {
+        color: rgba(0, 0, 0, 0.26);
+      }
+      @media (hover: none) {
+        .jss79:hover {
+          background-color: transparent;
+        }
+      }
+      .jss79:hover.jss83 {
+        background-color: transparent;
+      }
+      .jss80 {
+        color: inherit;
+      }
+      .jss81 {
+        color: #3f51b5;
+      }
+      .jss81:hover {
+        background-color: rgba(63, 81, 181, 0.08);
+      }
+      @media (hover: none) {
+        .jss81:hover {
+          background-color: transparent;
+        }
+      }
+      .jss82 {
+        color: #3f51b5;
+      }
+      .jss82:hover {
+        background-color: rgba(63, 81, 181, 0.08);
+      }
+      @media (hover: none) {
+        .jss82:hover {
+          background-color: transparent;
+        }
+      }
+      .jss84 {
+        width: 100%;
+        display: flex;
+        align-items: inherit;
+        justify-content: inherit;
+      }
+    </style>
+    <style data-jss="" data-meta="MuiSvgIcon">
+      .jss69 {
+        fill: currentColor;
+        width: 1em;
+        height: 1em;
+        display: inline-block;
+        font-size: 24px;
+        transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+        user-select: none;
+        flex-shrink: 0;
+      }
+      .jss70 {
+        color: #3f51b5;
+      }
+      .jss71 {
+        color: #3f51b5;
+      }
+      .jss72 {
+        color: rgba(0, 0, 0, 0.54);
+      }
+      .jss73 {
+        color: #f44336;
+      }
+      .jss74 {
+        color: rgba(0, 0, 0, 0.26);
+      }
+      .jss75 {
+        font-size: inherit;
+      }
+    </style>
+    <style data-jss="" data-meta="MuiListItem">
+      .jss49 {
+        width: 100%;
+        display: flex;
+        position: relative;
+        box-sizing: border-box;
+        text-align: left;
+        align-items: center;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        justify-content: flex-start;
+        text-decoration: none;
+      }
+      .jss50 {
+        position: relative;
+      }
+      .jss51 {
+        background-color: rgba(0, 0, 0, 0.08);
+      }
+      .jss53 {
+        padding-top: 8px;
+        padding-bottom: 8px;
+      }
+      .jss54 {
+        opacity: 0.5;
+      }
+      .jss55 {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+        background-clip: padding-box;
+      }
+      .jss56 {
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+      @media (min-width: 600px) {
+        .jss56 {
+          padding-left: 24px;
+          padding-right: 24px;
+        }
+      }
+      .jss57 {
+        transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+      }
+      .jss57:hover {
+        text-decoration: none;
+        background-color: rgba(0, 0, 0, 0.08);
+      }
+      @media (hover: none) {
+        .jss57:hover {
+          background-color: transparent;
+        }
+      }
+      .jss58 {
+        padding-right: 32px;
+      }
+    </style>
+    <style data-jss="" data-meta="MuiMenuItem">
+      .jss47 {
+        color: rgba(0, 0, 0, 0.87);
+        width: auto;
+        height: 24px;
+        overflow: hidden;
+        font-size: 1rem;
+        box-sizing: content-box;
+        font-weight: 400;
+        font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+        line-height: 1.5em;
+        white-space: nowrap;
+        padding-left: 16px;
+        text-overflow: ellipsis;
+        padding-right: 16px;
+      }
+      .jss47.jss48 {
+        background-color: rgba(0, 0, 0, 0.14);
+      }
+    </style>
+    <style data-jss="" data-meta="MuiFormControl">
+      .jss43 {
+        margin: 0;
+        border: 0;
+        display: inline-flex;
+        padding: 0;
+        position: relative;
+        min-width: 0;
+        flex-direction: column;
+      }
+      .jss44 {
+        margin-top: 16px;
+        margin-bottom: 8px;
+      }
+      .jss45 {
+        margin-top: 8px;
+        margin-bottom: 4px;
+      }
+      .jss46 {
+        width: 100%;
+      }
+    </style>
+    <style data-jss="" data-meta="MuiModal">
+      .jss77 {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1300;
+        position: fixed;
+      }
+      .jss78 {
+        visibility: hidden;
+      }
+    </style>
+    <style data-jss="" data-meta="MuiPopover">
+      .jss76 {
+        outline: none;
+        position: absolute;
+        min-width: 16px;
+        max-width: calc(100% - 32px);
+        overflow-y: auto;
+        overflow-x: hidden;
+        min-height: 16px;
+        max-height: calc(100% - 32px);
+      }
+    </style>
+    <script type="application/ld+json" data-react-helmet="true">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://library.bdrc.io/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "བཀའ་འགྱུར ༼སྡེ་དགེ་པར་ཕུད༽",
+            "item": "https://library.bdrc.io/show/bdr:MW22084"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Etext"
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/instantsearch.css@7/themes/satellite-min.css"
+      />
+      <div
+        title="65fe12a3-7344-4458-8dd4-33436d62b117"
+        data-v="65fe12a3-7344-4458-8dd4-33436d62b117"
+      ></div>
+      <div id="uiLangPopup">
+        <div class="bg"></div>
+        <div class="fg">
+          <div>
+            སྐད་ཡིག་འདེམ།<span id="lang" style="margin: 0px 0px 0px 10px"
+              ><img alt="language icon" src="/icons/LANGUE.svg"
+            /></span>
+          </div>
+          <div>
+            <div class="jss43 formControl">
+              <li
+                tabindex="-1"
+                class="jss59 jss49 jss52 jss56 jss57 jss47 is-locale"
+                role="menuitem"
+                value="bo"
+                lang="bo"
+              >
+                བོད་ཡིག<span class="jss62"></span>
+              </li>
+              <li
+                tabindex="-1"
+                class="jss59 jss49 jss52 jss56 jss57 jss47"
+                role="menuitem"
+                value="en"
+                lang="en"
+              >
+                English<span class="jss62"></span>
+              </li>
+              <li
+                tabindex="-1"
+                class="jss59 jss49 jss52 jss56 jss57 jss47"
+                role="menuitem"
+                value="zh"
+                lang="zh"
+              >
+                中文<span class="jss62"></span>
+              </li>
+              <li
+                tabindex="-1"
+                class="jss59 jss49 jss52 jss56 jss57 jss47"
+                role="menuitem"
+                value="km"
+                lang="km"
+              >
+                ភាសាខ្មែរ<span class="jss62"></span>
+              </li>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="over-nav mirador-null simpleAdvanced-undefined">
+        <div>
+          <div><i>Preserving Buddhist literature for the world</i></div>
+          <div style="text-transform: capitalize">
+            <a
+              href="https://www.bdrc.io?lang=bo"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="BDRC-link"
+              ><span class="visually-hidden">Go to BDRC homepage</span
+              ><img alt="BDRC logo" src="/BDRC-Logo_.png" />BDRC</a
+            ><a
+              href="https://www.bdrc.io/buda-archive?lang=bo"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span class="visually-hidden">Go to About BUDA page</span>About BUDA</a
+            ><a href="https://www.bdrc.io/news?lang=bo" target="_blank" rel="noopener noreferrer"
+              ><span class="visually-hidden">Go to News page</span>News</a
+            ><a
+              href="https://www.bdrc.io/programs?lang=bo"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span class="visually-hidden">Go to Programs page</span>Programs</a
+            ><a href="https://bdrc.io/donation?lang=bo" target="_blank" rel="noopener noreferrer"
+              ><span class="visually-hidden">Go to Donation page</span>ཞལ་འདེབས།</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="nav msgPopupOn">
+        <div>
+          <div id="logo">
+            <a href="/?sortBy=firstScanSyncDate_desc&amp;type%5B0%5D=Instance"
+              ><span class="visually-hidden">Go to homepage</span
+              ><img alt="BUDA icon" src="/icons/BUDA-small.svg" /><span class="buda-caption"
+                ><span>BUDA</span><span class="buda-small">བུདྡྷ་དྲ་ཐོག་དཔེ་མཛོད།</span></span
+              ></a
+            >
+          </div>
+          <div class="inner-nav">
+            <div>
+              <a
+                class=""
+                href="/tradition/bo/?type[0]=Instance&amp;language[0]=LangBo&amp;sortBy=firstScanSyncDate_desc"
+                ><span class="visually-hidden">Go to Tibetan Tradition page</span>Tibetan
+                Tradition</a
+              >
+            </div>
+            <div>
+              <a class="" href="/tradition/pi/"
+                ><span class="visually-hidden">Go to Pali / SEA Tradition page</span>Pali / SEA
+                Tradition</a
+              >
+            </div>
+            <div>
+              <a class="" href="/tradition/sa/"
+                ><span class="visually-hidden">Go to Sanskrit Tradition page</span>Sanskrit
+                Tradition</a
+              >
+            </div>
+            <div>
+              <a class="" href="/tradition/zh/"
+                ><span class="visually-hidden">Go to Chinese Tradition page</span>Chinese
+                Tradition</a
+              >
+            </div>
+          </div>
+          <a id="about" href="https://bdrc.io" target="_blank" rel="noopener noreferrer"
+            ><span class="visually-hidden">Go to BDRC About page</span>ང་ཚོའི་སྐོར།</a
+          ><a id="new-search" href="/"
+            ><span class="visually-hidden">Go to search page</span><span>གསར་དུ་ཚོལ།</span
+            ><svg
+              class="jss69"
+              focusable="false"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+              style="fill: rgb(215, 52, 73); width: 32px; height: 32px"
+            >
+              <path
+                d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+              ></path>
+              <path fill="none" d="M0 0h24v24H0z"></path></svg></a
+          ><a id="guide" href="/buda-user-guide"
+            ><span class="visually-hidden">Go to User guide page</span
+            ><span
+              >བཀོལ་སྤྱོད་ལམ་སྟོན།<svg
+                version="1.1"
+                id="Layer_1"
+                x="0px"
+                y="0px"
+                viewBox="0 0 103.19 122.88"
+                style="fill: rgb(215, 52, 73); width: 28px"
+              >
+                <g>
+                  <path
+                    d="M17.16,0h82.72c1.82,0,3.31,1.49,3.31,3.31v92.32c-0.15,2.58-3.48,2.64-7.08,2.48H15.94 c-4.98,0-9.05,4.07-9.05,9.05c0,4.98,4.07,9.05,9.05,9.05l80.17,0v-9.63l7.08,0v12.24c0,2.23-1.82,4.05-4.05,4.05l-82.85,0 C7.33,122.88,0,115.55,0,106.59V17.16C0,7.72,7.72,0,17.16,0L17.16,0z M54.53,14.05c20.05,0,36.3,16.25,36.3,36.3 c0,20.05-16.25,36.3-36.3,36.3c-20.05,0-36.3-16.25-36.3-36.3C18.23,30.3,34.48,14.05,54.53,14.05L54.53,14.05z M52.5,36.67 c0.6,0.21,1.29,0.32,2.05,0.32c0.8,0,1.49-0.11,2.1-0.32c0.58-0.2,1.1-0.51,1.55-0.92c0.43-0.38,0.77-0.84,0.98-1.36 c0.23-0.54,0.34-1.15,0.34-1.84c0-0.7-0.11-1.33-0.34-1.87c-0.21-0.52-0.54-0.98-0.98-1.38l-0.02-0.02 c-0.44-0.41-0.97-0.72-1.55-0.93c-0.61-0.21-1.3-0.32-2.1-0.32c-0.77,0-1.46,0.11-2.04,0.32c-0.57,0.2-1.07,0.51-1.52,0.92 l-0.03,0.03c-0.44,0.4-0.77,0.87-0.98,1.38c-0.23,0.54-0.34,1.16-0.34,1.87c0,0.69,0.11,1.3,0.34,1.84 c0.21,0.49,0.52,0.93,0.92,1.3c0.02,0.02,0.05,0.03,0.06,0.05c0.44,0.41,0.97,0.72,1.55,0.92V36.67L52.5,36.67z M46.11,67.64v5.03 h17.01v-5.03h-0.38c-0.35,0-0.7-0.09-1.06-0.29c-0.28-0.15-0.54-0.35-0.78-0.61c-0.25-0.24-0.46-0.52-0.61-0.8 C60.1,65.59,60,65.24,60,64.9V44.93c0-0.8-0.09-1.36-0.29-1.69c-0.08-0.12-0.18-0.18-0.35-0.18H45.93v5.5h0.57 c0.35,0,0.72,0.11,1.07,0.31c0.25,0.14,0.48,0.32,0.7,0.57c0.03,0.02,0.05,0.05,0.08,0.08c0.25,0.26,0.43,0.52,0.57,0.78 c0.17,0.34,0.26,0.67,0.26,1.01V64.9c0,0.32-0.08,0.63-0.23,0.95l-0.05,0.09c-0.14,0.26-0.32,0.52-0.57,0.78 c-0.25,0.26-0.51,0.48-0.77,0.63c-0.35,0.2-0.7,0.29-1.07,0.29H46.11L46.11,67.64z"
+                    style="fill-rule: evenodd; clip-rule: evenodd"
+                  ></path>
+                </g></svg></span></a
+          ><a id="more-pages"
+            ><span class="visually-hidden">Open menu of more pages</span
+            ><span
+              >more pages<svg
+                class="jss69"
+                focusable="false"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path>
+                <path fill="none" d="M0 0h24v24H0z"></path></svg></span
+          ></a>
+          <div class="history">
+            <span title="བཙལ་བའི་ལོ་རྒྱུས།"><img alt="history icon" src="/icons/histo.svg" /></span
+            ><span title="དཔེ་རྟགས།"><img alt="bookmarks icon" src="/icons/fav.svg" /></span>
+          </div>
+          <div id="lang-login">
+            <button tabindex="0" class="jss59 jss79" type="button" id="lang" title="སྐད་ཡིག་འདེམ།">
+              <span class="jss84"><img alt="language icon" src="/icons/LANGUE.svg" /></span
+              ><span class="jss62"></span></button
+            ><button tabindex="0" class="jss59 jss79" type="button" id="login">
+              <span class="jss84"
+                ><svg
+                  class="jss69"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                  style="color: black; width: 28px; height: 28px"
+                >
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"
+                  ></path>
+                  <path fill="none" d="M0 0h24v24H0z"></path></svg></span
+              ><span class="jss62"></span></button
+            ><button tabindex="0" class="jss59 jss79" type="button" id="burger">
+              <span class="jss84"><img alt="burger icon" src="/icons/burger.svg" /></span
+              ><span class="jss62"></span>
+            </button>
+          </div>
+          <a target="_blank" rel="noopener noreferrer" href="https://bdrc.io/donation/" id="donate"
+            ><span class="visually-hidden">Go to Donation page</span
+            ><img alt="donate icon" src="/donate.svg" />ཞལ་འདེབས།</a
+          >
+          <div class="close">+</div>
+        </div>
+      </div>
+      <div class="ISB advanced-undefined etextNav-true">
+        <div class="search inner-search-bar fromAdvanced">
+          <div>
+            <form
+              action="/osearch/search"
+              method="GET"
+              role="search"
+              class="ais-SearchBox-form search-input"
+              novalidate=""
+              data-submit-hidden="false"
+            >
+              <h2>Search the Digital Archives</h2>
+              <input
+                class="ais-SearchBox-input"
+                autocomplete="off"
+                autocorrect="off"
+                autocapitalize="off"
+                spellcheck="false"
+                maxlength="512"
+                type="search"
+                name="q"
+                placeholder="Search the Digital Archives"
+                value=""
+              /><button type="submit" class="ais-SearchBox-submit">Submit</button
+              ><button
+                class="ais-SearchBox-reset"
+                type="reset"
+                title="Clear the search query"
+                hidden=""
+              >
+                <svg
+                  class="ais-SearchBox-resetIcon"
+                  viewBox="0 0 20 20"
+                  width="10"
+                  height="10"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M8.114 10L.944 2.83 0 1.885 1.886 0l.943.943L10 8.113l7.17-7.17.944-.943L20 1.886l-.943.943-7.17 7.17 7.17 7.17.943.944L18.114 20l-.943-.943-7.17-7.17-7.17 7.17-.944.943L0 18.114l.943-.943L8.113 10z"
+                  ></path>
+                </svg></button
+              ><span hidden=""
+                ><span class="ais-SearchBox-loadingIndicator"
+                  ><svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 38 38"
+                    stroke="#444"
+                    class="ais-SearchBox-loadingIcon"
+                    aria-hidden="true"
+                  >
+                    <g fill="none" fill-rule="evenodd">
+                      <g transform="translate(1 1)" stroke-width="2">
+                        <circle stroke-opacity=".5" cx="18" cy="18" r="18"></circle>
+                        <path d="M36 18c0-9.94-8.06-18-18-18">
+                          <animateTransform
+                            attributeName="transform"
+                            type="rotate"
+                            from="0 18 18"
+                            to="360 18 18"
+                            dur="1s"
+                            repeatCount="indefinite"
+                          ></animateTransform>
+                        </path>
+                      </g>
+                    </g></svg></span
+              ></span>
+              <ul class="search-result-wrapper suggestions" hidden=""></ul>
+              <div id="simple-search">
+                <span class="regular"><span class="new">New</span>Search Tibetan in phonetics!</span
+                ><span>How to find things?</span><span>Advanced search</span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="etext-header-breadcrumbs">
+        <div class="ariane" data-level="1">
+          <a href="/">Home</a
+          ><a class="can-shrink" href="/show/bdr:MW22084"
+            >བཀའ་འགྱུར ༼སྡེ་དགེ་པར་ཕུད༽<span class="visually-hidden"
+              >Back to བཀའ་འགྱུར ༼སྡེ་དགེ་པར་ཕུད༽</span
+            ></a
+          ><span>Etext</span>
+        </div>
+      </div>
+      <div class="etext-header">
+        <div>
+          <span
+            ><a class="urilink backLink" href="/show/bdr:MW22084"
+              ><svg class="jss69" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"></path>
+                <path fill="none" d="M0 0h24v24H0z"></path></svg
+              >Back<span class="visually-hidden">Go back</span></a
+            >
+            <h1 title="བཀའ་འགྱུར ༼སྡེ་དགེ་པར་ཕུད༽" lang="bo" class="on">
+              <span class="newT etext EtextInstance"
+                ><span class="space-fix"><span>Collection</span></span>
+                <div class="etext-header-breadcrumbs">
+                  <div class="ariane">
+                    <a href="/">Home</a
+                    ><a class="can-shrink" href="/show/bdr:MW22084"
+                      >བཀའ་འགྱུར ༼སྡེ་དགེ་པར་ཕུད༽<span class="visually-hidden"
+                        >Back to བཀའ་འགྱུར ༼སྡེ་དགེ་པར་ཕུད༽</span
+                      ></a
+                    ><span>Etext</span>
+                  </div>
+                </div></span
+              ><span><span class="placeType">བཀའ་འགྱུར ༼སྡེ་དགེ་པར་ཕུད༽</span></span>
+            </h1></span
+          >
+        </div>
+      </div>
+      <div class="etext-nav-parent someClass">
+        <div class="etext-header sticky">
+          <div>
+            <span
+              ><a class="urilink backLink" href="/show/bdr:MW22084"
+                ><svg class="jss69" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"></path>
+                  <path fill="none" d="M0 0h24v24H0z"></path></svg
+                >Back<span class="visually-hidden">Go back</span></a
+              >
+              <h1 title="བཀའ་འགྱུར ༼སྡེ་དགེ་པར་ཕུད༽" lang="bo" class="on">
+                <span class="newT etext EtextInstance"
+                  ><span class="space-fix"><span>Collection</span></span>
+                  <div class="etext-header-breadcrumbs">
+                    <div class="ariane">
+                      <a href="/">Home</a
+                      ><a class="can-shrink" href="/show/bdr:MW22084"
+                        >བཀའ་འགྱུར ༼སྡེ་དགེ་པར་ཕུད༽<span class="visually-hidden"
+                          >Back to བཀའ་འགྱུར ༼སྡེ་དགེ་པར་ཕུད༽</span
+                        ></a
+                      ><span>Etext</span>
+                    </div>
+                  </div></span
+                ><span><span class="placeType">བཀའ་འགྱུར ༼སྡེ་དགེ་པར་ཕུད༽</span></span>
+              </h1></span
+            >
+          </div>
+        </div>
+        <div id="etext-nav" class="on">
+          <div>
+            <span id="DL" class="a"
+              >Please select a volume or a text within a volume for download<img
+                alt="download icon"
+                src="/icons/DLw.png" /></span
+            ><span id="dico" class="on a"
+              ><span id="check"></span><span>སྨོན་ལམ་ཚིག་མཛོད།</span
+              ><span><img alt="monlam icon" class="ico" src="/icons/monlam.png" /></span
+            ></span>
+            <div id="control">
+              <span title="ཡིག་གཟུགས་ཆུང་དུ་ཐོངས།" class="on"
+                ><img alt="decrease font icon" src="/icons/Zm.svg" /></span
+              ><span title="ཡིག་གཟུགས་ཆེ་རུ་ཐོངས།" class="on"
+                ><img alt="increase font icon" src="/icons/Zp.svg" /></span
+              ><span id="lang" title="སྐད་ཡིག་འདེམ།"
+                ><img alt="language icon" src="/icons/LANGUEb.svg"
+              /></span>
+            </div>
+            <span class="on a"
+              ><span id="check"></span><span>བཤེར་པར་སྟོན།</span
+              ><img alt="images icon" width="42" src="/icons/search/images_b.svg"
+            /></span>
+            <div class="etext-search">
+              <span
+                ><div class="loadedContent"></div>
+                <input
+                  placeholder="Search this collection"
+                  autocomplete="off"
+                  autocorrect="off"
+                  autocapitalize="off"
+                  spellcheck="false"
+                  maxlength="512"
+                  value="" /></span
+              ><button tabindex="-1" class="jss59 jss60 jss79 jss83" type="button" disabled="">
+                <span class="jss84"
+                  ><svg class="jss69" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path></svg
+                  >Prev</span
+                ></button
+              ><button tabindex="-1" class="jss59 jss60 jss79 jss83" type="button" disabled="">
+                <span class="jss84"
+                  ><svg class="jss69" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
+                    <path fill="none" d="M0 0h24v24H0V0z"></path></svg
+                  >རྗེས་མ།</span
+                >
+              </button>
+            </div>
+            <span class="X"></span>
+          </div>
+        </div>
+      </div>
+      <div id="settings"><img alt="settings icon" src="/icons/settings.svg" /></div>
+      <button
+        tabindex="0"
+        class="jss59 jss79 show-outline-etext collapseETr-undefined"
+        type="button"
+        width="32"
+      >
+        <span class="jss84"><img alt="collection icon" src="/icons/collecN.svg" /></span
+        ><span class="jss62"></span>
+      </button>
+      <div
+        data-simplebar="init"
+        class="resource etext-outline withOutline-true collapseETr-undefined"
+      >
+        <div class="simplebar-wrapper" style="margin: 0px">
+          <div class="simplebar-height-auto-observer-wrapper">
+            <div class="simplebar-height-auto-observer"></div>
+          </div>
+          <div class="simplebar-mask">
+            <div class="simplebar-offset" style="right: 0px; bottom: 0px">
+              <div
+                class="simplebar-content-wrapper"
+                tabindex="0"
+                role="region"
+                aria-label="scrollable content"
+                style="height: 100%; overflow: hidden scroll"
+              >
+                <div class="simplebar-content" style="padding: 0px">
+                  <div class="data etextrefs" id="outline">
+                    <button tabindex="0" class="jss59 jss79 close-etext-outline" type="button">
+                      <span class="jss84"
+                        ><svg
+                          class="jss69"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                          aria-hidden="true"
+                          width="24"
+                        >
+                          <path
+                            d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                          ></path>
+                          <path fill="none" d="M0 0h24v24H0z"></path></svg></span
+                      ><span class="jss62"></span>
+                    </button>
+                    <div>
+                      <div class="root is-root on">
+                        <img alt="triangle icon" src="/icons/triangle_.png" class="xpd" /><span
+                          class="parTy"
+                          title="དཔེ་ཚོགས།"
+                          ><div>COL</div></span
+                        ><span
+                          ><h2>
+                            <a><span>བཀའ་འགྱུར ༼སྡེ་དགེ་པར་ཕུད༽</span></a>
+                          </h2></span
+                        >
+                      </div>
+                      <div style="padding-left: 43px">
+                        <span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༡"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >01) པོད། ༡<span class="visually-hidden">Go to པོད། ༡ page</span></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༢"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >02) པོད། ༢<span class="visually-hidden">Go to པོད། ༢ page</span></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༣"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >03) པོད། ༣<span class="visually-hidden">Go to པོད། ༣ page</span></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༤"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >04) པོད། ༤<span class="visually-hidden">Go to པོད། ༤ page</span></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༥"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >05) པོད། ༥<span class="visually-hidden">Go to པོད། ༥ page</span></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༦"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >06) པོད། ༦<span class="visually-hidden">Go to པོད། ༦ page</span></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༧"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >07) པོད། ༧<span class="visually-hidden">Go to པོད། ༧ page</span></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༨"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >08) པོད། ༨<span class="visually-hidden">Go to པོད། ༨ page</span></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༩"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >09) པོད། ༩<span class="visually-hidden">Go to པོད། ༩ page</span></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༡༠"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >10) པོད། ༡༠<span class="visually-hidden"
+                                  >Go to པོད། ༡༠ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༡༡"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >11) པོད། ༡༡<span class="visually-hidden"
+                                  >Go to པོད། ༡༡ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༡༢"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >12) པོད། ༡༢<span class="visually-hidden"
+                                  >Go to པོད། ༡༢ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༡༣"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >13) པོད། ༡༣<span class="visually-hidden"
+                                  >Go to པོད། ༡༣ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༡༤"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >14) པོད། ༡༤<span class="visually-hidden"
+                                  >Go to པོད། ༡༤ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༡༥"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >15) པོད། ༡༥<span class="visually-hidden"
+                                  >Go to པོད། ༡༥ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༡༦"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >16) པོད། ༡༦<span class="visually-hidden"
+                                  >Go to པོད། ༡༦ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༡༧"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >17) པོད། ༡༧<span class="visually-hidden"
+                                  >Go to པོད། ༡༧ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༡༨"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >18) པོད། ༡༨<span class="visually-hidden"
+                                  >Go to པོད། ༡༨ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༡༩"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >19) པོད། ༡༩<span class="visually-hidden"
+                                  >Go to པོད། ༡༩ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༢༠"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >20) པོད། ༢༠<span class="visually-hidden"
+                                  >Go to པོད། ༢༠ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༢༡"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >21) པོད། ༢༡<span class="visually-hidden"
+                                  >Go to པོད། ༢༡ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༢༢"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >22) པོད། ༢༢<span class="visually-hidden"
+                                  >Go to པོད། ༢༢ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༢༣"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >23) པོད། ༢༣<span class="visually-hidden"
+                                  >Go to པོད། ༢༣ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༢༤"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >24) པོད། ༢༤<span class="visually-hidden"
+                                  >Go to པོད། ༢༤ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༢༥"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >25) པོད། ༢༥<span class="visually-hidden"
+                                  >Go to པོད། ༢༥ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༢༦"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >26) པོད། ༢༦<span class="visually-hidden"
+                                  >Go to པོད། ༢༦ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༢༧"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >27) པོད། ༢༧<span class="visually-hidden"
+                                  >Go to པོད། ༢༧ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༢༨"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >28) པོད། ༢༨<span class="visually-hidden"
+                                  >Go to པོད། ༢༨ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༢༩"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >29) པོད། ༢༩<span class="visually-hidden"
+                                  >Go to པོད། ༢༩ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༣༠"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >30) པོད། ༣༠<span class="visually-hidden"
+                                  >Go to པོད། ༣༠ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༣༡"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >31) པོད། ༣༡<span class="visually-hidden"
+                                  >Go to པོད། ༣༡ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༣༢"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >32) པོད། ༣༢<span class="visually-hidden"
+                                  >Go to པོད། ༣༢ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༣༣"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >33) པོད། ༣༣<span class="visually-hidden"
+                                  >Go to པོད། ༣༣ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༣༤"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >34) པོད། ༣༤<span class="visually-hidden"
+                                  >Go to པོད། ༣༤ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༣༥"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >35) པོད། ༣༥<span class="visually-hidden"
+                                  >Go to པོད། ༣༥ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༣༦"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >36) པོད། ༣༦<span class="visually-hidden"
+                                  >Go to པོད། ༣༦ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༣༧"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >37) པོད། ༣༧<span class="visually-hidden"
+                                  >Go to པོད། ༣༧ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༣༨"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >38) པོད། ༣༨<span class="visually-hidden"
+                                  >Go to པོད། ༣༨ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༣༩"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >39) པོད། ༣༩<span class="visually-hidden"
+                                  >Go to པོད། ༣༩ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༤༠"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >40) པོད། ༤༠<span class="visually-hidden"
+                                  >Go to པོད། ༤༠ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༤༡"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >41) པོད། ༤༡<span class="visually-hidden"
+                                  >Go to པོད། ༤༡ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༤༢"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >42) པོད། ༤༢<span class="visually-hidden"
+                                  >Go to པོད། ༤༢ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༤༣"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >43) པོད། ༤༣<span class="visually-hidden"
+                                  >Go to པོད། ༤༣ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༤༤"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >44) པོད། ༤༤<span class="visually-hidden"
+                                  >Go to པོད། ༤༤ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༤༥"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >45) པོད། ༤༥<span class="visually-hidden"
+                                  >Go to པོད། ༤༥ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༤༦"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >46) པོད། ༤༦<span class="visually-hidden"
+                                  >Go to པོད། ༤༦ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༤༧"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >47) པོད། ༤༧<span class="visually-hidden"
+                                  >Go to པོད། ༤༧ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༤༨"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >48) པོད། ༤༨<span class="visually-hidden"
+                                  >Go to པོད། ༤༨ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༤༩"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >49) པོད། ༤༩<span class="visually-hidden"
+                                  >Go to པོད། ༤༩ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༥༠"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >50) པོད། ༥༠<span class="visually-hidden"
+                                  >Go to པོད། ༥༠ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༥༡"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >51) པོད། ༥༡<span class="visually-hidden"
+                                  >Go to པོད། ༥༡ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༥༢"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >52) པོད། ༥༢<span class="visually-hidden"
+                                  >Go to པོད། ༥༢ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༥༣"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >53) པོད། ༥༣<span class="visually-hidden"
+                                  >Go to པོད། ༥༣ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༥༤"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >54) པོད། ༥༤<span class="visually-hidden"
+                                  >Go to པོད། ༥༤ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༥༥"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >55) པོད། ༥༥<span class="visually-hidden"
+                                  >Go to པོད། ༥༥ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༥༦"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >56) པོད། ༥༦<span class="visually-hidden"
+                                  >Go to པོད། ༥༦ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༥༧"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >57) པོད། ༥༧<span class="visually-hidden"
+                                  >Go to པོད། ༥༧ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༥༨"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >58) པོད། ༥༨<span class="visually-hidden"
+                                  >Go to པོད། ༥༨ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༥༩"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >59) པོད། ༥༩<span class="visually-hidden"
+                                  >Go to པོད། ༥༩ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༦༠"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >60) པོད། ༦༠<span class="visually-hidden"
+                                  >Go to པོད། ༦༠ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༦༡"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >61) པོད། ༦༡<span class="visually-hidden"
+                                  >Go to པོད། ༦༡ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༦༢"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >62) པོད། ༦༢<span class="visually-hidden"
+                                  >Go to པོད། ༦༢ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༦༣"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >63) པོད། ༦༣<span class="visually-hidden"
+                                  >Go to པོད། ༦༣ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༦༤"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >64) པོད། ༦༤<span class="visually-hidden"
+                                  >Go to པོད། ༦༤ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༦༥"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >65) པོད། ༦༥<span class="visually-hidden"
+                                  >Go to པོད། ༦༥ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༦༦"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >66) པོད། ༦༦<span class="visually-hidden"
+                                  >Go to པོད། ༦༦ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༦༧"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >67) པོད། ༦༧<span class="visually-hidden"
+                                  >Go to པོད། ༦༧ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༦༨"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >68) པོད། ༦༨<span class="visually-hidden"
+                                  >Go to པོད། ༦༨ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༦༩"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >69) པོད། ༦༩<span class="visually-hidden"
+                                  >Go to པོད། ༦༩ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༧༠"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >70) པོད། ༧༠<span class="visually-hidden"
+                                  >Go to པོད། ༧༠ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༧༡"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >71) པོད། ༧༡<span class="visually-hidden"
+                                  >Go to པོད། ༧༡ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༧༢"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >72) པོད། ༧༢<span class="visually-hidden"
+                                  >Go to པོད། ༧༢ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༧༣"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >73) པོད། ༧༣<span class="visually-hidden"
+                                  >Go to པོད། ༧༣ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༧༤"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >74) པོད། ༧༤<span class="visually-hidden"
+                                  >Go to པོད། ༧༤ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༧༥"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >75) པོད། ༧༥<span class="visually-hidden"
+                                  >Go to པོད། ༧༥ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༧༦"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >76) པོད། ༧༦<span class="visually-hidden"
+                                  >Go to པོད། ༧༦ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༧༧"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >77) པོད། ༧༧<span class="visually-hidden"
+                                  >Go to པོད། ༧༧ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༧༨"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >78) པོད། ༧༨<span class="visually-hidden"
+                                  >Go to པོད། ༧༨ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༧༩"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >79) པོད། ༧༩<span class="visually-hidden"
+                                  >Go to པོད། ༧༩ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༨༠"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >80) པོད། ༨༠<span class="visually-hidden"
+                                  >Go to པོད། ༨༠ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༨༡"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >81) པོད། ༨༡<span class="visually-hidden"
+                                  >Go to པོད། ༨༡ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༨༢"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >82) པོད། ༨༢<span class="visually-hidden"
+                                  >Go to པོད། ༨༢ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༨༣"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >83) པོད། ༨༣<span class="visually-hidden"
+                                  >Go to པོད། ༨༣ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༨༤"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >84) པོད། ༨༤<span class="visually-hidden"
+                                  >Go to པོད། ༨༤ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༨༥"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >85) པོད། ༨༥<span class="visually-hidden"
+                                  >Go to པོད། ༨༥ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༨༦"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >86) པོད། ༨༦<span class="visually-hidden"
+                                  >Go to པོད། ༨༦ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༨༧"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >87) པོད། ༨༧<span class="visually-hidden"
+                                  >Go to པོད། ༨༧ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༨༨"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >88) པོད། ༨༨<span class="visually-hidden"
+                                  >Go to པོད། ༨༨ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༨༩"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >89) པོད། ༨༩<span class="visually-hidden"
+                                  >Go to པོད། ༨༩ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༩༠"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >90) པོད། ༩༠<span class="visually-hidden"
+                                  >Go to པོད། ༩༠ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༩༡"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >91) པོད། ༩༡<span class="visually-hidden"
+                                  >Go to པོད། ༩༡ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༩༢"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >92) པོད། ༩༢<span class="visually-hidden"
+                                  >Go to པོད། ༩༢ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༩༣"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >93) པོད། ༩༣<span class="visually-hidden"
+                                  >Go to པོད། ༩༣ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༩༤"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >94) པོད། ༩༤<span class="visually-hidden"
+                                  >Go to པོད། ༩༤ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༩༥"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >95) པོད། ༩༥<span class="visually-hidden"
+                                  >Go to པོད། ༩༥ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༩༦"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >96) པོད། ༩༦<span class="visually-hidden"
+                                  >Go to པོད། ༩༦ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༩༧"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >97) པོད། ༩༧<span class="visually-hidden"
+                                  >Go to པོད། ༩༧ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༩༨"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >98) པོད། ༩༨<span class="visually-hidden"
+                                  >Go to པོད། ༩༨ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༩༩"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >99) པོད། ༩༩<span class="visually-hidden"
+                                  >Go to པོད། ༩༩ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༡༠༠"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >100) པོད། ༡༠༠<span class="visually-hidden"
+                                  >Go to པོད། ༡༠༠ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༡༠༡"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >101) པོད། ༡༠༡<span class="visually-hidden"
+                                  >Go to པོད། ༡༠༡ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༡༠༢"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >102) པོད། ༡༠༢<span class="visually-hidden"
+                                  >Go to པོད། ༡༠༢ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div></span
+                        ><span class="top"
+                          ><img
+                            alt="triangle icon"
+                            src="/icons/triangle.png"
+                            class="xpd right" /><span class="parTy" title="Etext Volume"
+                            ><div>vol</div></span
+                          ><span
+                            ><span class="ulink hasSpace"
+                              ><a
+                                class="urilink prefLabel"
+                                data-info="པོད། ༡༠༣"
+                                href="/show/bdr:IE0OPI6440489A"
+                                >103) པོད། ༡༠༣<span class="visually-hidden"
+                                  >Go to པོད། ༡༠༣ page</span
+                                ></a
+                              ></span
+                            ></span
+                          >
+                          <div class="abs">
+                            <button class="permalink" title="དྲ་ཐག">
+                              <img alt="permalink icon" src="/icons/PLINK_small.svg" /><img
+                                alt="permalink icon"
+                                src="/icons/PLINK_small_r.svg"
+                              />
+                            </button></div
+                        ></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="simplebar-placeholder" style="width: auto; height: 2628px"></div>
+        </div>
+        <div class="simplebar-track simplebar-horizontal" style="visibility: hidden">
+          <div class="simplebar-scrollbar" style="width: 0px; display: none"></div>
+        </div>
+        <div class="simplebar-track simplebar-vertical" style="visibility: visible">
+          <div
+            class="simplebar-scrollbar"
+            style="height: 67px; transform: translate3d(0px, 0px, 0px); display: block"
+          ></div>
+        </div>
+      </div>
+      <div class="withOutline">
+        <div class="resource etext-view">
+          <div class="">
+            <div class="data etext-data">
+              <div id="etext-scroll">
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                    scroll-margin-top: 160px;
+                  "
+                >
+                  <h3 style="margin-bottom: 20px; text-align: right">
+                    <a href="/show/bdr:IE0OPI6440489A?startChar=1667&amp;uilang=bo#open-viewer"
+                      >ཤོག་ངོས་དང་བོ།<span class="visually-hidden">Go to first page</span></a
+                    >
+                  </h3>
+                  <h3 style="margin-bottom: 20px; text-align: right"></h3>
+                  <h3 style="margin-bottom: 20px; text-align: right">
+                    <a href="/show/bdr:IE0OPI6440489A?startChar=714905&amp;uilang=bo#open-viewer"
+                      >ཤོག་ངོས་ཐ་མ།<span class="visually-hidden">Go to last page</span></a
+                    >
+                  </h3>
+                </div>
+                <div
+                  data-start="1667"
+                  data-seq="3"
+                  data-iri="bdr:VEIE0OPI6440489A_I0886"
+                  class="etextPage hasSeq"
+                >
+                  <div>
+                    <span class="button" title="ཚང་མ་སྟོན། available scans for that page"
+                      ><img alt="show images icon" src="/icons/image.svg"
+                    /></span>
+                    <h5>
+                      <span class="a" title="ཚང་མ་སྟོན། available scans for that page"
+                        >པར་གྲངས། ༣</span
+                      >
+                    </h5>
+                    &nbsp;
+                    <h5 class="withHoverM" style="text-transform: lowercase">
+                      ནས་ <span class="ulink hasSpace">པོད། ༡</span>
+                    </h5>
+                  </div>
+                  <div class="overpage">
+                    <h4 class="page">
+                      <span lang="en"><span>ངོ agj </span></span
+                      ><span lang="bo"
+                        ><span><br />འདུལ་བ་ཀ་བཞུགས་སོ།།<br /></span
+                      ></span>
+                    </h4>
+                  </div>
+                  <div class="hover-menu">
+                    <div>
+                      <button class="anchorH">
+                        <a href="/show/bdr:IE0OPI6440489A?startChar=1667&amp;uilang=bo#open-viewer"
+                          ><img
+                            alt="permalink icon"
+                            src="/icons/PLINK_small.svg"
+                            style="width: 16px"
+                          /><span class="visually-hidden"
+                            >Go to /show/bdr:IE0OPI6440489A?startChar=1667&amp;uilang=bo#open-viewer
+                            page</span
+                          ></a
+                        ><img alt="info icon" src="/icons/info.svg" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="monlamResults">
+          <div data-simplebar="init">
+            <div class="simplebar-wrapper" style="margin: 0px">
+              <div class="simplebar-height-auto-observer-wrapper">
+                <div class="simplebar-height-auto-observer"></div>
+              </div>
+              <div class="simplebar-mask">
+                <div class="simplebar-offset" style="right: 0px; bottom: 0px">
+                  <div
+                    class="simplebar-content-wrapper"
+                    tabindex="0"
+                    role="region"
+                    aria-label="scrollable content"
+                    style="height: 100%; overflow: hidden"
+                  >
+                    <div class="simplebar-content" style="padding: 0px">
+                      <h2>
+                        <a href="https://monlamdic.com" target="_blank" rel="noopener noreferrer"
+                          ><img
+                            alt="monlam icon"
+                            width="32"
+                            src="/icons/monlam.png"
+                            title="monlamdic.com"
+                          /><span class="visually-hidden">Open monlam dictionary</span></a
+                        ><a href="https://monlamdic.com" target="_blank" rel="noopener noreferrer"
+                          >སྨོན་ལམ་ཚིག་མཛོད་ནང་གི་ཚིག་འགྲེལ།<span class="visually-hidden"
+                            >Open monlam dictionary</span
+                          ></a
+                        ><svg
+                          class="jss69"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                          aria-hidden="true"
+                          width="32"
+                        >
+                          <path
+                            d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                          ></path>
+                          <path fill="none" d="M0 0h24v24H0z"></path>
+                        </svg>
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="simplebar-placeholder" style="width: auto; height: 88px"></div>
+            </div>
+            <div class="simplebar-track simplebar-horizontal" style="visibility: hidden">
+              <div class="simplebar-scrollbar" style="width: 0px; display: none"></div>
+            </div>
+            <div class="simplebar-track simplebar-vertical" style="visibility: hidden">
+              <div class="simplebar-scrollbar" style="height: 0px; display: none"></div>
+            </div>
+          </div>
+        </div>
+        <div class="ETSBresults">
+          <div data-simplebar="init">
+            <div class="simplebar-wrapper" style="margin: -10px">
+              <div class="simplebar-height-auto-observer-wrapper">
+                <div class="simplebar-height-auto-observer"></div>
+              </div>
+              <div class="simplebar-mask">
+                <div class="simplebar-offset" style="right: 0px; bottom: 0px">
+                  <div
+                    class="simplebar-content-wrapper"
+                    tabindex="0"
+                    role="region"
+                    aria-label="scrollable content"
+                    style="height: 100%; overflow: hidden"
+                  >
+                    <div class="simplebar-content" style="padding: 10px"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="simplebar-placeholder" style="width: auto; height: 20px"></div>
+            </div>
+            <div class="simplebar-track simplebar-horizontal" style="visibility: hidden">
+              <div class="simplebar-scrollbar" style="width: 0px; display: none"></div>
+            </div>
+            <div class="simplebar-track simplebar-vertical" style="visibility: hidden">
+              <div class="simplebar-scrollbar" style="height: 0px; display: none"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      !(function (e) {
+        function r(r) {
+          for (var n, i, l = r[0], a = r[1], p = r[2], c = 0, s = []; c < l.length; c++)
+            ((i = l[c]),
+              Object.prototype.hasOwnProperty.call(o, i) && o[i] && s.push(o[i][0]),
+              (o[i] = 0));
+          for (n in a) Object.prototype.hasOwnProperty.call(a, n) && (e[n] = a[n]);
+          for (f && f(r); s.length; ) s.shift()();
+          return (u.push.apply(u, p || []), t());
+        }
+        function t() {
+          for (var e, r = 0; r < u.length; r++) {
+            for (var t = u[r], n = !0, l = 1; l < t.length; l++) {
+              var a = t[l];
+              0 !== o[a] && (n = !1);
+            }
+            n && (u.splice(r--, 1), (e = i((i.s = t[0]))));
+          }
+          return e;
+        }
+        var n = {},
+          o = { 1: 0 },
+          u = [];
+        function i(r) {
+          if (n[r]) return n[r].exports;
+          var t = (n[r] = { i: r, l: !1, exports: {} });
+          return (e[r].call(t.exports, t, t.exports, i), (t.l = !0), t.exports);
+        }
+        ((i.m = e),
+          (i.c = n),
+          (i.d = function (e, r, t) {
+            i.o(e, r) || Object.defineProperty(e, r, { enumerable: !0, get: t });
+          }),
+          (i.r = function (e) {
+            ('undefined' != typeof Symbol &&
+              Symbol.toStringTag &&
+              Object.defineProperty(e, Symbol.toStringTag, { value: 'Module' }),
+              Object.defineProperty(e, '__esModule', { value: !0 }));
+          }),
+          (i.t = function (e, r) {
+            if ((1 & r && (e = i(e)), 8 & r)) return e;
+            if (4 & r && 'object' == typeof e && e && e.__esModule) return e;
+            var t = Object.create(null);
+            if (
+              (i.r(t),
+              Object.defineProperty(t, 'default', { enumerable: !0, value: e }),
+              2 & r && 'string' != typeof e)
+            )
+              for (var n in e)
+                i.d(
+                  t,
+                  n,
+                  function (r) {
+                    return e[r];
+                  }.bind(null, n)
+                );
+            return t;
+          }),
+          (i.n = function (e) {
+            var r =
+              e && e.__esModule
+                ? function () {
+                    return e.default;
+                  }
+                : function () {
+                    return e;
+                  };
+            return (i.d(r, 'a', r), r);
+          }),
+          (i.o = function (e, r) {
+            return Object.prototype.hasOwnProperty.call(e, r);
+          }),
+          (i.p = '/'));
+        var l = (this['webpackJsonppublic-digital-library'] =
+            this['webpackJsonppublic-digital-library'] || []),
+          a = l.push.bind(l);
+        ((l.push = r), (l = l.slice()));
+        for (var p = 0; p < l.length; p++) r(l[p]);
+        var f = a;
+        t();
+      })([]);
+    </script>
+    <script onerror="scriptError(this)" src="/static/js/2.9d3e2d57.chunk.js"></script>
+    <script onerror="scriptError(this)" src="/static/js/main.d0ca9719.chunk.js"></script>
+  </body>
+</html>
